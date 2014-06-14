@@ -42,7 +42,7 @@ public class CourseFragment extends Fragment {
 
     private static final long LOCATION_REFRESH_TIME = 30000;
     private static final float LOCATION_REFRESH_DISTANCE = 2.5f;
-    private static double lat, longt;
+    private static double lat=0, longt=0;
     List<Teacher> teachers;
     HashMap<String, List<String>> timesForEachTeacher;
     ListView l;
@@ -87,6 +87,10 @@ public class CourseFragment extends Fragment {
     }
 
     public static String getlocation() {
+        if(lat==0||longt==0)
+        {
+            return null;
+        }
         return Double.toString(lat) + "," + Double.toString(longt);
     }
 
@@ -160,9 +164,12 @@ public class CourseFragment extends Fragment {
             public void onProviderEnabled(String s) {
                 Log.d("GPS", s);
                 Location location = getLastBestLocation();
-                lat = location.getLatitude();
-                longt = location.getLongitude();
-                Log.d("GPS", location.toString());
+                if(location!=null) {
+                    lat = location.getLatitude();
+                    longt = location.getLongitude();
+                    Log.d("GPS", location.toString());
+                }
+
 
             }
 
@@ -309,8 +316,26 @@ public class CourseFragment extends Fragment {
                 public void onClick(View view) {
                     String source = getlocation();
                     String dest = Utilities.getLocationByAddress(place.getText().toString(), _context.getResources());
-                    if (dest != null) {
+                    if (dest != null&& source!=null) {
                         Utilities.openMapToNavigate(source, dest, _context);
+                    }
+                    else{
+                        if(dest!=null) {
+
+                            String []cords=dest.split(",");
+                            double x=0,y=0;
+                            try {
+                                x= Double.valueOf(cords[0]);
+                                 y= Double.valueOf(cords[1]);
+                                Utilities.openMapInLocation(x,y,_context);
+                            }
+                            catch (NumberFormatException nfe)
+                            {
+                                    return;
+                            }
+
+
+                        }
                     }
                 }
             });

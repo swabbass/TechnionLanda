@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 import ward.landa.R;
@@ -388,6 +389,12 @@ public class Utilities {
         cxt.startActivity(intent);
     }
 
+    public static void openMapInLocation(double latitude,double longitude,Context cxt)
+    {
+        String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        cxt.startActivity(intent);
+    }
     public static String getLocationByAddress(String address, Resources res) {
 
 

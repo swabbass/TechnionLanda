@@ -66,7 +66,7 @@ public class Utilities {
 
     /**
      * removes all kind of tags like <13455> will be removed
-     *
+     *  -perfomance o(n) ..n itirations
      * @param inp html text input
      * @return
      */
@@ -379,6 +379,12 @@ public class Utilities {
         mNotificationManager.notify(notfyId, nBuilder.build());
     }
 
+    /**
+     * opens google maps to navigate with directions to destination
+     * @param source source cordinates x,y
+     * @param dest  destination cordinates x.y
+     * @param cxt   Context to open intent for constants usage
+     */
     public static void openMapToNavigate(String source, String dest, Context cxt) {
         Intent intent = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("http://ditu.google.cn/maps?f=d&source=s_d" +
@@ -389,12 +395,25 @@ public class Utilities {
         cxt.startActivity(intent);
     }
 
+    /**
+     *  open the map on exact location without navigation
+     * @param latitude x cordinate
+     * @param longitude y cordinage
+     * @param cxt Context
+     */
     public static void openMapInLocation(double latitude,double longitude,Context cxt)
     {
         String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         cxt.startActivity(intent);
     }
+
+    /**
+     * Gets the location (x,y) formate for given address in technion
+     * @param address one of strings for locations in Values
+     * @param res resourses to get strings
+     * @return the x,y formated string with cordinates
+     */
     public static String getLocationByAddress(String address, Resources res) {
 
 

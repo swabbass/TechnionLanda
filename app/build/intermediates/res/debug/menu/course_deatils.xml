@@ -1,9 +1,6 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ward.landa.CourseDeatilsActivity" >
+<menu xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ward.landa.CourseDeatilsActivity">
 
-    
 
 </menu>
 <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/menu/course_deatils.xml -->

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/pinUpdate"
-        android:title="@string/pin"/>
+        android:title="@string/pin" />
     <item
         android:id="@+id/deleteSingleUpdate"
-        android:title="@string/delete"/>
+        android:title="@string/delete" />
 
 </menu><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/menu/update_pop_up_menu.xml -->

@@ -59,9 +59,10 @@ public class Update implements Serializable, Comparable<Update> {
     }
 
     public void setText(String text) {
-        String tmp = Utilities.removeTableFirstTrHtml(text);
-        tmp = Utilities.html2Text(tmp == null ? text : tmp);
-        this.text = tmp;
+       // String tmp = Utilities.removeTableFirstTrHtml(text);
+        //tmp = Utilities.html2Text(tmp == null ? text : tmp);
+        this.text =text;
+                //Utilities.html2Text(text);
 
         // Html.fromHtml(text).toString();
     }

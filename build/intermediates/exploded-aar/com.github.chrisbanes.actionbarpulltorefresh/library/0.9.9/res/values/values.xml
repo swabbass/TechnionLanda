@@ -59,9 +59,9 @@
     <!-- From: file:/Users/chris/Development/ActionBar-PullToRefresh/library/src/main/res/values/ids.xml -->
     <eat-comment />
 
-    <item name="ptr_content" type="id" />
-    <item name="ptr_progress" type="id" />
-    <item name="ptr_text" type="id" />
+    <item name="ptr_content" type="id"/>
+    <item name="ptr_progress" type="id"/>
+    <item name="ptr_text" type="id"/>
     <!-- From: file:/Users/chris/Development/ActionBar-PullToRefresh/library/src/main/res/values/pull_refresh_strings.xml -->
     <eat-comment />
 

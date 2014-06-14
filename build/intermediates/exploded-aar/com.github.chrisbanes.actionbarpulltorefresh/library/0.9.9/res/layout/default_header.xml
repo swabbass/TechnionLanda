@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright 2013 Chris Banes
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,8 +29,8 @@
             android:id="@id/ptr_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center" />
 
     </FrameLayout>
 
@@ -37,8 +38,8 @@
         android:id="@id/ptr_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/ptr_progress_bar_stroke_width" />
+        android:minHeight="@dimen/ptr_progress_bar_stroke_width"/>
 
 </RelativeLayout>
 
-    <!-- From: file:/Users/chris/Development/ActionBar-PullToRefresh/library/src/main/res/layout/default_header.xml -->
+<!-- From: file:/Users/chris/Development/ActionBar-PullToRefresh/library/src/main/res/layout/default_header.xml -->

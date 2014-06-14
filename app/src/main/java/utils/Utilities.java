@@ -322,7 +322,7 @@ public class Utilities {
                 JSONObject jObj = new JSONObject(msg);
                 String id = jObj.getString("ID");
                 String title = subject;
-                String content = jObj.getString("post_content");
+                String content = Utilities.html2Text(jObj.getString("post_content"));
                 String date = jObj.getString("post_date");
                 String url = jObj.getString("guid");
                 u = new Update(id, title, date, content, false);
@@ -504,7 +504,7 @@ public class Utilities {
                         u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                update.getString("content"), false);
+                                Utilities.html2Text(update.getString("content")), false);
                         u.setUrl(update.getString("url"));
 
                         downloadOk = true;

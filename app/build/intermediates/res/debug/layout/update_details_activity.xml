@@ -3,6 +3,6 @@
     android:id="@+id/updateDetailsContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#404040" >
+    android:background="#404040">
 
 </FrameLayout><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/update_details_activity.xml -->

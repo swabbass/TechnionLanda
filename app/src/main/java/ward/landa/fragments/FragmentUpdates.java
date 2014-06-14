@@ -169,7 +169,7 @@ public class FragmentUpdates extends Fragment {
         db_mngr = new DBManager(getActivity());
         this.container = container;
 
-        pullToRefreshLayout = (PullToRefreshLayout) root.findViewById(R.id.LinearLayout1);
+       pullToRefreshLayout = (PullToRefreshLayout) root.findViewById(R.id.LinearLayout1);
         Options options = Options.create().scrollDistance(.25f).build();
         ActionBarPullToRefresh.from(getActivity()).
                 options(options).
@@ -690,6 +690,11 @@ public class FragmentUpdates extends Fragment {
                 if (cancel(true)) {
                     Log.e(GCMUtils.TAG,
                             "loading Updates from internet canceled");
+                    if(toRefresh)
+                    {
+                        Toast.makeText(getActivity(),getResources().getString(R.string.fialedToRefresh),Toast.LENGTH_LONG).show();
+                        pullToRefreshLayout.setRefreshComplete();
+                    }
                 }
             } else {
                 Log.d("ward", jObject.toString());
@@ -701,7 +706,7 @@ public class FragmentUpdates extends Fragment {
                         Update u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                update.getString("content"), false);
+                                Utilities.html2Text(update.getString("content")), false);
                         u.setUrl(update.getString("url"));
                         if (!toRefresh) {
                             updates.add(u);
@@ -715,8 +720,13 @@ public class FragmentUpdates extends Fragment {
                     Log.e(GCMUtils.TAG, e.toString());
                     if (!connectionDetector.isConnectingToInternet()) {
                         Log.e(GCMUtils.TAG, "faild no internet ");
-
+                            if(toRefresh)
+                            {
+                                Toast.makeText(getActivity(),getResources().getString(R.string.fialedToRefresh),Toast.LENGTH_LONG).show();
+                                pullToRefreshLayout.setRefreshComplete();
+                            }
                     }
+                    if(!toRefresh)
                     db_mngr.clearDb();
                     return "";
                 }
@@ -767,7 +777,13 @@ public class FragmentUpdates extends Fragment {
         @Override
         public void onRefreshStarted(View view) {
             Toast.makeText(getActivity(), getResources().getString(R.string.Refreshing), Toast.LENGTH_LONG).show();
-            new downloadRecentUpdates(true).execute();
+            if(connectionDetector.isConnectingToInternet())
+                new downloadRecentUpdates(true).execute();
+            else{
+                pullToRefreshLayout.setRefreshComplete();
+                Toast.makeText(getActivity(),getResources().getString(R.string.fialedToRefresh),Toast.LENGTH_LONG).show();
+            }
+
         }
 
     }

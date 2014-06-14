@@ -60,8 +60,157 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45204555-adf8-4b55-88ca-6431d8b2d682" name="Default" comment="new Features&#10; pull to refresh for updates &#10;gps dirction for course time when cliking on location icon in course details &#10;fixing when course added from the backend or edited should be eddited he not added &#10;added upload picture michanism when picture uploaded to back end it will send gcm to the app to remove the current and download the new one">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_place.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_place.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_place.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_action_place.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_action_place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/fr/castorflex/android/smoothprogressbar/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/fr/castorflex/android/smoothprogressbar/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/uk/co/senab/actionbarpulltorefresh/library/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/uk/co/senab/actionbarpulltorefresh/library/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/ward/landa/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/ward/landa/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/admob_ads_attrs.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/admob_ads_attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-af/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-af/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-am/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-am/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ar/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ar/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-be/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-be/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-bg/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-bg/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ca/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ca/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-cs/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-cs/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-da/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-da/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-de/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-de/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-el/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-el/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rGB/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rGB/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rIN/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rIN/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es-rUS/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es-rUS/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-et-rEE/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-et-rEE/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fa/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fa/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fi/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fi/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr-rCA/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr-rCA/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hi/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hi/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hr/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hr/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hu/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hu/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hy-rAM/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hy-rAM/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-in/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-in/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-it/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-it/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-iw/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-iw/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ja/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ja/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ka-rGE/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ka-rGE/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-km-rKH/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-km-rKH/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ko/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ko/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lt/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lt/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lv/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lv/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-mn-rMN/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-mn-rMN/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ms-rMY/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ms-rMY/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nb/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nb/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nl/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nl/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pl/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pl/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rBR/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rBR/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rPT/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rPT/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ro/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ro/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ru/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ru/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sk/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sk/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sl/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sl/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sr/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sr/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sv/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sv/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sw/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sw/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-th/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-th/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tl/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tl/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tr/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tr/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-uk/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-uk/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-vi/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-vi/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rCN/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rCN/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rHK/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rHK/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rTW/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rTW/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zu/auth_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zu/auth_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_icon_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_icon_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/drawable/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-af/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-af/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-am/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-am/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ar/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ar/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-be/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-be/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-bg/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-bg/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ca/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ca/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-cs/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-cs/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-da/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-da/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-de/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-de/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-el/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-el/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rGB/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rGB/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-en-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es-rUS/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es-rUS/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-et-rEE/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-et-rEE/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fa/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fa/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fi/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr-rCA/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-fr-rCA/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hi/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hr/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hu/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hu/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hy-rAM/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-hy-rAM/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-in/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-in/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-it/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-it/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-iw/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-iw/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ja/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ja/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ka-rGE/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ka-rGE/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-km-rKH/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-km-rKH/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ko/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ko/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lt/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lt/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lv/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lv/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-mn-rMN/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-mn-rMN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ms-rMY/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ms-rMY/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nb/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nb/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nl/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-nl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pl/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rBR/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rBR/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rPT/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-pt-rPT/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ro/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ro/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ru/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-ru/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sk/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sk/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sl/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sr/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sv/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sv/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sw/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-sw/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-th/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-th/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tl/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tr/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-tr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-uk/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-uk/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-vi/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-vi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rCN/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rCN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rHK/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rHK/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rTW/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zh-rTW/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zu/common_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-zu/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/layout/default_header.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/layout/default_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/maps_attrs.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/maps_attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-he/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-he/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_attrs.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_colors.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/wallet_primary_text_holo_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/wallet_primary_text_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/wallet_secondary_text_holo_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/color/wallet_secondary_text_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/wallet_strings.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-es/wallet_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_styles.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,71 +233,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CourseFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java">
+      <file leaf-file-name="FragmentUpdates.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2408377" vertical-offset="5195" max-vertical-offset="7259">
-              <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.79447323" vertical-offset="3059" max-vertical-offset="3927">
+              <caret line="642" column="54" selection-start-line="642" selection-start-column="54" selection-end-line="642" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2560#2576#0" expanded="true" />
-                <element signature="e#12479#12820#0" expanded="true" />
-                <element signature="e#12797#12798#0" expanded="true" />
-                <element signature="e#13102#13103#0" expanded="true" />
-                <element signature="e#13157#13158#0" expanded="true" />
-                <element signature="e#13213#13214#0" expanded="true" />
-                <element signature="e#13265#13266#0" expanded="true" />
-                <element signature="e#13327#13328#0" expanded="true" />
-                <element signature="e#13362#13363#0" expanded="true" />
+                <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onResume#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#6490:8884" expanded="false" />
+                <element signature="method#onPrepareActionMode#0;class#6490:8884" expanded="false" />
+                <element signature="method#onDestroyActionMode#0;class#6490:8884" expanded="false" />
+                <element signature="method#onCreateActionMode#0;class#6490:8884" expanded="false" />
+                <element signature="method#onActionItemClicked#0;class#6490:8884" expanded="false" />
+                <element signature="method#onItemCheckedStateChanged#0;class#6490:8884" expanded="false" />
+                <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#getView#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#17256:18879" expanded="false" />
+                <element signature="method#onClick#0;class#17256:18879" expanded="false" />
+                <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="e#21619#22195#0" expanded="true" />
+                <element signature="e#22168#22169#0" expanded="true" />
+                <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="e#23004#23005#0" expanded="true" />
+                <element signature="e#23058#23059#0" expanded="true" />
+                <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
+                <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/Utilities.java">
+      <file leaf-file-name="DBManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="1989">
-              <caret line="397" column="25" selection-start-line="397" selection-start-column="25" selection-end-line="397" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6573" max-vertical-offset="12954">
+              <caret line="420" column="29" selection-start-line="420" selection-start-column="29" selection-end-line="420" selection-end-column="29" />
               <folding>
-                <element signature="docComment;method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
-                <element signature="method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#html2Text#0;class#Utilities#0" expanded="false" />
-                <element signature="method#html2Text#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
-                <element signature="method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#getTableTags#0;class#Utilities#0" expanded="false" />
-                <element signature="method#getTableTags#0;class#Utilities#0" expanded="false" />
-                <element signature="method#getInputMethodManager#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#replacer#0;class#Utilities#0" expanded="false" />
-                <element signature="method#replacer#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
-                <element signature="method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#displayMessage#0;class#Utilities#0" expanded="false" />
-                <element signature="method#displayMessage#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#displayMessageUpdate#0;class#Utilities#0" expanded="false" />
-                <element signature="method#displayMessageUpdate#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
-                <element signature="method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#saveImageToSD#0;class#Utilities#0" expanded="false" />
-                <element signature="method#saveImageToSD#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;method#generateUpdateFromExtras#0;class#Utilities#0" expanded="false" />
-                <element signature="method#generateUpdateFromExtras#0;class#Utilities#0" expanded="false" />
-                <element signature="e#10911#10936#0" expanded="false" />
-                <element signature="docComment;method#showNotification#0;class#Utilities#0" expanded="false" />
-                <element signature="method#showNotification#0;class#Utilities#0" expanded="false" />
-                <element signature="e#11687#11752#0" expanded="false" />
-                <element signature="docComment;class#PostListener#0;class#Utilities#0" expanded="false" />
-                <element signature="class#PostListener#0;class#Utilities#0" expanded="false" />
-                <element signature="class#Table#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;field#startIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;field#endIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
-                <element signature="method#Table#0;class#Table#0;class#Utilities#0" expanded="false" />
-                <element signature="docComment;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-                <element signature="class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-                <element signature="method#fetchUpdateFromBackEndTask#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-                <element signature="method#onPostExecute#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
+                <element signature="e#15765#15773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Update.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="709" max-vertical-offset="1904">
+              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+              <folding>
+                <element signature="method#setText#0;class#Update#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1333,9 +1494,10 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/updates_frag_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
       </list>
     </option>
   </component>
@@ -1563,7 +1725,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d4906740c200e" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4d003c126abc500d" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_S_by_Google" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="260" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
@@ -1776,15 +1938,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32676518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0032840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32676518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0032840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29502195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49753696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2041,67 +2203,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>178</line>
-          <properties />
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
           <line>116</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>173</line>
+          <line>571</line>
           <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>175</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>176</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>171</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>169</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>170</line>
-          <properties />
-          <option name="timeStamp" value="83" />
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="84" />
+      <option name="time" value="88" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="1734">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72824156" vertical-offset="780" max-vertical-offset="3043">
@@ -2413,14 +2529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4518" max-vertical-offset="13243">
-          <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7225131" vertical-offset="1696" max-vertical-offset="2210">
@@ -2469,66 +2577,6 @@
         <state vertical-scroll-proportion="0.09577465" vertical-offset="0" max-vertical-offset="561">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="489" max-vertical-offset="2108">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#6491:8885" expanded="false" />
-            <element signature="method#onPrepareActionMode#0;class#6491:8885" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#6491:8885" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#6491:8885" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#6491:8885" expanded="false" />
-            <element signature="method#onItemCheckedStateChanged#0;class#6491:8885" expanded="false" />
-            <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#updatesAdapter#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getItem#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getView#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#17257:18880" expanded="false" />
-            <element signature="method#onClick#0;class#17257:18880" expanded="false" />
-            <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onReceive#0;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2591,15 +2639,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5602095" vertical-offset="6265" max-vertical-offset="7259">
+          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2560#2576#0" expanded="true" />
+            <element signature="e#12479#12820#0" expanded="true" />
+            <element signature="e#12797#12798#0" expanded="true" />
+            <element signature="e#13102#13103#0" expanded="true" />
+            <element signature="e#13157#13158#0" expanded="true" />
+            <element signature="e#13213#13214#0" expanded="true" />
+            <element signature="e#13265#13266#0" expanded="true" />
+            <element signature="e#13327#13328#0" expanded="true" />
+            <element signature="e#13362#13363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6573" max-vertical-offset="12954">
+          <caret line="420" column="29" selection-start-line="420" selection-start-column="29" selection-end-line="420" selection-end-column="29" />
+          <folding>
+            <element signature="e#15765#15773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="1989">
-          <caret line="397" column="25" selection-start-line="397" selection-start-column="25" selection-end-line="397" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.94127804" vertical-offset="3195" max-vertical-offset="3893">
+          <caret line="533" column="5" selection-start-line="533" selection-start-column="5" selection-end-line="533" selection-end-column="5" />
           <folding>
             <element signature="docComment;method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
             <element signature="method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
             <element signature="docComment;method#html2Text#0;class#Utilities#0" expanded="false" />
-            <element signature="method#html2Text#0;class#Utilities#0" expanded="false" />
             <element signature="docComment;method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
             <element signature="method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
             <element signature="docComment;method#getTableTags#0;class#Utilities#0" expanded="false" />
@@ -2618,11 +2694,10 @@
             <element signature="docComment;method#saveImageToSD#0;class#Utilities#0" expanded="false" />
             <element signature="method#saveImageToSD#0;class#Utilities#0" expanded="false" />
             <element signature="docComment;method#generateUpdateFromExtras#0;class#Utilities#0" expanded="false" />
-            <element signature="method#generateUpdateFromExtras#0;class#Utilities#0" expanded="false" />
-            <element signature="e#10911#10936#0" expanded="false" />
+            <element signature="e#10932#10957#0" expanded="false" />
             <element signature="docComment;method#showNotification#0;class#Utilities#0" expanded="false" />
             <element signature="method#showNotification#0;class#Utilities#0" expanded="false" />
-            <element signature="e#11687#11752#0" expanded="false" />
+            <element signature="e#11708#11773#0" expanded="false" />
             <element signature="docComment;class#PostListener#0;class#Utilities#0" expanded="false" />
             <element signature="class#PostListener#0;class#Utilities#0" expanded="false" />
             <element signature="class#Table#0;class#Utilities#0" expanded="false" />
@@ -2630,29 +2705,74 @@
             <element signature="docComment;field#endIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
             <element signature="method#Table#0;class#Table#0;class#Utilities#0" expanded="false" />
             <element signature="docComment;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-            <element signature="class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
             <element signature="method#fetchUpdateFromBackEndTask#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2408377" vertical-offset="5195" max-vertical-offset="7259">
-          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="709" max-vertical-offset="1904">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2560#2576#0" expanded="true" />
-            <element signature="e#12479#12820#0" expanded="true" />
-            <element signature="e#12797#12798#0" expanded="true" />
-            <element signature="e#13102#13103#0" expanded="true" />
-            <element signature="e#13157#13158#0" expanded="true" />
-            <element signature="e#13213#13214#0" expanded="true" />
-            <element signature="e#13265#13266#0" expanded="true" />
-            <element signature="e#13327#13328#0" expanded="true" />
-            <element signature="e#13362#13363#0" expanded="true" />
+            <element signature="method#setText#0;class#Update#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79447323" vertical-offset="3059" max-vertical-offset="3927">
+          <caret line="642" column="54" selection-start-line="642" selection-start-column="54" selection-end-line="642" selection-end-column="54" />
+          <folding>
+            <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onResume#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#6490:8884" expanded="false" />
+            <element signature="method#onPrepareActionMode#0;class#6490:8884" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#6490:8884" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#6490:8884" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#6490:8884" expanded="false" />
+            <element signature="method#onItemCheckedStateChanged#0;class#6490:8884" expanded="false" />
+            <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getView#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#17256:18879" expanded="false" />
+            <element signature="method#onClick#0;class#17256:18879" expanded="false" />
+            <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="e#21619#22195#0" expanded="true" />
+            <element signature="e#22168#22169#0" expanded="true" />
+            <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="e#23004#23005#0" expanded="true" />
+            <element signature="e#23058#23059#0" expanded="true" />
+            <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
           </folding>
         </state>
       </provider>

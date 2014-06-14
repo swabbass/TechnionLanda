@@ -4,7 +4,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="110dp"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/teacherCourseName"
@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
-        
+
         android:src="@drawable/person"
         app:border_color="#e0e0e0"
         app:border_width="2dp" />

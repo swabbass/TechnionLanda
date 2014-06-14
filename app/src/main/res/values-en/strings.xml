@@ -19,5 +19,6 @@
     <string name="feshbach">פישבך</string>
     <string name="mayer">מאיר</string>
     <string name="chemya">כימיה</string>
+    <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
 
 </resources>

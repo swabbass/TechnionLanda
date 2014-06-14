@@ -8,7 +8,7 @@
     android:measureWithLargestChild="true"
     android:orientation="vertical"
     android:weightSum="5"
-    tools:context=".CourseFragment" >
+    tools:context=".CourseFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -22,8 +22,7 @@
         android:childDivider="?android:attr/listDivider"
         android:divider="?android:attr/listDivider"
         android:dividerHeight="1dp"
-        android:groupIndicator="@null" >
-    </ExpandableListView>
+        android:groupIndicator="@null"></ExpandableListView>
 
     <TextView
         android:id="@+id/languageLable"

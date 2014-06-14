@@ -6,7 +6,7 @@
     android:background="#404040"
     android:clickable="true"
     android:orientation="horizontal"
-    android:weightSum="1" >
+    android:weightSum="1">
 
     <ImageView
         android:id="@+id/teacher_picture"

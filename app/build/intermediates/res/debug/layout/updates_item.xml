@@ -1,13 +1,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/shadow" >
+    android:background="@drawable/shadow">
 
     <RelativeLayout
         android:id="@+id/updatesItem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?android:attr/activatedBackgroundIndicator" >
+        android:background="?android:attr/activatedBackgroundIndicator">
 
         <ImageView
             android:id="@+id/popUpMenu"

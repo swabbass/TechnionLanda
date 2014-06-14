@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-   <item
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
         android:id="@+id/deleteUpdate"
-        android:showAsAction="always"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="Delete"/>
-       
+        android:showAsAction="always"
+        android:title="Delete" />
+
 
 </menu>
 <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/menu/update_contextual_menu.xml -->

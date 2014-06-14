@@ -5,7 +5,7 @@
     android:layout_margin="3dp"
     android:gravity="center"
     android:padding="5dp"
-    android:textColor="#0082f7" >
+    android:textColor="#0082f7">
 
 </TextView>
 <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/spinner_layout.xml -->

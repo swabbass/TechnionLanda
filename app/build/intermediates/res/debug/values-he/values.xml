@@ -36,6 +36,7 @@
     <string name="drawer_close">סגור רשימה</string>
     <string name="drawer_open">פתח רשימה</string>
     <string name="feshbach">פישבך</string>
+    <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
     <string name="mayer">מאיר</string>
     <string name="navigateTo">נווט ל</string>
     <string name="noConntection">אין חיבור,לקבלת מידע עדכני נא להתחבר לאינטרנט</string>

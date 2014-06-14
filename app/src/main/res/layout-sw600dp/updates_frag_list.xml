@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/romaFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#404040">
+
+        <ListView
+            android:id="@+id/updates_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#404040"
+
+            android:divider="#00e4e4e4"
+            android:dividerHeight="1dp"
+
+            android:drawSelectorOnTop="true"
+            android:padding="5dp">
+
+
+        </ListView>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+</FrameLayout>

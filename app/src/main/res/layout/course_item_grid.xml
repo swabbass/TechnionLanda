@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="davidNew.tff"
+        android:gravity="center_vertical|center"
+        android:text="course name"
+        android:textAlignment="center"
+        android:textColor="#e0e0e0"
+        android:textSize="15sp"
+        android:textStyle="bold|normal"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/alarm_course_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/list_image"
+        android:layout_alignTop="@+id/list_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alarm_course" />
+
+</RelativeLayout>

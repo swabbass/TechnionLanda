@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/generalLable"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="כללי"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/workshopChkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="התראות סדנה"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/UpdatecheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="התראות עדכונים"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/languageLabel"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="שפה"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/languageChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radioHE"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/radioHE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="He"
+            android:textColor="#e0e0e0" />
+
+        <RadioButton
+            android:id="@+id/radioAr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ar"
+            android:textColor="#e0e0e0" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/versionLabel"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="גרסה"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1.0"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/teacherCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/teacherFacultyLable"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tutorSmallAvatar"
+        android:layout_toRightOf="@+id/alaramMe"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#E0E0E0" />
+
+    <ward.landa.ImageUtilities.CircleImageView
+        android:id="@+id/tutorSmallAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+
+        android:src="@drawable/person"
+        app:border_color="#e0e0e0"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/teacherFacultyLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tutorSmallAvatar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tutorSmallAvatar"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#e0e0e0"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/alaramMe"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/alarm" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shadow">
+
+    <RelativeLayout
+        android:id="@+id/updatesItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/activatedBackgroundIndicator">
+
+        <ImageView
+            android:id="@+id/popUpMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_action_overflow" />
+
+        <ward.landa.ExpandableTextView
+            android:id="@+id/contentTextBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_updateLable"
+            android:ellipsize="end"
+            android:fontFamily="davidNew.tff"
+            android:lines="4"
+            android:maxLines="6"
+            android:paddingLeft="3dp"
+            android:text="news news news!!"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/update_timeLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/contentTextBox"
+            android:fontFamily="davidNew.tff"
+            android:gravity="top|left"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="25/11/92 14:25"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#e0e0e0" />
+
+        <ImageView
+            android:id="@+id/pinImageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="4dp"
+            android:src="@drawable/pin" />
+
+        <TextView
+            android:id="@+id/title_updateLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pinImageView"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/popUpMenu"
+            android:layout_toRightOf="@+id/pinImageView"
+            android:ellipsize="end"
+            android:fontFamily="davidNew.tff"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="עדכון"
+            android:textColor="#0082f7"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

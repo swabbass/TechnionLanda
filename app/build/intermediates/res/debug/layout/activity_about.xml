@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AboutAvtivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:orientation="vertical"
+    tools:context="ward.landa.AboutActivity" >
+
+    <ImageView
+        android:id="@+id/pinImageView"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.58"
+        android:scaleType="fitCenter"
+        android:src="@drawable/web_hi_rewhites_512" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="davidNew.tff"
+        android:gravity="center"
+        android:text="@string/headTitle"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:fontFamily="davidNew.tff"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/aboutText"
+        android:textColor="#e0e0e0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="http://landa.technion.ac.il"
+        android:textColor="#e0e0e0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="פיתוח"
+        android:textColor="#0082f7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="@string/developedby"
+        android:textColor="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:paddingBottom="5dp"
+        android:text="swabbass@t2.technion.ac.il"
+        android:textStyle="bold" />
+
+</LinearLayout><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/activity_about.xml -->

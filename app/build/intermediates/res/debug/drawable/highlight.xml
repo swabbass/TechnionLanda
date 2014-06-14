@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+  <!-- Selected --> 
+  <item 
+    android:state_focused="false" 
+    android:state_selected="true" 
+    android:drawable="@drawable/focused"/> 
+
+  <!-- Pressed -->
+  <item 
+    android:state_selected="false" 
+    android:state_focused="true"
+    android:drawable="@drawable/selected" /> 
+
+</selector> <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/drawable/highlight.xml -->

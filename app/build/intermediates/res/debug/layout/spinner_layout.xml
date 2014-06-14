@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:gravity="center"
+    android:padding="5dp"
+    android:textColor="#0082f7" >
+
+</TextView>
+<!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/spinner_layout.xml -->

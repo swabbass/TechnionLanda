@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/teacher_menu_search"
+        android:actionLayout="@layout/search_layout"
+        android:icon="@drawable/action_search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="Search"/>
+
+</menu><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/menu/teacher_menu.xml -->

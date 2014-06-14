@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:weightSum="1" xmlns:app="http://schemas.android.com/apk/res/ward.landa">
+
+    <ward.landa.ImageUtilities.CircleImageView
+        android:id="@+id/teacher_picture"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/person"
+        app:border_color="#e0e0e0"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/positionteacherLable"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailTeacher"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/Role"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/positionteacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/positionteacherLable"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="position"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e0e0e0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/facultyTeacherLable"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/positionteacher"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/Faculty"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/emailTeacherLable"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/teacher_picture"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/Email"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/facultyTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/facultyTeacherLable"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Faculty"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e0e0e0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nameteacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/teacher_picture"
+        android:fontFamily="david.tff"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="שם"
+        android:textColor="#e0e0e0"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/sendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailTeacher"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emailTeacherLable"
+        android:clickable="true"
+        android:src="@drawable/ic_action_new_email" />
+
+    <TextView
+        android:id="@+id/emailTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailTeacherLable"
+        android:layout_toRightOf="@+id/sendEmail"
+        android:fontFamily="david.tff"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e0e0e0"
+        android:textSize="16sp" />
+
+</RelativeLayout><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/teacherfragmentlayout.xml -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="0.5.2" >
+        <source path="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library\0.5.2\assets" />
+    </dataSet>
+    <dataSet config="0.9.9" >
+        <source path="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.chrisbanes.actionbarpulltorefresh\library\0.9.9\assets" />
+    </dataSet>
+    <dataSet config="4.4.52" >
+        <source path="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="C:\Users\wabbass\git\Landa1\app\src\main\assets" >
+            <file
+                name="davidNew.tff"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\assets\davidNew.tff" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\wabbass\git\Landa1\app\src\debug\assets" />
+    </dataSet>
+
+</merger>

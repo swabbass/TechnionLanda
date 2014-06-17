@@ -11,8 +11,6 @@ public final class R {
     public static final class animator {
         public static final int fadeing=0x7f040000;
         public static final int fadeout=0x7f040001;
-        public static final int slide_down=0x7f040002;
-        public static final int slideup=0x7f040003;
     }
     public static final class array {
         public static final int drawer_array=0x7f050000;

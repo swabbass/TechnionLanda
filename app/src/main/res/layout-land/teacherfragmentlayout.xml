@@ -25,7 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/emailTeacher"
-        android:fontFamily="davidNew.tff"
+
         android:gravity="right"
         android:paddingRight="10dp"
         android:paddingTop="5dp"

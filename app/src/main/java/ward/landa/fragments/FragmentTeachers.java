@@ -21,7 +21,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -30,7 +29,6 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
@@ -61,18 +59,16 @@ public class FragmentTeachers extends Fragment {
 
     private static List<Teacher> tutors;
     private static DBManager db_mngr;
-    List<Teacher> searched;
-    callbackTeacher tCallback;
-    gridAdabter gAdapter;
-    JSONParser jParser;
-    GridView gridView;
-    boolean toFetchDataFromDB;
-    ConnectionDetector connectionDetector;
-    TeacherReciever tRsvr;
-    SwingBottomInAnimationAdapter sb;
-    View root;
-    EditText search;
-    Spinner spinner;
+    private   List<Teacher> searched;
+    private   callbackTeacher tCallback;
+    private   gridAdabter gAdapter;
+    private   JSONParser jParser;
+    private  GridView gridView;
+    private   boolean toFetchDataFromDB;
+    private  ConnectionDetector connectionDetector;
+    private  TeacherReciever tRsvr;
+    private  SwingBottomInAnimationAdapter sb;
+    private  View root;
 
     @Override
     public void onStop() {
@@ -100,7 +96,7 @@ public class FragmentTeachers extends Fragment {
      */
     private void initlizeSearchEngine(View v) {
 
-        search = (EditText) v.findViewById(R.id.teacher_txt_search);
+        EditText search = (EditText) v.findViewById(R.id.teacher_txt_search);
         search.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -147,23 +143,16 @@ public class FragmentTeachers extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         getActivity().getMenuInflater().inflate(R.menu.teacher_menu, menu);
-        View v = (View) menu.findItem(R.id.teacher_menu_search).getActionView();
+        View v = menu.findItem(R.id.teacher_menu_search).getActionView();
 
         if (!getArguments().getBoolean("rtl"))
             getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
         initlizeSearchEngine(v);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
 
-        return super.onOptionsItemSelected(item);
-    }
 
-    @Override
-    public void onOptionsMenuClosed(Menu menu) {
-        super.onOptionsMenuClosed(menu);
-    }
+
 
     @Override
     public void onAttach(Activity activity) {
@@ -188,10 +177,10 @@ public class FragmentTeachers extends Fragment {
         toFetchDataFromDB = sh.getBoolean(GCMUtils.LOAD_TEACHERS, false);
         jParser = new JSONParser();
 
-        searched = new ArrayList<Teacher>();
+        searched = new ArrayList<>();
 
         gridView = (GridView) root.findViewById(R.id.gridview);
-        tutors = new ArrayList<Teacher>();
+        tutors = new ArrayList<>();
 
         boolean isConnected = connectionDetector.isConnectingToInternet();
         if (!toFetchDataFromDB && isConnected) {
@@ -223,7 +212,7 @@ public class FragmentTeachers extends Fragment {
     private void loadFromDataBase() {
         tutors = null;
         tutors = db_mngr.getCursorAllTeachers();
-        gAdapter = new gridAdabter(root.getContext(), tutors, getResources(), 0);
+        gAdapter = new gridAdabter(root.getContext(), tutors, getResources());
         sb = new SwingBottomInAnimationAdapter(gAdapter);
         sb.setAbsListView(gridView);
         gridView.setAdapter(sb);
@@ -258,7 +247,7 @@ public class FragmentTeachers extends Fragment {
 
                                 } else if (!toFetchDataFromDB) {
                                     getActivity().finish();
-                                } else if (toFetchDataFromDB) {
+                                } else {
                                     loadFromDataBase();
                                 }
 
@@ -283,19 +272,18 @@ public class FragmentTeachers extends Fragment {
      */
     static class gridAdabter extends BaseAdapter {
 
-        LayoutInflater inflater;
+      final   LayoutInflater inflater;
         List<Teacher> l;
-        Resources res;
-        Context cxt;
+     final   Resources res;
+       final Context cxt;
         int searched = 0;
 
-        public gridAdabter(Context context, List<Teacher> l, Resources res,
-                           int search) {
+        public gridAdabter(Context context, List<Teacher> l, Resources res) {
             this.cxt = context;
             this.inflater = LayoutInflater.from(context);
             this.l = l;
             this.res = res;
-            this.searched = search;
+            this.searched = 0;
         }
 
         public void setL(List<Teacher> l, int search) {
@@ -390,22 +378,20 @@ public class FragmentTeachers extends Fragment {
      *
      * @author wabbass
      */
-    class TeacherReciever extends BroadcastReceiver {
+    private class TeacherReciever extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().toString()
+            if (intent.getAction()
                     .compareTo("com.google.android.c2dm.intent.RECEIVE") == 0) {
                 if (intent.getStringExtra("Type") != null) {
                     if (intent.getStringExtra("Type").contains("INSTRUCTOR")) {
                         abortBroadcast();
                         String type = intent.getStringExtra("Type");
-                        Teacher t = GCMUtils.HandleInstructor(type, context,
-                                db_mngr, intent);
                         tutors = null;
                         tutors = db_mngr.getCursorAllTeachers();
                         gAdapter = new gridAdabter(root.getContext(), tutors,
-                                getResources(), 0);
+                                getResources());
                         sb = new SwingBottomInAnimationAdapter(gAdapter);
                         sb.setAbsListView(gridView);
                         gridView.setAdapter(sb);
@@ -416,7 +402,7 @@ public class FragmentTeachers extends Fragment {
                         String id_number = intent.getStringExtra("Image");
                         final String[] file = id_number.split(Pattern
                                 .quote("."));
-                        final Teacher t = new Teacher(file[0]);
+
                         Target target = new Target() {
                             @Override
                             public void onBitmapFailed(Drawable arg0) {
@@ -468,7 +454,7 @@ public class FragmentTeachers extends Fragment {
      * @author wabbass
      */
     class loadDataFromBackend extends AsyncTask<String, String, String> {
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
+        final List<NameValuePair> params = new ArrayList<>();
         boolean allOk = false;
         private ProgressDialog pDialog;
 
@@ -492,7 +478,7 @@ public class FragmentTeachers extends Fragment {
                             "loading teachers from internet canceled");
                 }
             }
-            Log.d("ward", jsonUsers.toString());
+            Log.d("ward", jsonUsers != null ? jsonUsers.toString() : null);
             try {
 
                 JSONArray teachers = jsonUsers.getJSONArray("users");
@@ -537,7 +523,7 @@ public class FragmentTeachers extends Fragment {
                     @Override
                     public void run() {
                         gAdapter = new gridAdabter(getActivity(), tutors,
-                                getResources(), 0);
+                                getResources());
                         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                                 gAdapter);
                         sb.setAbsListView(gridView);

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-public class squareImage extends ImageView {
+class squareImage extends ImageView {
 
     public squareImage(Context context) {
         super(context);

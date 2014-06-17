@@ -20,7 +20,7 @@ import ward.landa.R;
 import ward.landa.Teacher;
 
 public class teacherFragment extends Fragment {
-    Teacher t;
+    private Teacher t;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

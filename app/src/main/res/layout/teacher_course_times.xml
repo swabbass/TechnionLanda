@@ -22,7 +22,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="5dp"
-        android:fontFamily="davidNew.tff"
+
         android:textColor="#e0e0e0"
         android:textStyle="normal" />
 

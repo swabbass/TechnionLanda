@@ -15,7 +15,7 @@ public class CourseNotification implements Serializable {
 
     public CourseNotification(String name) {
         this.setName(name);
-        this.course = new ArrayList<Course>();
+        this.course = new ArrayList<>();
     }
 
     public void addTimeForCourse(Course c) {
@@ -26,7 +26,7 @@ public class CourseNotification implements Serializable {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 

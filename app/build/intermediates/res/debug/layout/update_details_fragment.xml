@@ -47,7 +47,7 @@
 
         <WebView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:id="@+id/webView"
             android:layout_weight="104.70"
             android:textAlignment="center"

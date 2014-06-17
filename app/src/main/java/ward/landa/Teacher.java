@@ -29,17 +29,7 @@ public class Teacher implements Serializable {
     private boolean downloadedImage;
     private HashMap<String, List<String>> timesForEachCourse;
 
-    // private HashMap<String, Course> courses;
-    public Teacher(int ID, int imgId, String name, String email, String phone,
-                   String pos, String faculty) {
-        setID(ID);
-        setImgId(imgId);
-        setName(name);
-        setEmail(email);
-        setPosition(pos);
-        setFaculty(faculty);
-        timesForEachCourse = new HashMap<String, List<String>>();
-    }
+
 
     public Teacher(String id_number) {
         this.id_number = id_number;
@@ -60,7 +50,7 @@ public class Teacher implements Serializable {
         String t = Settings.picFromAbsoulotePath + id_number + ".png";
         setImageLocalPath(t);
         setDownloadedImage(false);
-        timesForEachCourse = new HashMap<String, List<String>>();
+        timesForEachCourse = new HashMap<>();
     }
 
     @Override
@@ -81,7 +71,7 @@ public class Teacher implements Serializable {
     public void addTimeToCourse(String name, String time) {
         List<String> times = timesForEachCourse.get(name);
         if (times == null) {
-            times = new ArrayList<String>();
+            times = new ArrayList<>();
             timesForEachCourse.put(name, times);
         }
         times.add(time);
@@ -112,23 +102,24 @@ public class Teacher implements Serializable {
         return ID;
     }
 
-    public void setID(int iD) {
+    void setID(int iD) {
         ID = iD;
     }
 
-    public int getImgId() {
+    int getImgId() {
         return imgId;
     }
 
-    public void setImgId(int imgId) {
+    void setImgId(int imgId) {
         this.imgId = imgId;
     }
+
 
     public String getName() {
         return first_name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.first_name = name.replaceAll("\\s", "");
     }
 
@@ -136,7 +127,8 @@ public class Teacher implements Serializable {
         return email;
     }
 
-    public void setEmail(String email) {
+
+    void setEmail(String email) {
         this.email = email.replaceAll("\\s", "");
     }
 
@@ -144,7 +136,7 @@ public class Teacher implements Serializable {
         return position;
     }
 
-    public void setPosition(String position) {
+    void setPosition(String position) {
         this.position = position;
     }
 
@@ -152,7 +144,8 @@ public class Teacher implements Serializable {
         return faculty;
     }
 
-    public void setFaculty(String faculty) {
+
+    void setFaculty(String faculty) {
         this.faculty = faculty;
     }
 
@@ -160,7 +153,7 @@ public class Teacher implements Serializable {
         return last_name;
     }
 
-    public void setLast_name(String last_name) {
+    void setLast_name(String last_name) {
         this.last_name = last_name.replaceAll("\\s", "");
     }
 
@@ -168,13 +161,14 @@ public class Teacher implements Serializable {
         return id_number;
     }
 
-    public void setId_number(String id_number) {
+    void setId_number(String id_number) {
         this.id_number = id_number.replaceAll("\\s", "");
     }
 
     public String getImageUrl() {
         return imageUrl;
     }
+
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;

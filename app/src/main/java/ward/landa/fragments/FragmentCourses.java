@@ -29,7 +29,6 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
@@ -57,24 +56,18 @@ import ward.landa.activities.Settings;
 
 public class FragmentCourses extends Fragment {
 
-    static DBManager db_mngr;
-    public JSONParser jParser;
-    OnCourseSelected callback;
-    ListView l;
-    GridView g;
-    List<Course> courses;
-    View root;
-    coursesAdapter uAdapter;
-    List<Course> searced;
-    boolean loadFromDb;
-    reciever corseRsvr;
-    ConnectionDetector connectionDetector;
+   private static DBManager db_mngr;
+    private JSONParser jParser;
+    private  OnCourseSelected callback;
 
-    @Override
-    public void onStop() {
+    private GridView g;
+    private  List<Course> courses;
+    private    coursesAdapter uAdapter;
+    private  List<Course> searced;
+    private   boolean loadFromDb;
+    private  reciever corseRsvr;
+    private    ConnectionDetector connectionDetector;
 
-        super.onStop();
-    }
 
     @Override
     public void onPause() {
@@ -98,7 +91,7 @@ public class FragmentCourses extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         getActivity().getMenuInflater().inflate(R.menu.course_menu, menu);
-        View v = (View) menu.findItem(R.id.course_menu_search).getActionView();
+        View v = menu.findItem(R.id.course_menu_search).getActionView();
         if (!getArguments().getBoolean("rtl"))
             getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
 
@@ -176,7 +169,7 @@ public class FragmentCourses extends Fragment {
 
                                 } else if (!loadFromDb) {
                                     getActivity().finish();
-                                } else if (loadFromDb) {
+                                } else {
                                     loadFromDataBase();
                                 }
 
@@ -191,7 +184,7 @@ public class FragmentCourses extends Fragment {
     private void loadFromDataBase() {
         courses = null;
         courses = db_mngr.getCursorAllWithCourses();
-        uAdapter = new coursesAdapter(courses, getActivity(), getResources(), 0);
+        uAdapter = new coursesAdapter(courses, getActivity(), getResources());
 
         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                 uAdapter);
@@ -204,14 +197,14 @@ public class FragmentCourses extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        root = inflater.inflate(R.layout.courses_frag_grid, container, false);
+        View root = inflater.inflate(R.layout.courses_frag_grid, container, false);
         g = (GridView) root.findViewById(R.id.gridviewcourses);
 
         connectionDetector = new ConnectionDetector(getActivity());
         jParser = new JSONParser();
         db_mngr = new DBManager(getActivity());
-        searced = new ArrayList<Course>();
-        courses = new ArrayList<Course>();
+        searced = new ArrayList<>();
+        courses = new ArrayList<>();
         SharedPreferences sh = getActivity().getSharedPreferences(
                 GCMUtils.DATA, Activity.MODE_PRIVATE);
         loadFromDb = sh.getBoolean(GCMUtils.LOAD_COURSES, false);
@@ -244,7 +237,7 @@ public class FragmentCourses extends Fragment {
      * @param st Course name (string to search or sub string )
      * @return List<Course> that matches the search
      */
-    public List<Course> search(String st) {
+    List<Course> search(String st) {
         searced.clear();
         for (Course c : courses) {
             if (c.getName().contains(st)) {
@@ -255,7 +248,6 @@ public class FragmentCourses extends Fragment {
     }
 
     public interface OnCourseSelected {
-        public void onCourseClick(int position);
 
         public void onCourseClick(Course c);
     }
@@ -270,17 +262,16 @@ public class FragmentCourses extends Fragment {
         List<Course> courses;
         LayoutInflater inflater = null;
         Context cxt = null;
-        Resources res;
+       final Resources res;
         int searched;
 
-        public coursesAdapter(List<Course> courses, Context cxt, Resources res,
-                              int search) {
+        public coursesAdapter(List<Course> courses, Context cxt, Resources res) {
             this.courses = courses;
             this.cxt = cxt;
             this.inflater = (LayoutInflater) cxt
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             this.res = res;
-            this.searched = search;
+            this.searched = 0;
 
         }
 
@@ -384,9 +375,9 @@ public class FragmentCourses extends Fragment {
      * @author wabbass
      */
     class loadDataFromBackend extends AsyncTask<String, String, String> {
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
+        final    List<NameValuePair> params = new ArrayList<>();
         boolean allOk = false;
-        List<Course> toSave = new ArrayList<Course>();
+        List<Course> toSave = new ArrayList<>();
 
         private ProgressDialog pDialog;
 
@@ -411,7 +402,7 @@ public class FragmentCourses extends Fragment {
                             "loading courses from internet canceled");
                 }
             }
-            Log.d("ward", jsonCourses.toString());
+            Log.d("ward", jsonCourses != null ? jsonCourses.toString() : null);
 
             try {
                 JSONArray jsonCoursesArray = jsonCourses
@@ -461,7 +452,7 @@ public class FragmentCourses extends Fragment {
                 toSave = null;
                 courses = db_mngr.getCursorAllWithCourses();
                 uAdapter = new coursesAdapter(courses, getActivity(),
-                        getResources(), 0);
+                        getResources());
 
                 SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                         uAdapter);
@@ -493,11 +484,11 @@ public class FragmentCourses extends Fragment {
      *
      * @author wabbass
      */
-    class reciever extends BroadcastReceiver {
+    private class reciever extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().toString()
+            if (intent.getAction()
                     .compareTo("com.google.android.c2dm.intent.RECEIVE") == 0) {
                 if (intent.getStringExtra("Type") != null) {
                     if (intent.getStringExtra("Type").contains("WORKSHOP")) {
@@ -507,7 +498,7 @@ public class FragmentCourses extends Fragment {
                         courses = null;
                         courses = db_mngr.getCursorAllWithCourses();
                         uAdapter = new coursesAdapter(courses, getActivity(),
-                                getResources(), 0);
+                                getResources());
 
                         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                                 uAdapter);

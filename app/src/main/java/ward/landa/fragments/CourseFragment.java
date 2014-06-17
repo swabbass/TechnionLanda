@@ -20,7 +20,6 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -42,23 +41,19 @@ public class CourseFragment extends Fragment {
 
     private static final long LOCATION_REFRESH_TIME = 30000;
     private static final float LOCATION_REFRESH_DISTANCE = 2.5f;
-    private static double lat=0, longt=0;
-    List<Teacher> teachers;
-    HashMap<String, List<String>> timesForEachTeacher;
-    ListView l;
-    ExpandableListView exList;
-    ExpandableListAdapter exAdapter;
-    int courseID;
-    int imgId;
-    String courseName;
-    String courseDesription;
-    TextView courseNameLable;
-    ImageView courseImg;
-    DBManager db_mngr;
-    AlarmCallBack alarmCheckListner;
-    Course c;
-    LocationListener locationListener;
-    LocationManager mLocationManager;
+    private static double lat = 0, longt = 0;
+    private  List<Teacher> teachers;
+    private HashMap<String, List<String>> timesForEachTeacher;
+
+    private ExpandableListView exList;
+
+    private String courseName;
+
+    private  DBManager db_mngr;
+    private   AlarmCallBack alarmCheckListner;
+    private Course c;
+    private  LocationListener locationListener;
+    private  LocationManager mLocationManager;
 
     /**
      * @param dateTime a day -timefrom-timeto-place-toNotify pattern to
@@ -76,7 +71,7 @@ public class CourseFragment extends Fragment {
         for (int i = lastIndex - 4; i >= 0; --i) {
             place += " " + info[i];
         }
-        HashMap<String, String> res = new HashMap<String, String>(5);
+        HashMap<String, String> res = new HashMap<>(5);
         res.put("day", day);
         res.put("timeFrom", timeFrom);
         res.put("timeTo", tumeTo);
@@ -86,9 +81,8 @@ public class CourseFragment extends Fragment {
         return res;
     }
 
-    public static String getlocation() {
-        if(lat==0||longt==0)
-        {
+    private static String getlocation() {
+        if (lat == 0 || longt == 0) {
             return null;
         }
         return Double.toString(lat) + "," + Double.toString(longt);
@@ -110,7 +104,9 @@ public class CourseFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         ActionBar ab = getActivity().getActionBar();
-        ab.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        if (ab != null) {
+            ab.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        }
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setDisplayShowHomeEnabled(true);
         super.onCreateOptionsMenu(menu, inflater);
@@ -120,27 +116,31 @@ public class CourseFragment extends Fragment {
         Bundle ex = getArguments();
         if (ex != null) {
             courseName = ex.getString("name");
-            this.imgId = ex.getInt("ImageID");
-            this.courseID = ex.getInt("courseID");
             this.c = (Course) ex.getSerializable("course");
         }
     }
 
     private void initlizeUI(View root) {
-        courseNameLable = (TextView) root.findViewById(R.id.courseLable);
-        courseImg = (ImageView) root.findViewById(R.id.courseAvatar);
+        TextView courseNameLable = (TextView) root.findViewById(R.id.courseLable);
+        ImageView courseImg = (ImageView) root.findViewById(R.id.courseAvatar);
         locationListener = initlizeLocationListner();
         courseNameLable.setText(courseName);
         if (c != null) {
+            if(c.isDownloadedImage()){
             Picasso.with(getActivity()).load(new File(c.getImagePath()))
                     .into(courseImg);
-        } else
-            courseImg.setImageResource(imgId);
+            }
+         else{
+                //if the downloading process not finished
+            Picasso.with(getActivity()).load(c.getImageUrl())
+                    .error(R.drawable.ic_launcher).into(courseImg);
+        }
+        }
 
         // l = (ListView) root.findViewById(R.id.courseTeachers);
         exList = (ExpandableListView) root.findViewById(R.id.courseTeachers);
         teachers = db_mngr.getTeachersForCourse(courseName);
-        timesForEachTeacher = new HashMap<String, List<String>>();
+        timesForEachTeacher = new HashMap<>();
         for (Teacher t : teachers) {
             timesForEachTeacher.put(t.getId_number(),
                     t.getTimePlaceForCourse(courseName));
@@ -148,42 +148,41 @@ public class CourseFragment extends Fragment {
     }
 
     private LocationListener initlizeLocationListner() {
-        final LocationListener mLocationListener = new LocationListener() {
-            @Override
-            public void onLocationChanged(final Location location) {
-                lat = location.getLatitude();
-                longt = location.getLongitude();
-            }
+        return new LocationListener() {
+           @Override
+           public void onLocationChanged(final Location location) {
+               lat = location.getLatitude();
+               longt = location.getLongitude();
+           }
 
-            @Override
-            public void onStatusChanged(String s, int i, Bundle bundle) {
-                Log.d("GPS", s);
-            }
+           @Override
+           public void onStatusChanged(String s, int i, Bundle bundle) {
+               Log.d("GPS", s);
+           }
 
-            @Override
-            public void onProviderEnabled(String s) {
-                Log.d("GPS", s);
-                Location location = getLastBestLocation();
-                if(location!=null) {
-                    lat = location.getLatitude();
-                    longt = location.getLongitude();
-                    Log.d("GPS", location.toString());
-                }
+           @Override
+           public void onProviderEnabled(String s) {
+               Log.d("GPS", s);
+               Location location = getLastBestLocation();
+               if (location != null) {
+                   lat = location.getLatitude();
+                   longt = location.getLongitude();
+                   Log.d("GPS", location.toString());
+               }
 
 
-            }
+           }
 
-            @Override
-            public void onProviderDisabled(String s) {
-                Log.d("GPS", s);
-                Location location = getLastBestLocation();
-                if (location != null) {
-                    lat = location.getLatitude();
-                    longt = location.getLongitude();
-                }
-            }
-        };
-        return mLocationListener;
+           @Override
+           public void onProviderDisabled(String s) {
+               Log.d("GPS", s);
+               Location location = getLastBestLocation();
+               if (location != null) {
+                   lat = location.getLatitude();
+                   longt = location.getLongitude();
+               }
+           }
+       };
     }
 
     private void initlizeLocationManager() {
@@ -234,7 +233,7 @@ public class CourseFragment extends Fragment {
     }
 
     private void expandNotifiedDateTimes() {
-        HashMap<String, String> params = null;
+        HashMap<String, String> params;
         for (Teacher teacher : teachers) {
             List<String> dates = timesForEachTeacher
                     .get(teacher.getId_number());
@@ -253,11 +252,11 @@ public class CourseFragment extends Fragment {
     }
 
     static class ExpandableListAdapter extends BaseExpandableListAdapter {
-        private Context _context;
-        private List<Teacher> _teachers;
-        private HashMap<String, List<String>> _listTimes;
-        private LayoutInflater inflater;
-        private AlarmCallBack listner;
+        private final Context _context;
+        private final List<Teacher> _teachers;
+        private final HashMap<String, List<String>> _listTimes;
+        private final LayoutInflater inflater;
+        private final AlarmCallBack listner;
 
         public ExpandableListAdapter(Context context, List<Teacher> teachers,
                                      HashMap<String, List<String>> listTimes, AlarmCallBack lister) {
@@ -291,47 +290,43 @@ public class CourseFragment extends Fragment {
                     childPosition);
             View v = convertView;
             if (v == null) {
+                ChildViewHolder childViewHolder = new ChildViewHolder();
                 v = inflater.inflate(R.layout.teacher_course_times, null);
-                v.setTag(R.id.switch1, v.findViewById(R.id.switch1));
-                v.setTag(R.id.dTLable, v.findViewById(R.id.dTLable));
-                v.setTag(R.id.placeLable, v.findViewById(R.id.placeLable));
-                v.setTag(R.id.pinImageView, v.findViewById(R.id.pinImageView));
+                childViewHolder.switchToggle = (Switch) v.findViewById(R.id.switch1);
+                childViewHolder.time = (TextView) v.findViewById(R.id.dTLable);
+                childViewHolder.place = (TextView) v.findViewById(R.id.placeLable);
+                childViewHolder.location = (ImageView) v.findViewById(R.id.pinImageView);
+                v.setTag(childViewHolder);
             }
-            ImageView location = (ImageView) v.getTag(R.id.pinImageView);
-            Switch switchToggle = (Switch) v.getTag(R.id.switch1);
+            final ChildViewHolder childViewHolder = (ChildViewHolder) v.getTag();
             HashMap<String, String> params = getParamsForCourse(dateTime);
-            final TextView place = (TextView) v.getTag(R.id.placeLable);
-            TextView time = (TextView) v.getTag(R.id.dTLable);
-            place.setText(params.get("place"));
-            time.setText(params.get("day") + " " + params.get("timeFrom") + "-"
+            childViewHolder.place.setText(params.get("place"));
+            childViewHolder.time.setText(params.get("day") + " " + params.get("timeFrom") + "-"
                     + params.get("timeTo"));
             if (params.get("notify").equals("1")) {
-                switchToggle.setChecked(true);
+                childViewHolder.switchToggle.setChecked(true);
 
             } else {
-                switchToggle.setChecked(false);
+                childViewHolder.switchToggle.setChecked(false);
             }
-            location.setOnClickListener(new OnClickListener() {
+            childViewHolder.location.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     String source = getlocation();
-                    String dest = Utilities.getLocationByAddress(place.getText().toString(), _context.getResources());
-                    if (dest != null&& source!=null) {
+                    String dest = Utilities.getLocationByAddress(childViewHolder.place.getText().toString(), _context.getResources());
+                    if (dest != null && source != null) {
                         Utilities.openMapToNavigate(source, dest, _context);
-                    }
-                    else{
-                        if(dest!=null) {
+                    } else {
+                        if (dest != null) {
 
-                            String []cords=dest.split(",");
-                            double x=0,y=0;
+                            String[] cords = dest.split(",");
+                            double x, y;
                             try {
-                                x= Double.valueOf(cords[0]);
-                                 y= Double.valueOf(cords[1]);
-                                Utilities.openMapInLocation(x,y,_context);
-                            }
-                            catch (NumberFormatException nfe)
-                            {
-                                    return;
+                                x = Double.valueOf(cords[0]);
+                                y = Double.valueOf(cords[1]);
+                                Utilities.openMapInLocation(x, y, _context);
+                            } catch (NumberFormatException nfe) {
+
                             }
 
 
@@ -339,7 +334,7 @@ public class CourseFragment extends Fragment {
                     }
                 }
             });
-            switchToggle
+            childViewHolder.switchToggle
                     .setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
                         @Override
@@ -382,30 +377,35 @@ public class CourseFragment extends Fragment {
             if (v == null) {
                 v = inflater.inflate(R.layout.course_teacher_details, parent,
                         false);
-                v.setTag(R.id.tutorSmallAvatar,
-                        v.findViewById(R.id.tutorSmallAvatar));
-                v.setTag(R.id.alaramMe, v.findViewById(R.id.alaramMe));
-                v.setTag(R.id.teacherFacultyLable,
-                        v.findViewById(R.id.teacherFacultyLable));
-                v.setTag(R.id.teacherCourseName,
-                        v.findViewById(R.id.teacherCourseName));
+                GroupViewHolder groupViewHolder = new GroupViewHolder();
+                groupViewHolder.teacherAvatar = (CircleImageView)
+                        v.findViewById(R.id.tutorSmallAvatar);
+                groupViewHolder.alarmMe = (ImageView) v.findViewById(R.id.alaramMe);
+                groupViewHolder.faculty = (TextView)
+                        v.findViewById(R.id.teacherFacultyLable);
+                groupViewHolder.name = (TextView)
+                        v.findViewById(R.id.teacherCourseName);
+                v.setTag(groupViewHolder);
 
             }
-            CircleImageView teacherAvatar = (CircleImageView) v
-                    .getTag(R.id.tutorSmallAvatar);
-            ImageView alarmMe = (ImageView) v.getTag(R.id.alaramMe);
+            GroupViewHolder groupViewHolder = (GroupViewHolder) v.getTag();
+
             if (isExpanded) {
-                alarmMe.setImageResource(R.drawable.alarm_close);
+                groupViewHolder.alarmMe.setImageResource(R.drawable.alarm_close);
             } else {
-                alarmMe.setImageResource(R.drawable.alarm_open);
+                groupViewHolder.alarmMe.setImageResource(R.drawable.alarm_open);
             }
-            TextView faculty = (TextView) v.getTag(R.id.teacherFacultyLable);
-            TextView name = (TextView) v.getTag(R.id.teacherCourseName);
-            Teacher t = (Teacher) _teachers.get(groupPosition);
-            Picasso.with(_context).load(new File(t.getImageLocalPath()))
-                    .into(teacherAvatar);
-            name.setText(t.getName() + " " + t.getLast_name());
-            faculty.setText(t.getFaculty());
+            Teacher t = _teachers.get(groupPosition);
+            if(t.isDownloadedImage()) {
+                Picasso.with(_context).load(new File(t.getImageLocalPath()))
+                        .into(groupViewHolder.teacherAvatar);
+            }
+            else{
+                Picasso.with(_context).load(t.getImageUrl())
+                        .error(R.drawable.ic_launcher).into(groupViewHolder.teacherAvatar);
+            }
+            groupViewHolder.name.setText(t.getName() + " " + t.getLast_name());
+            groupViewHolder.faculty.setText(t.getFaculty());
 
             return v;
         }
@@ -420,6 +420,21 @@ public class CourseFragment extends Fragment {
         public boolean isChildSelectable(int arg0, int arg1) {
             // TODO Auto-generated method stub
             return true;
+        }
+
+        static class ChildViewHolder {
+            ImageView location;
+            Switch switchToggle;
+            TextView place;
+            TextView time;
+        }
+
+        static class GroupViewHolder {
+            CircleImageView teacherAvatar;
+            ImageView alarmMe;
+            TextView faculty;
+            TextView name;
+
         }
 
     }

@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -20,19 +19,18 @@ import ward.landa.activities.Settings;
 
 public class SettingsFragment extends Fragment implements OnClickListener {
 
-    Switch updatesChkbox, workshopsChkbox;
-    RadioGroup langChoice,viewChoice;
-    boolean updateMe, workshopMe;
-    String localLang;
-    TextView version;
-    boolean richView;
+    private  Switch updatesChkbox, workshopsChkbox;
+    private   RadioGroup langChoice,viewChoice;
+    private boolean updateMe, workshopMe;
+    private  String localLang;
+    private  boolean richView;
 
     private void initlizeUI(View root) {
         updatesChkbox = (Switch) root.findViewById(R.id.UpdatecheckBox);
         workshopsChkbox = (Switch) root.findViewById(R.id.workshopChkBox);
         langChoice = (RadioGroup) root.findViewById(R.id.languageChoice);
         viewChoice=(RadioGroup)root.findViewById(R.id.updateViewCoice);
-        version = (TextView) root.findViewById(R.id.version);
+        TextView version = (TextView) root.findViewById(R.id.version);
         try {
             String versionName = getActivity().getPackageManager()
                     .getPackageInfo(getActivity().getPackageName(), 0).versionName;
@@ -40,7 +38,7 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         } catch (NameNotFoundException e) {
             // TODO Auto-generated catch block
             version.setText("1.0");
-            return;
+
 
         }
     }
@@ -109,12 +107,7 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         super.onPause();
     }
 
-    @Override
-    public void onStop() {
 
-        super.onStop();
-
-    }
 
     @Override
     public void onClick(View v) {

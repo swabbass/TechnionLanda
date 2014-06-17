@@ -27,7 +27,7 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/title_updateLable"
             android:ellipsize="end"
-            android:fontFamily="davidNew.tff"
+
             android:lines="4"
             android:maxLines="6"
             android:paddingLeft="3dp"

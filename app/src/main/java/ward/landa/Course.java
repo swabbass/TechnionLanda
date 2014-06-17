@@ -26,7 +26,7 @@ public class Course implements Serializable {
     private int subject_id;
     private boolean downloadedImage;
     //private List<Teacher> teachers;
-    private int toShow;
+
 
     public Course(String sub_id) {
         this.subject_id = Integer.valueOf(sub_id);
@@ -42,17 +42,7 @@ public class Course implements Serializable {
 
     }
 
-    public Course(int courseID, String name, String dateString, String teacher, int imgId, float rate) {
-        setCourseID(courseID);
-        setName(name);
-        setDateTime(dateString);
-        setTeacher(teacher);
-        setImgID(imgId);
-        setRating(rate);
-        setToShow(1);
-        //	teachers=new ArrayList<Teacher>();
 
-    }
 
     public Course(int courseID, String name, String dateString, String timeFrom, String timeTo, String place, String tutor_id) {
         setCourseID(courseID);
@@ -62,7 +52,6 @@ public class Course implements Serializable {
         setTimeTo(timeTo);
         setPlace(place);
         setImgID(0);
-        setRating(0);
         setTutor_id(tutor_id);
 
     }
@@ -117,21 +106,9 @@ public class Course implements Serializable {
         this.courseID = courseID;
     }
 
-    public float getRating() {
-        return rating;
-    }
 
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
 
-    public int getToShow() {
-        return toShow;
-    }
 
-    public void setToShow(int toShow) {
-        this.toShow = toShow;
-    }
 
     public String getPlace() {
         return place;

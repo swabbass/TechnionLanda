@@ -1,6 +1,7 @@
 package utils;
 
 import android.app.Activity;
+import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -15,17 +16,13 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
-import android.text.Html;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
-import org.jsoup.examples.HtmlToPlainText;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,14 +36,16 @@ import java.util.List;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
+import ward.landa.Course;
 import ward.landa.R;
 import ward.landa.Update;
 import ward.landa.activities.MainActivity;
+import ward.landa.activities.Reciever;
 import ward.landa.activities.Settings;
 
 public class Utilities {
 
-    public static final String NEW_UPDATE = "new_Update";
+    private static final String NEW_UPDATE = "new_Update";
     private static final int notfyId = 12;
     public static HashMap<String, String> files;
 
@@ -69,7 +68,7 @@ public class Utilities {
 
     /**
      *  when new semester starts reset all the courses and teachers
-     * @param context
+     * @param context Context
      */
     public static void resetForNewSemester(Context context,DBManager dbManager)
     {
@@ -82,7 +81,7 @@ public class Utilities {
      * removes all kind of tags like <13455> will be removed
      *  -perfomance o(n) ..n itirations
      * @param inp html text input
-     * @return
+     * @return String fromtated without any html tag
      */
     public static String html2Text(String inp) {
         boolean intag = false;
@@ -90,7 +89,6 @@ public class Utilities {
         DBManager.removeQoutes(inp);
         for (int i = 0; i < inp.length(); ++i) {
 
-            char c = inp.charAt(i);
             if (!intag && inp.charAt(i) == '<') {
                 intag = true;
                 continue;
@@ -119,9 +117,8 @@ public class Utilities {
     public static String removeTableFirstTrHtml(String html) {
         String tmp = html;
         List<Table> tables = getTableTags(tmp);
-        for (int i = 0; i < tables.size(); ++i) {
+        for (Table t : tables) {
 
-            Table t = tables.get(i);
             int firstTrTag = html.indexOf("<tr", t.startIndex);
             int lastTrTag = html.indexOf("</tr>", t.startIndex)
                     + "</tr>".length();
@@ -146,9 +143,9 @@ public class Utilities {
      * @return list of tables in the html
      */
     private static List<Table> getTableTags(String html) {
-        int tableIndex = -1;
+        int tableIndex;
         int count = 0;
-        List<Table> tables = new ArrayList<Utilities.Table>();
+        List<Table> tables = new ArrayList<>();
         while ((tableIndex = html.indexOf(Table.TABLE_OPENER)) != -1) {
             int tableCloserIndex = html.indexOf(Table.TABLE_CLOSER)
                     + Table.TABLE_CLOSER.length();
@@ -184,7 +181,7 @@ public class Utilities {
 
         String data = outBuffer.toString();
         try {
-            StringBuffer tempBuffer = new StringBuffer();
+            StringBuilder tempBuffer = new StringBuilder();
             int incrementor = 0;
             int dataLength = data.length();
             while (incrementor < dataLength) {
@@ -295,7 +292,10 @@ public class Utilities {
         try {
             if (!file.createNewFile()) {
                 if (file.delete()) {
-                    file.createNewFile();
+                   if( file.createNewFile())
+                   {
+
+                   }
                 } else {
                     throw new IOException("y3nn roma ");
                 }
@@ -310,6 +310,7 @@ public class Utilities {
             e.printStackTrace();
         }
         try {
+            assert fos != null;
             fos.write(bytes.toByteArray());
             fos.close();
         } catch (IOException e) {
@@ -326,7 +327,7 @@ public class Utilities {
      */
     public static Update generateUpdateFromExtras(Bundle extras, Context cxt) {
         String msg = extras.getString(Settings.EXTRA_MESSAGE);
-        String subject = extras.getString("title");
+
         Update u = null;
         String[] data = msg.split("\n");
         String post = data[0];
@@ -335,7 +336,7 @@ public class Utilities {
             try {
                 JSONObject jObj = new JSONObject(msg);
                 String id = jObj.getString("ID");
-                String title = subject;
+                String title = extras.getString("title");
                 String content = Utilities.html2Text(jObj.getString("post_content"));
                 content=content.replaceAll("&#8221;",Pattern.quote("\""));
                 String date = jObj.getString("post_date");
@@ -501,13 +502,13 @@ public class Utilities {
      */
     public static class fetchUpdateFromBackEndTask extends
             AsyncTask<String, String, Update> {
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
+       final List<NameValuePair> params = new ArrayList<>();
         boolean downloadOk = false;
-        Context cxt;
-        ConnectionDetector connectionDetector;
+       final Context cxt;
+       final ConnectionDetector connectionDetector;
         Update u;
-        PostListener listner;
-        String url = "http://wabbass.byethost9.com/wordpress/";
+      final  PostListener listner;
+       final String url = "http://wabbass.byethost9.com/wordpress/";
 
         public fetchUpdateFromBackEndTask(Context cxt, PostListener listner) {
             this.cxt = cxt;
@@ -567,4 +568,47 @@ public class Utilities {
 
     }
 
+    /**
+     *  After device reboot register the alarams for notified courses
+     * @param courses List of notified Courses
+     * @param context   Context
+     */
+    public   static void resetAlarnsAfterReboot(List<Course> courses,Context context)
+    {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        for(Course c:courses)
+        {
+            int dayNum = Utilities.dayWeekNumber(c.getDateTime());
+            if (dayNum == -1)
+                return;
+            int hourFrom = Integer.parseInt(c.getTimeFrom().split(":")[0]
+                    .replaceAll("\\s", ""));
+            int minFrom = Integer.parseInt(c.getTimeFrom().split(":")[1]
+                    .replaceAll("\\s", ""));
+            if (minFrom - 20 < 0) {
+                hourFrom--;
+                minFrom = 40;
+            }
+                minFrom -= 20;
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(Calendar.DAY_OF_WEEK, dayNum);
+                calendar.set(Calendar.HOUR_OF_DAY, hourFrom);
+                calendar.set(Calendar.MINUTE, minFrom);
+                calendar.set(Calendar.SECOND, 0);
+                Intent myIntent = new Intent(context, Reciever.class);
+                myIntent.setAction(Settings.WARD_LANDA_ALARM);
+                myIntent.putExtra("course", c);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
+                        c.getCourseID(), myIntent,
+                        PendingIntent.FLAG_CANCEL_CURRENT);
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                    calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
+                    pendingIntent);
+            calendar.set(Calendar.MINUTE, minFrom + 10);
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                    calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
+                    pendingIntent);
+
+        }
+    }
 }

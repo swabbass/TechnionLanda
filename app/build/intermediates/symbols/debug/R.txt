@@ -1,7 +1,5 @@
 int animator fadeing 0x7f040000
 int animator fadeout 0x7f040001
-int animator slide_down 0x7f040002
-int animator slideup 0x7f040003
 int array drawer_array 0x7f050000
 int attr adSize 0x7f010001
 int attr adSizes 0x7f010002

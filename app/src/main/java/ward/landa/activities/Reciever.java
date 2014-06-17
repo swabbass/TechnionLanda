@@ -5,9 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.Html;
 import android.util.Log;
-
+import java.util.List;
 import java.util.Set;
-
 import utils.DBManager;
 import utils.GCMUtils;
 import utils.Utilities;
@@ -18,21 +17,22 @@ import ward.landa.Update;
 
 public class Reciever extends BroadcastReceiver implements PostListener {
     final public static String ONE_TIME = "onetime";
-    DBManager dbmngr;
-    Context cxt;
+    private DBManager dbmngr;
+    private Context cxt;
 
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d("wordpress", "" + intent.getAction());
+        dbmngr = new DBManager(context);
         Set<String> keys = intent.getExtras().keySet();
         this.cxt = context;
         Settings.initlizeSettings(context);
         for (String key : keys) {
             Log.d("wordpress", key + " : " + intent.getExtras().getString(key));
         }
-        if (intent.getAction().toString()
+        if (intent.getAction()
                 .compareTo("com.google.android.c2dm.intent.RECEIVE") == 0) {
-            dbmngr = new DBManager(context);
+
             if (intent.getStringExtra("Type") != null) {
                 String t = intent.getStringExtra("Type");
                 if (t.contains("INSTRUCTOR")) {
@@ -51,9 +51,17 @@ public class Reciever extends BroadcastReceiver implements PostListener {
                 } else {
                     Utilities.fetchUpdateFromBackEndTask task = new Utilities.fetchUpdateFromBackEndTask(
                             context, this);
+                    assert u != null;
                     task.execute(u.getUpdate_id());
                 }
             }
+        }
+        if (intent.getAction()
+                .compareTo("android.intent.action.BOOT_COMPLETED") == 0) {
+
+            List<Course> notifiedCourses=dbmngr.getAllNotifiedCourses();
+
+                Utilities.resetAlarnsAfterReboot(notifiedCourses,context);
         }
         if (intent.getAction().equals(Settings.WARD_LANDA_ALARM)) {
             Course c = (Course) intent.getSerializableExtra("course");

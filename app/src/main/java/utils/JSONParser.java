@@ -6,7 +6,6 @@ import android.util.Log;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -19,14 +18,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 public class JSONParser {
 
-    static InputStream is = null;
-    static JSONObject jObj = null;
-    static String json = "";
+    private   static InputStream is = null;
+    private  static JSONObject jObj = null;
+    private  static String json = "";
 
     // constructor
     public JSONParser() {
@@ -41,7 +39,7 @@ public class JSONParser {
         // Making HTTP request
         try {
             // check for request method
-            if (method == "POST") {
+            if (method.equals("POST")) {
 
                 DefaultHttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(url);
@@ -51,7 +49,7 @@ public class JSONParser {
                 HttpEntity httpEntity = httpResponse.getEntity();
                 is = httpEntity.getContent();
 
-            } else if (method == "GET") {
+            } else if (method.equals("GET")) {
                 // request method is GET
                 DefaultHttpClient httpClient = new DefaultHttpClient();
                 if (params != null) {
@@ -66,10 +64,6 @@ public class JSONParser {
 
             }
 
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,9 +72,9 @@ public class JSONParser {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     is, "UTF-8"), 8);
             StringBuilder sb = new StringBuilder();
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
-                sb.append(line + "\n");
+                sb.append(line).append("\n");
             }
             is.close();
             json = sb.toString();

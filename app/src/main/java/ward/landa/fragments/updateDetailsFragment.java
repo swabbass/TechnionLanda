@@ -2,7 +2,6 @@ package ward.landa.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,10 +14,6 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
-
-import java.util.Set;
-import java.util.regex.Pattern;
-
 import utils.Utilities;
 import ward.landa.R;
 import ward.landa.Update;
@@ -26,9 +21,8 @@ import ward.landa.activities.Settings;
 
 public class updateDetailsFragment extends Fragment {
 
-    TextView subject, dateTime, content;
-    WebView webView;
-    boolean isRich;
+    private TextView content;
+    private  WebView webView;
 
     @Override
     public void onAttach(Activity activity) {
@@ -72,12 +66,11 @@ public class updateDetailsFragment extends Fragment {
 
     private void initlizeUI(View root) {
         Settings.initlizeSettings(getActivity());
-        isRich= Settings.isRichView();
-        subject = (TextView) root.findViewById(R.id.updateDetailSubjectLable);
-        dateTime = (TextView) root.findViewById(R.id.updateDetailDateTimeLable);
+        boolean isRich = Settings.isRichView();
+        TextView subject = (TextView) root.findViewById(R.id.updateDetailSubjectLable);
+        TextView dateTime = (TextView) root.findViewById(R.id.updateDetailDateTimeLable);
         content = (TextView) root.findViewById(R.id.updateDetailContentLable);
         Update u = (Update) getArguments().getSerializable("Update");
-        String Cont = getArguments().getString("content");
         subject.setText(u.getSubject());
         dateTime.setText(u.getDateTime());
         webView=(WebView) root.findViewById(R.id.webView);
@@ -109,12 +102,6 @@ public class updateDetailsFragment extends Fragment {
                 super.onPageFinished(view, url);
             }
         };
-        String test=u.getHtml_text().replaceAll("color: #373737","color: #e0e0e0");
-        test=test.replaceAll("color: #000000;","color: #e0e0e0");
-        String html="<html>"+
-                "<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head>"+
-                " <body >"
-                +test+"</body></html>";
 
         webView.setWebViewClient(webViewClient);
         webView.getSettings().setJavaScriptEnabled(true);

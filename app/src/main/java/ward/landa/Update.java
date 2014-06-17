@@ -112,7 +112,7 @@ public class Update implements Serializable, Comparable<Update> {
         return update_id;
     }
 
-    public void setUpdate_id(String update_id) {
+    void setUpdate_id(String update_id) {
         this.update_id = update_id;
     }
 
@@ -120,7 +120,7 @@ public class Update implements Serializable, Comparable<Update> {
         return urlToJason;
     }
 
-    public void setUrlToJason(String urlToJason) {
+    void setUrlToJason(String urlToJason) {
         this.urlToJason = urlToJason;
     }
 

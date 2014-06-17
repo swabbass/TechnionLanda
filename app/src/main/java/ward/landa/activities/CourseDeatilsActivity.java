@@ -25,8 +25,7 @@ import ward.landa.fragments.CourseFragment;
 public class CourseDeatilsActivity extends FragmentActivity implements
         CourseFragment.AlarmCallBack {
 
-    Intent result;
-    DBManager dbManager;
+   private Intent result;
     private String courseName;
     private int imgId;
     private int courseID;
@@ -52,7 +51,6 @@ public class CourseDeatilsActivity extends FragmentActivity implements
             getWindow().getDecorView().setLayoutDirection(
                     View.LAYOUT_DIRECTION_RTL);
 
-        } else {
         }
     }
 
@@ -63,9 +61,9 @@ public class CourseDeatilsActivity extends FragmentActivity implements
         setContentView(R.layout.activity_course_deatils);
         fetchArguments();
 
-        dbManager = new DBManager(getApplicationContext());
+        DBManager dbManager = new DBManager(getApplicationContext());
         courseNotification = new CourseNotification(courseName);
-        checkedCourses = new ArrayList<CourseDetailHolder>();
+        checkedCourses = new ArrayList<>();
         result = new Intent(getApplicationContext(), MainActivity.class);
         setTitle(courseName);
         setResult(Settings.COURSES, result);
@@ -115,47 +113,37 @@ public class CourseDeatilsActivity extends FragmentActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onPause() {
 
-        super.onPause();
-    }
 
-    @Override
-    protected void onStop() {
-
-        super.onStop();
-    }
-
-    public String getCourseName() {
+    String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
-    public int getImgId() {
+    int getImgId() {
         return imgId;
     }
 
-    public void setImgId(int imgId) {
+    void setImgId(int imgId) {
         this.imgId = imgId;
     }
 
-    public int getCourseID() {
+    int getCourseID() {
         return courseID;
     }
 
-    public void setCourseID(int courseID) {
+    void setCourseID(int courseID) {
         this.courseID = courseID;
     }
 
-    public int getParentIndex() {
+    int getParentIndex() {
         return parentIndex;
     }
 
-    public void setParentIndex(int parentIndex) {
+    void setParentIndex(int parentIndex) {
         this.parentIndex = parentIndex;
     }
 
@@ -175,7 +163,7 @@ public class CourseDeatilsActivity extends FragmentActivity implements
 
 
     private List<Course> setAlarams() {
-        List<Course> list = new ArrayList<Course>(checkedCourses.size());
+        List<Course> list = new ArrayList<>(checkedCourses.size());
         for (CourseDetailHolder courseDetailHolder : checkedCourses) {
             String[] info = courseDetailHolder.time.split(Pattern.quote(" - "));
             int lastIndex = info.length - 3;
@@ -183,7 +171,6 @@ public class CourseDeatilsActivity extends FragmentActivity implements
             String timeFrom = info[lastIndex - 1];
             String tumeTo = info[lastIndex];
             String place = info[lastIndex - 3];
-            String notify = info[lastIndex + 1];
             String id = info[lastIndex + 2];
             for (int i = lastIndex - 4; i >= 0; --i) {
                 place += " " + info[i];

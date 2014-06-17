@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.util.Log;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -28,9 +27,9 @@ public class GCMUtils {
     public static final String LOAD_UPDATES = "load_updates";
     public static final String LOAD_COURSES = "load_courses";
     public static final String REG_KEY = "REGKEY";
-    public static final String URL = "http://wabbass.byethost9.com/wordpress/";
+    private static final String URL = "http://wabbass.byethost9.com/wordpress/";
     public static final String TAG = "wordpress";
-    public static final String NLANDA_GCM_REG = "http://nlanda.technion.ac.il/LandaSystem/registerGcm.aspx";
+    private static final String NLANDA_GCM_REG = "http://nlanda.technion.ac.il/LandaSystem/registerGcm.aspx";
 
     public static String sendRegistrationIdToBackend(String regKey) {
         HttpClient httpclient = new DefaultHttpClient();
@@ -44,7 +43,6 @@ public class GCMUtils {
             Log.d(TAG, EntityUtils.toString(resNlanda.getEntity()));
             return "";
 
-        } catch (ClientProtocolException e) {
         } catch (IOException e) {
         }
 
@@ -106,7 +104,7 @@ public class GCMUtils {
                             cTmp.getName() + " ");
             } else {
                 cTmp.setSubject_id(subject_id);
-                dbmngr.UpdateCourse(cTmp, 0);
+                dbmngr.UpdateCourse(cTmp);
                 if (Settings.isToNotifyUpdates())
                     Utilities.showNotification(cxt, cxt.getResources().getString(R.string.CourseUpdated),
                             cTmp.getName() + " ");

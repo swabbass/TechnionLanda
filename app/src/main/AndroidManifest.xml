@@ -63,19 +63,19 @@
         <activity
             android:name="ward.landa.activities.CourseDeatilsActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"></activity>
+            android:parentActivityName="ward.landa.activities.MainActivity"/>
         <activity
             android:name="ward.landa.activities.TutorDetails"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"></activity>
+            android:parentActivityName="ward.landa.activities.MainActivity"/>
         <activity
             android:name="ward.landa.activities.UpdateDetailActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"></activity>
+            android:parentActivityName="ward.landa.activities.MainActivity"/>
         <activity
             android:name="ward.landa.activities.SettingsActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"></activity>
+            android:parentActivityName="ward.landa.activities.MainActivity"/>
         <activity
             android:name="ward.landa.AboutActivity"
             android:label="@string/about"

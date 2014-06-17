@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.io.File;
@@ -12,22 +11,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ward.landa.Course;
-import ward.landa.R;
 import ward.landa.Teacher;
 import ward.landa.Update;
 import ward.landa.activities.Settings;
 
 public class DBManager {
-    public static final String DB_NAME = "db_LANDA";
+    private static final String DB_NAME = "db_LANDA";
 
-    public static final int DB_VER = 13;
+    private static final int DB_VER = 13;
 
-    DB_HELPER dbHelper;
-    Context cxt;
+  private final    DB_HELPER dbHelper;
 
     public DBManager(Context context) {
-        this.cxt = context;
-        this.dbHelper = new DB_HELPER(context, DB_NAME, null, DB_VER);
+        this.dbHelper = new DB_HELPER(context);
     }
 
     /**
@@ -113,10 +109,10 @@ public class DBManager {
      * Update course in db with given course
      *
      * @param course Updated course to update in the data base
-     * @param notify 1 enable notificatins for this course else 0
-     * @return
+     *
+     * @return true all ok ,false otherwise
      */
-    public boolean UpdateCourse(Course course, int notify) {
+    public boolean UpdateCourse(Course course) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(dbCourse.COURSE_ID, course.getCourseID());
@@ -130,7 +126,7 @@ public class DBManager {
 
         values.put(dbCourse.DOWNLOADED_IMAGE,
                 Boolean.toString(course.isDownloadedImage()));
-        values.put(dbCourse.NOTIFIED, notify);
+        values.put(dbCourse.NOTIFIED, course.getNotify());
 
         boolean res = db.update(
                 dbCourse.COURSE_TABLE,
@@ -333,9 +329,8 @@ public class DBManager {
      * @param text text to add
      * @return string well formatted for sql query
      */
-    public String getSQLText(String text) {
-        char c = 34;
-        Character ch = Character.valueOf(c);
+    String getSQLText(String text) {
+        Character ch = (char) 34;
         return ch.toString() + text + ch.toString();
     }
 
@@ -354,7 +349,7 @@ public class DBManager {
                 dbCourse.COURSE_PLACE, dbCourse.SUBJECT_ID
 
         }, dbCourse.NOTIFIED + " = " + "1", null, null, null, null);
-        List<Course> result = new ArrayList<Course>(cursor.getCount());
+        List<Course> result = new ArrayList<>(cursor.getCount());
         while (cursor.moveToNext()) {
             Course c = new Course(cursor.getString(1), cursor.getString(2),
                     cursor.getString(3), cursor.getString(4),
@@ -419,7 +414,7 @@ public class DBManager {
                         dbUpdate.UPDATE_URL, dbUpdate.UPDATE_PINNED,dbUpdate.HTML_CONTENT}, null, null,
                 null, null, dbUpdate.UPDATE_DATE + " DESC"
         );
-        List<Update> updates = new ArrayList<Update>();
+        List<Update> updates = new ArrayList<>();
         while (cursor.moveToNext()) {
             Update u = new Update(cursor.getString(0), cursor.getString(1),
                     cursor.getString(3), cursor.getString(2),
@@ -443,18 +438,21 @@ public class DBManager {
         Cursor cursor;
         SQLiteDatabase database = dbHelper.getReadableDatabase();
         cursor = database.query(false, dbCourse.COURSE_TABLE, new String[]{
-                        dbCourse.COURSE_ID, dbCourse.COURSE_NAME, dbCourse.TEACHER_ID,
-                        dbCourse.COURSE_PLACE, dbCourse.COURSE_DAY,
-                        dbCourse.COURSE_TIME_FROM, dbCourse.COURSE_TIME_TO,
+                        dbCourse.COURSE_ID,
+                        dbCourse.COURSE_NAME,
+                        dbCourse.TEACHER_ID,
+                        dbCourse.COURSE_PLACE,
+                        dbCourse.COURSE_DAY,
+                        dbCourse.COURSE_TIME_FROM,
+                        dbCourse.COURSE_TIME_TO,
                         dbCourse.SUBJECT_ID, dbCourse.DOWNLOADED_IMAGE}, null, null,
                 dbCourse.SUBJECT_ID, null, null, null
         );
-        List<Course> courses = new ArrayList<Course>();
+        List<Course> courses = new ArrayList<>();
         while (cursor.moveToNext()) {
-
-            Course c = new Course(Integer.parseInt(cursor.getString(0)),
-                    cursor.getString(1), "", cursor.getString(2),
-                    R.drawable.ic_launcher, 0);
+            Course c=new Course(cursor.getString(7));
+            c.setCourseID(Integer.parseInt(cursor.getString(0)));
+            c.setName(cursor.getString(1));
             c.setTimeFrom(cursor.getString(5));
             c.setTimeTo(cursor.getString(6));
             c.setDateTime(cursor.getString(4));
@@ -484,7 +482,7 @@ public class DBManager {
     public List<Teacher> getTeachersForCourse(String name) {
         Cursor cursor;
         SQLiteDatabase database = dbHelper.getReadableDatabase();
-        List<Teacher> teachers = new ArrayList<Teacher>();
+        List<Teacher> teachers = new ArrayList<>();
         cursor = database.query(dbCourse.COURSE_TABLE,
                 new String[]{dbCourse.TEACHER_ID, dbCourse.COURSE_PLACE,
                         dbCourse.COURSE_DAY, dbCourse.COURSE_TIME_FROM,
@@ -523,12 +521,13 @@ public class DBManager {
         SQLiteDatabase database = dbHelper.getReadableDatabase();
         cursor = database.query(dbTeacher.TEACHERS_TABLE, new String[]{
                 dbTeacher.ID_NUMBER, dbTeacher.FIRST_NAME, dbTeacher.LAST_NAME,
-                dbTeacher.FACULTY}, dbTeacher.ID_NUMBER + " = "
+                dbTeacher.FACULTY,dbTeacher.DOWNLOADED_IMAGE}, dbTeacher.ID_NUMBER + " = "
                 + getSQLText(idNum), null, null, null, null);
         if (cursor != null && cursor.getCount() != 0) {
             cursor.moveToNext();
             Teacher t = new Teacher(cursor.getString(1), cursor.getString(2),
                     "", idNum, "T", cursor.getString(3));
+            t.setDownloadedImage(Boolean.valueOf(cursor.getString(4)));
             database.close();
 
             return t;
@@ -584,7 +583,7 @@ public class DBManager {
      * This in case of user deleting the images manually
      */
     public void checkForDownloadedImages() {
-        Cursor courses = null, tutors;
+        Cursor courses, tutors;
         SQLiteDatabase database = dbHelper.getWritableDatabase();
         courses = database.query(dbCourse.COURSE_TABLE,
                 new String[]{dbCourse.SUBJECT_ID}, null, null, null, null,
@@ -619,8 +618,8 @@ public class DBManager {
 
 
     public List<File> getImagesFiles() {
-        Cursor courses = null, tutors;
-        List<File> files = new ArrayList<File>();
+        Cursor courses, tutors;
+        List<File> files = new ArrayList<>();
         SQLiteDatabase database = dbHelper.getWritableDatabase();
         courses = database.query(dbCourse.COURSE_TABLE,
                 new String[]{dbCourse.SUBJECT_ID}, null, null, null, null,
@@ -668,9 +667,9 @@ public class DBManager {
 
     class DB_HELPER extends SQLiteOpenHelper {
 
-        public DB_HELPER(Context context, String name, CursorFactory factory,
-                         int version) {
-            super(context, name, null, version);
+        public DB_HELPER(Context context
+                        ) {
+            super(context, DB_NAME, null, DB_VER);
 
         }
 
@@ -711,7 +710,7 @@ public class DBManager {
  */
 class dbTeacher {
     public static final String TEACHERS_TABLE = "Teachers";// ׳�?׳�?׳‘׳�׳�? ׳©׳�
-    public static final String UID = "id";
+    private static final String UID = "id";
     public static final String ID_NUMBER = "id_number";
     public static final String FIRST_NAME = "first_name";//
     public static final String LAST_NAME = "last_name";// ׳�?׳�?׳�׳₪׳•׳�
@@ -743,7 +742,7 @@ class dbTeacher {
  */
 class dbCourse {
     public static final String COURSE_TABLE = "Courses";
-    public static final String UID = "id";
+    private static final String UID = "id";
     public static final String COURSE_ID = "course_id";
     public static final String SUBJECT_ID = "subject_id";
     public static final String TEACHER_ID = "id_number";
@@ -773,7 +772,7 @@ class dbCourse {
  */
 class dbUpdate {
     public static final String UPDATES_TABLE = "updates";// ׳�?׳�?׳‘׳�׳�? ׳©׳�
-    public static final String UID = "id";
+    private static final String UID = "id";
     public static final String UPDATE_ID = "subject_id";
     public static final String UPDATE_SUBJECT = "subject";
     public static final String UPDATE_CONTENT = "content";

@@ -43,8 +43,6 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -71,33 +69,22 @@ public class MainActivity extends FragmentActivity implements
         FragmentUpdates.updateCallback, OnBackStackChangedListener,
         OnNavigationListener {
 
-    private static boolean rtlSupported;
+     private static boolean rtlSupported;
     private static ArrayList<DrawerItem> items;
-    GoogleCloudMessaging gcm;
-    String localLang;
-    boolean isUpdateNotify;
-    boolean isCourseNotify;
-    SectionsPagerAdapter mSectionsPagerAdapter;
-    ViewPager mViewPager;
-    PagerTabStrip strip;
-    DrawerLayout drawerLayout;
-    ActionBarDrawerToggle drawertoggle;
-    ListView draweList;
-    String[] drawertitles;
-    int viewpagerid = -1;
-    Fragment[] pages;
-    boolean isReg;
-    boolean isTutuors;
-    boolean isCourses;
-    String regKey;
-    utils.DBManager db_mngr;
-    JSONParser jParser;
-    ImageLoaderConfiguration config;
-    ImageLoader image_loader;
-    ActionBar actionBar;
-    ConnectionDetector connection_detector;
-    Reciever alarm;
-    private registerGcm task;
+    private GoogleCloudMessaging gcm;
+    private  String localLang;
+    private   ViewPager mViewPager;
+    private DrawerLayout drawerLayout;
+    private   ActionBarDrawerToggle drawertoggle;
+    private  ListView draweList;
+
+    private Fragment[] pages;
+    private  boolean isReg;
+    private   boolean isTutuors;
+    private  boolean isCourses;
+    private   String regKey;
+    private utils.DBManager db_mngr;
+    private   ConnectionDetector connection_detector;
 
     // ------------------------------Activity LifeCycle--------------------\\
     @Override
@@ -107,8 +94,8 @@ public class MainActivity extends FragmentActivity implements
         setContentView(R.layout.activity_main);
         loadSettings();
         forceRTLIfSupported();
-        jParser = new JSONParser();
-        alarm = new Reciever();
+        JSONParser jParser = new JSONParser();
+        Reciever alarm = new Reciever();
 
     }
 
@@ -137,8 +124,7 @@ public class MainActivity extends FragmentActivity implements
         if (connection_detector.isConnectingToInternet())
             initlizeGCM();
         else {
-            showDialogNoconnection((!isReg || !isCourses || !isTutuors) ? true
-                    : false);
+            showDialogNoconnection((!isReg || !isCourses || !isTutuors));
         }
         super.onStart();
     }
@@ -169,10 +155,7 @@ public class MainActivity extends FragmentActivity implements
         super.onStop();
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
+
 
     // ------------------------------Activity Extended-------------------\\
 
@@ -189,12 +172,7 @@ public class MainActivity extends FragmentActivity implements
         // super.onActivityResult(requestCode, resultCode, data);
     }
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        // TODO Auto-generated method stub
-        super.onSaveInstanceState(outState);
 
-    }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -255,7 +233,7 @@ public class MainActivity extends FragmentActivity implements
         gcm = GoogleCloudMessaging.getInstance(this);
         if (!isReg) {
             if (connection_detector.isConnectingToInternet()) {
-                task = new registerGcm();
+                registerGcm task = new registerGcm();
                 task.execute();
 
             }
@@ -266,8 +244,8 @@ public class MainActivity extends FragmentActivity implements
     private void loadSettings() {
         Settings.initlizeSettings(getApplicationContext());
         this.localLang = Settings.getLocalLang();
-        this.isCourseNotify = Settings.isToNotifyCourse();
-        this.isUpdateNotify = Settings.isToNotifyUpdates();
+        boolean isCourseNotify = Settings.isToNotifyCourse();
+        boolean isUpdateNotify = Settings.isToNotifyUpdates();
 
     }
 
@@ -294,13 +272,13 @@ public class MainActivity extends FragmentActivity implements
     }
 
     private void initlizeDrawerNavigation() {
-        drawertitles = new String[]{
+        String[] drawertitles = new String[]{
                 getResources().getString(R.string.updates),
                 getResources().getString(R.string.teachers),
                 getResources().getString(R.string.courses),
                 getResources().getString(R.string.settings),
                 getResources().getString(R.string.about)};
-        items = new ArrayList<DrawerItem>();
+        items = new ArrayList<>();
         items.add(new DrawerSection(getResources().getString(
                 R.string.Navigation)));
         items.add(new DrawerSubSectionItem(getResources().getString(
@@ -359,11 +337,11 @@ public class MainActivity extends FragmentActivity implements
     }
 
     private void initlizePager() {
-        mSectionsPagerAdapter = new SectionsPagerAdapter(
+        SectionsPagerAdapter mSectionsPagerAdapter = new SectionsPagerAdapter(
                 getSupportFragmentManager(), getResources(), pages);
 
         // Setup the ViewPager with the sections adapter.
-        strip = (PagerTabStrip) findViewById(R.id.pager_title_strip);
+        PagerTabStrip strip = (PagerTabStrip) findViewById(R.id.pager_title_strip);
         mViewPager = (ViewPager) findViewById(R.id.pager);
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
@@ -376,7 +354,7 @@ public class MainActivity extends FragmentActivity implements
     }
 
     private void initlizeSpinner() {
-        actionBar = getActionBar();
+        ActionBar actionBar = getActionBar();
         SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
                 R.array.drawer_array, R.layout.spinner_layout);
         actionBar.setDisplayShowTitleEnabled(false);
@@ -429,10 +407,6 @@ public class MainActivity extends FragmentActivity implements
 
     }
 
-    @Override
-    public void onCourseClick(int position) {
-
-    }
 
     @Override
     public void onCourseClick(Course c) {
@@ -459,7 +433,7 @@ public class MainActivity extends FragmentActivity implements
 
     }
 
-    // ------------------------------Inner Static Classes --------------------\\
+    // ------------------------------Helping Methods --------------------\\
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void forceRTLIfSupported() {
@@ -595,13 +569,14 @@ public class MainActivity extends FragmentActivity implements
 
     }
 
+    // ------------------------------Inner Static Classes --------------------\\
     /**
      * @author wabbass
      */
     static class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        Resources res;
-        Fragment[] f;
+     final   Resources res;
+    final    Fragment[] f;
 
         public SectionsPagerAdapter(FragmentManager fm, Resources res,
                                     Fragment[] f) {
@@ -642,7 +617,6 @@ public class MainActivity extends FragmentActivity implements
 
         @Override
         public CharSequence getPageTitle(int position) {
-            Locale l = Locale.getDefault();
 
             switch (position) {
                 case 0:
@@ -663,8 +637,6 @@ public class MainActivity extends FragmentActivity implements
         }
 
     }
-
-    // ------------------------------Helping Methods --------------------\\
 
     /**
      * @author wabbass
@@ -699,7 +671,7 @@ public class MainActivity extends FragmentActivity implements
 
         @Override
         public View getView(int position, View converView, ViewGroup parent) {
-            View v = null;
+            View v;
             DrawerItem item = (DrawerItem) getItem(position);
             if (item.getType() == DrawerItemType.SECTION) {
                 v = getSectionView(converView, parent, item);
@@ -788,7 +760,7 @@ public class MainActivity extends FragmentActivity implements
      */
     static class drawerOnItemClick implements ListView.OnItemClickListener {
 
-        MainActivity activityRef;
+        final MainActivity activityRef;
 
         public drawerOnItemClick(MainActivity activity) {
             // TODO Auto-generated constructor stub
@@ -798,7 +770,7 @@ public class MainActivity extends FragmentActivity implements
         @Override
         public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                 long arg3) {
-            DrawerItem item = (DrawerItem) items.get(arg2);
+            DrawerItem item = items.get(arg2);
 
             if (item.getType() == DrawerItemType.ITEM) {
                 DrawerSubSectionItem subItem = (DrawerSubSectionItem) item;
@@ -836,8 +808,8 @@ public class MainActivity extends FragmentActivity implements
      */
     static class DrawerSection implements DrawerItem {
 
-        private String text;
-        private DrawerItemType type;
+        private final String text;
+        private final DrawerItemType type;
 
         public DrawerSection(String txt) {
             this.text = txt;
@@ -864,11 +836,11 @@ public class MainActivity extends FragmentActivity implements
      */
     static class DrawerSubSectionItem implements DrawerItem {
 
-        private String text;
-        private DrawerItemType type;
-        private int iconId;
+        private final String text;
+        private final DrawerItemType type;
+        private final int iconId;
 
-        private FragmentTypes vType;
+        private final FragmentTypes vType;
 
         public DrawerSubSectionItem(String text, int icon, FragmentTypes type) {
             this.text = text;
@@ -911,7 +883,7 @@ public class MainActivity extends FragmentActivity implements
                 st = gcm.register(GCMUtils.SENDER_ID);
                 if (st != null && !st.isEmpty()) {
                     isReg = true;
-                    regKey = new String(st);
+                    regKey = st;
                     Log.d(GCMUtils.TAG, "regKey is : " + regKey);
                     GCMUtils.sendRegistrationIdToBackend(regKey);
                 }

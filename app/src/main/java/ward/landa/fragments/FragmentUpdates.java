@@ -32,7 +32,6 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.nhaarman.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;
 
 import org.apache.http.NameValuePair;
@@ -44,7 +43,6 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
 import uk.co.senab.actionbarpulltorefresh.library.Options;
@@ -64,23 +62,19 @@ import ward.landa.activities.SettingsActivity;
 
 public class FragmentUpdates extends Fragment {
 
-    GoogleCloudMessaging gcm;
-    boolean isReg;
-    String regKey;
-    ListView l;
-    List<Update> updates;
-    boolean rtlSupport;
-    boolean isExpanded = false;
-    updateCallback callBack;
-    boolean showAll;
-    updatesAdapter uAdapter;
-    updateReciever uR;
-    JSONParser jParser;
-    ConnectionDetector connectionDetector;
-    DBManager db_mngr;
-    View root;
-    ViewGroup container;
-    PullToRefreshLayout pullToRefreshLayout;
+
+    private    ListView l;
+    private  List<Update> updates;
+    private  updateCallback callBack;
+
+    private   updatesAdapter uAdapter;
+    private    updateReciever uR;
+    private   JSONParser jParser;
+    private  ConnectionDetector connectionDetector;
+    private   DBManager db_mngr;
+    private  View root;
+
+    private   PullToRefreshLayout pullToRefreshLayout;
     private boolean toFetchDataFromDB;
 
     @Override
@@ -119,10 +113,7 @@ public class FragmentUpdates extends Fragment {
         super.onResume();
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
+
 
     @Override
     public void onPause() {
@@ -168,7 +159,7 @@ public class FragmentUpdates extends Fragment {
      */
     private void initlizeFragment(View root, ViewGroup container) {
         db_mngr = new DBManager(getActivity());
-        this.container = container;
+
 
        pullToRefreshLayout = (PullToRefreshLayout) root.findViewById(R.id.LinearLayout1);
         Options options = Options.create().scrollDistance(.25f).build();
@@ -181,8 +172,8 @@ public class FragmentUpdates extends Fragment {
         jParser = new JSONParser();
         l = (ListView) root.findViewById(R.id.updates_listView);
 
-        showAll = false;
-        updates = new ArrayList<Update>();
+
+        updates = new ArrayList<>();
 
         SharedPreferences sh = getActivity().getSharedPreferences(
                 GCMUtils.DATA, Activity.MODE_PRIVATE);
@@ -357,7 +348,7 @@ public class FragmentUpdates extends Fragment {
 
                                 } else if (!toFetchDataFromDB) {
                                     getActivity().finish();
-                                } else if (toFetchDataFromDB) {
+                                } else {
                                     loadFromDataBase();
                                 }
 
@@ -383,10 +374,10 @@ public class FragmentUpdates extends Fragment {
     static class updatesAdapter extends BaseAdapter {
 
         LayoutInflater inflater = null;
-        updateCallback callback;
-        List<Update> selected_items;
-        WeakReference<Activity> weakActivity;
-        WeakReference<DBManager> weakDb_mngr;
+      final  updateCallback callback;
+        final  List<Update> selected_items;
+       final WeakReference<Activity> weakActivity;
+      final  WeakReference<DBManager> weakDb_mngr;
         private List<Update> updates;
         private boolean isActionMode;
 
@@ -397,9 +388,9 @@ public class FragmentUpdates extends Fragment {
             this.inflater = (LayoutInflater) cxt
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             this.callback = callback;
-            this.weakActivity = new WeakReference<Activity>(cxt);
-            this.selected_items = new ArrayList<Update>();
-            this.weakDb_mngr = new WeakReference<DBManager>(db_mngr);
+            this.weakActivity = new WeakReference<>(cxt);
+            this.selected_items = new ArrayList<>();
+            this.weakDb_mngr = new WeakReference<>(db_mngr);
         }
 
         public List<Update> getUpdates() {
@@ -609,11 +600,11 @@ public class FragmentUpdates extends Fragment {
      *
      * @author wabbass
      */
-    class updateReciever extends BroadcastReceiver {
+    private class updateReciever extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context arg0, Intent arg1) {
-            if (arg1.getAction().toString()
+            if (arg1.getAction()
                     .compareTo("com.google.android.c2dm.intent.RECEIVE") == 0) {
                 if (arg1.getStringExtra("Type") == null) {
                     abortBroadcast();
@@ -627,26 +618,27 @@ public class FragmentUpdates extends Fragment {
                         Utilities.showNotification(getActivity(),
                                 u.getSubject(),
                                 Utilities.html2Text(u.getText()));
-                    } else if (u.getUrlToJason() != null) {
-                        Utilities.PostListener listner = new Utilities.PostListener() {
+                    } else {
+                        assert u != null;
+                        if (u.getUrlToJason() != null) {
+                            Utilities.PostListener listner = new Utilities.PostListener() {
 
-                            @Override
-                            public void onPostUpdateDownloaded(Update u) {
-                                addUpdate(u);
-                                Utilities.showNotification(getActivity(),
-                                        u.getSubject(),
-                                        Utilities.html2Text(u.getText()));
-                                Collections.sort(updates);
-                                uAdapter.notifyDataSetChanged();
+                                @Override
+                                public void onPostUpdateDownloaded(Update u) {
+                                    addUpdate(u);
+                                    Utilities.showNotification(getActivity(),
+                                            u.getSubject(),
+                                            Utilities.html2Text(u.getText()));
+                                    Collections.sort(updates);
+                                    uAdapter.notifyDataSetChanged();
 
-                            }
-                        };
-                        Utilities.fetchUpdateFromBackEndTask task = new Utilities.fetchUpdateFromBackEndTask(
-                                getActivity(), listner);
-                        task.execute(u.getUpdate_id());
+                                }
+                            };
+                            Utilities.fetchUpdateFromBackEndTask task = new Utilities.fetchUpdateFromBackEndTask(
+                                    getActivity(), listner);
+                            task.execute(u.getUpdate_id());
+                        }
                     }
-                } else {
-
                 }
             }
 
@@ -661,9 +653,9 @@ public class FragmentUpdates extends Fragment {
      * @author wabbass
      */
     class downloadRecentUpdates extends AsyncTask<String, String, String> {
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
+      final  List<NameValuePair> params = new ArrayList<>();
         boolean downloadOk = false;
-        boolean toRefresh;
+       final  boolean toRefresh;
         private ProgressDialog pDialog;
 
         public downloadRecentUpdates(boolean pullToRefresh) {

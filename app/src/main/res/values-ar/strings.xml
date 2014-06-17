@@ -43,5 +43,8 @@
     <string name="mayer">מאיר</string>
     <string name="chemya">כימיה</string>
     <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
+    <string name="richViewText">מידע עשיר</string>
+    <string name="RichTextView">גרסה עשירה</string>
+    <string name="LightTextView">גרסה קלה</string>
 
 </resources>

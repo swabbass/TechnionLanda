@@ -37,6 +37,42 @@
         android:textSize="18sp" />
 
     <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:id="@+id/updateTextStyleLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="תצוגה תוכן"
+        android:textColor="#0082f7"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/updateViewCoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/normalViewRadio"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/normalViewRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/LightTextView"
+            android:textColor="#e0e0e0" />
+
+        <RadioButton
+            android:id="@+id/richViewRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/RichTextView"
+            android:textColor="#e0e0e0" />
+    </RadioGroup>
+
+    <TextView
         android:id="@+id/languageLabel"
         style="?android:attr/listSeparatorTextViewStyle"
         android:layout_width="match_parent"
@@ -45,7 +81,8 @@
         android:text="שפה"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#0082f7"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_marginTop="5dp" />
 
     <RadioGroup
         android:id="@+id/languageChoice"
@@ -53,7 +90,8 @@
         android:layout_height="wrap_content"
         android:checkedButton="@+id/radioHE"
         android:orientation="horizontal"
-        android:weightSum="3">
+        android:weightSum="3"
+        android:layout_marginTop="5dp">
 
         <RadioButton
             android:id="@+id/radioHE"

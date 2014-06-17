@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -20,15 +21,17 @@ import ward.landa.activities.Settings;
 public class SettingsFragment extends Fragment implements OnClickListener {
 
     Switch updatesChkbox, workshopsChkbox;
-    RadioGroup langChoice;
+    RadioGroup langChoice,viewChoice;
     boolean updateMe, workshopMe;
     String localLang;
     TextView version;
+    boolean richView;
 
     private void initlizeUI(View root) {
         updatesChkbox = (Switch) root.findViewById(R.id.UpdatecheckBox);
         workshopsChkbox = (Switch) root.findViewById(R.id.workshopChkBox);
         langChoice = (RadioGroup) root.findViewById(R.id.languageChoice);
+        viewChoice=(RadioGroup)root.findViewById(R.id.updateViewCoice);
         version = (TextView) root.findViewById(R.id.version);
         try {
             String versionName = getActivity().getPackageManager()
@@ -48,6 +51,8 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         updateMe = Settings.isToNotifyUpdates();
         workshopMe = Settings.isToNotifyCourse();
         localLang = Settings.getLocalLang();
+        richView=Settings.isRichView();
+
     }
 
     private void setSettings(View root) {
@@ -55,7 +60,19 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         updatesChkbox.setChecked(updateMe);
         workshopsChkbox.setChecked(workshopMe);
         RadioButton btn = (RadioButton) root.findViewById(Settings.langId(localLang));
+        RadioButton viewRadioChoice=(RadioButton)root.findViewById(Settings.isRichView()?R.id.richViewRadio:R.id.normalViewRadio);
+        viewRadioChoice.setChecked(true);
         btn.setChecked(true);
+        viewChoice.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i)
+                {
+                    case R.id.richViewRadio:richView=true;break;
+                    case R.id.normalViewRadio:richView=false;break;
+                }
+            }
+        });
         langChoice.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
             @Override
@@ -88,7 +105,7 @@ public class SettingsFragment extends Fragment implements OnClickListener {
 
     @Override
     public void onPause() {
-        Settings.saveSettings(getActivity(), localLang, workshopMe, updateMe);
+        Settings.saveSettings(getActivity(), localLang, workshopMe, updateMe,richView);
         super.onPause();
     }
 

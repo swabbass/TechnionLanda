@@ -31,7 +31,8 @@ public class CourseDeatilsActivity extends FragmentActivity implements
     private int imgId;
     private int courseID;
     private int parentIndex = -1;
-    private List<String> checkedCourses;
+    private List<CourseDetailHolder> checkedCourses;
+
     private CourseNotification courseNotification;
 
     private void fetchArguments() {
@@ -64,7 +65,7 @@ public class CourseDeatilsActivity extends FragmentActivity implements
 
         dbManager = new DBManager(getApplicationContext());
         courseNotification = new CourseNotification(courseName);
-        checkedCourses = new ArrayList<String>();
+        checkedCourses = new ArrayList<CourseDetailHolder>();
         result = new Intent(getApplicationContext(), MainActivity.class);
         setTitle(courseName);
         setResult(Settings.COURSES, result);
@@ -160,10 +161,12 @@ public class CourseDeatilsActivity extends FragmentActivity implements
 
     @Override
     public void onTimeChecked(String time, boolean isChecked) {
-        if (isChecked)
-            checkedCourses.add(time);
-        else
-            checkedCourses.remove(time);
+
+        CourseDetailHolder courseDetailHolder=new CourseDetailHolder();
+        courseDetailHolder.time=time;
+        courseDetailHolder.isChecked=isChecked;
+
+            checkedCourses.add(courseDetailHolder);
 
         courseNotification.setCourse(setAlarams());
         result.putExtra("notfiy", courseNotification);
@@ -173,8 +176,8 @@ public class CourseDeatilsActivity extends FragmentActivity implements
 
     private List<Course> setAlarams() {
         List<Course> list = new ArrayList<Course>(checkedCourses.size());
-        for (String time : checkedCourses) {
-            String[] info = time.split(Pattern.quote(" - "));
+        for (CourseDetailHolder courseDetailHolder : checkedCourses) {
+            String[] info = courseDetailHolder.time.split(Pattern.quote(" - "));
             int lastIndex = info.length - 3;
             String day = info[lastIndex - 2];
             String timeFrom = info[lastIndex - 1];
@@ -187,7 +190,7 @@ public class CourseDeatilsActivity extends FragmentActivity implements
             }
 
             Course c = new Course(courseName, day, timeFrom, tumeTo, place);
-            c.setNotify(1);
+            c.setNotify(courseDetailHolder.isChecked?1:0);
             c.setCourseID(Integer.parseInt(id));
             list.add(c);
 
@@ -197,7 +200,12 @@ public class CourseDeatilsActivity extends FragmentActivity implements
         return list;
     }
 
+    static class CourseDetailHolder{
+        public String time;
+        public boolean isChecked;
+    }
 }
+
 
 /*
  * 

@@ -44,6 +44,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
 import uk.co.senab.actionbarpulltorefresh.library.Options;
@@ -318,7 +319,7 @@ public class FragmentUpdates extends Fragment {
                 tmp.setText(u.getText());
                 tmp.setDateTime(u.getDateTime());
                 tmp.setUrl(u.getUrl());
-
+                tmp.setHtml_text(u.getHtml_text());
                 db_mngr.updateUpdate(tmp);
 
                 return false;
@@ -692,6 +693,7 @@ public class FragmentUpdates extends Fragment {
                             "loading Updates from internet canceled");
                     if(toRefresh)
                     {
+                        l.setEnabled(false);
                         Toast.makeText(getActivity(),getResources().getString(R.string.fialedToRefresh),Toast.LENGTH_LONG).show();
                         pullToRefreshLayout.setRefreshComplete();
                     }
@@ -706,7 +708,7 @@ public class FragmentUpdates extends Fragment {
                         Update u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                Utilities.html2Text(update.getString("content")), false);
+                                Utilities.html2Text(update.getString("content")), false,update.getString("content"));
                         u.setUrl(update.getString("url"));
                         if (!toRefresh) {
                             updates.add(u);
@@ -761,9 +763,11 @@ public class FragmentUpdates extends Fragment {
                 db_mngr.clearDb();
                 showDialogNoconnection(!toFetchDataFromDB);
             } else if (toRefresh) {
+
                 Collections.sort(updates);
                 uAdapter.notifyDataSetChanged();
                 pullToRefreshLayout.setRefreshComplete();
+                if(isAdded())
                 Toast.makeText(getActivity(), getResources().getString(R.string.EndedRefreshing), Toast.LENGTH_LONG).show();
             }
             super.onPostExecute(result);

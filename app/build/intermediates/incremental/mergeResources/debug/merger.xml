@@ -9960,6 +9960,8 @@ normal
                 <string name="aboutText" >היוזמה להקמת הפרויקט לקידום בני המיעוטים בטכניון הייתה על ידי משפחת פטסי ובני לנדא. 
 תודתנו העמוקה נתונה למשפחת לנדא על יוזמתם הברוכה להשקת הפרויקט ועל המעורבות, האחריות והנדיבות שהם מגלים בנושא צמצום פערים בחברה הישראלית.
                 </string>
+                <string name="LightTextView" >גרסה קלה
+                </string>
                 <string name="taub" >טאוב
                 </string>
                 <string name="TeacherAdded" >חונך חדש
@@ -9970,15 +9972,17 @@ normal
                 </string>
                 <string name="timedayDesc" >time day
                 </string>
+                <string name="RichTextView" >גרסה עשירה
+                </string>
                 <string name="EndedRefreshing" >עדכון הסתיים
                 </string>
                 <string name="CourseAdded" >סדנה חדשה
                 </string>
                 <string name="AC" >רכז פרויקט
                 </string>
-                <string name="TeacherUpdated" >פרטי חונך עודכנו
-                </string>
                 <string name="title_activity_about" >AboutActivity
+                </string>
+                <string name="TeacherUpdated" >פרטי חונך עודכנו
                 </string>
                 <string name="teachers" >מסדנתים
                 </string>
@@ -10015,11 +10019,11 @@ normal
                 </string>
                 <string name="UpdatePinned" >עדכון מסומן כחשוב
                 </string>
+                <string name="rabin" >רבין
+                </string>
                 <string name="fialedToRefresh" >נכשל,אין חיבור אינטרנט 
                 </string>
                 <string name="noConntectionMsgFirsttime" >נא להתחבר לאינטרנט להרצת האפלקציה בפעם הראשונה
-                </string>
-                <string name="rabin" >רבין
                 </string>
                 <string name="settings" >הגדרות
                 </string>
@@ -10063,11 +10067,13 @@ normal
                 </string>
                 <string name="about" >אודות
                 </string>
+                <string name="richViewText" >מידע עשיר
+                </string>
                 <string name="Time" >זמן
                 </string>
-                <string name="General" >כללי
-                </string>
                 <string name="selected" >"נבחר "
+                </string>
+                <string name="General" >כללי
                 </string>
                 <string name="headTitle" > פרויקט לשוויון הזדמניות -לנדא
                 </string>
@@ -10198,7 +10204,11 @@ normal
                 </string>
                 <string name="Email" >البريد الالكتروني
                 </string>
+                <string name="RichTextView" >גרסה עשירה
+                </string>
                 <string name="drawer_open" >افتح القائمه
+                </string>
+                <string name="LightTextView" >גרסה קלה
                 </string>
                 <string name="delete" >حذف
                 </string>
@@ -10232,25 +10242,27 @@ normal
                 </string>
                 <string name="WorkshopAlarm" >ورشه قريبه
                 </string>
-                <string name="UpdateDeleted" >المستجد حذف!
-                </string>
                 <string name="TeacherAdded" >مدرس جديد
+                </string>
+                <string name="UpdateDeleted" >المستجد حذف!
                 </string>
                 <string name="app_name" >مشروع لنده
                 </string>
                 <string name="mayer" >מאיר
                 </string>
-                <string name="fialedToRefresh" >נכשל,אין חיבור אינטרנט 
-                </string>
                 <string name="selected" >"اختيار   "
                 </string>
                 <string name="Place" >مكان
+                </string>
+                <string name="fialedToRefresh" >נכשל,אין חיבור אינטרנט 
                 </string>
                 <string name="noConntectionMsgFirsttime" >الرجاء الاتصال بالانترنت لتشغيل البرنامج للمره الاولى
                 </string>
                 <string name="Time" >الوقت
                 </string>
                 <string name="rabin" >רבין
+                </string>
+                <string name="richViewText" >מידע עשיר
                 </string>
                 <string name="drawer_close" >اغلق القائمه
                 </string>
@@ -10278,6 +10290,8 @@ normal
             <file
                 path="C:\Users\wabbass\git\Landa1\app\src\main\res\values-en\strings.xml"
                 qualifiers="en" >
+                <string name="richViewText" >מידע עשיר
+                </string>
                 <string name="rabin" >רבין
                 </string>
                 <string name="EndedRefreshing" ></string>
@@ -10314,7 +10328,11 @@ normal
                 </string>
                 <string name="drawer_close" >Close Navigation Menu
                 </string>
+                <string name="RichTextView" >גרסה עשירה
+                </string>
                 <string name="ulman" >אולמן
+                </string>
+                <string name="LightTextView" >גרסה קלה
                 </string>
             </file>
             <file
@@ -10322,9 +10340,13 @@ normal
                 qualifiers="he" >
                 <string name="UpdateDeleted" >עדכון נמחק
                 </string>
-                <string name="UpdateUnPinned" >עדכון מסומן כלא חשוב
+                <string name="RichTextView" >גרסה עשירה
                 </string>
                 <string name="mayer" >מאיר
+                </string>
+                <string name="UpdateUnPinned" >עדכון מסומן כלא חשוב
+                </string>
+                <string name="LightTextView" >גרסה קלה
                 </string>
                 <string name="ulman" >אולמן
                 </string>
@@ -10350,6 +10372,8 @@ normal
                 </string>
                 <string name="pin" >סמן כחשוב
                 </string>
+                <string name="richViewText" >מידע עשיר
+                </string>
                 <string name="noConntection" >אין חיבור,לקבלת מידע עדכני נא להתחבר לאינטרנט
                 </string>
                 <string name="Faculty" >פקולטה
@@ -10358,9 +10382,9 @@ normal
                 </string>
                 <string name="CordAdded" >רכז חדש
                 </string>
-                <string name="sego" >סגו
-                </string>
                 <string name="AC" >רכז פרויקט
+                </string>
+                <string name="sego" >סגו
                 </string>
                 <string name="chemya" >כימיה
                 </string>
@@ -10374,9 +10398,9 @@ normal
                 </string>
                 <string name="CordUpdated" >פרטי רכז עודכנו
                 </string>
-                <string name="CourseAdded" >סדנה חדשה
-                </string>
                 <string name="Email" >דוא"ל
+                </string>
+                <string name="CourseAdded" >סדנה חדשה
                 </string>
                 <string name="taub" >טאוב
                 </string>
@@ -10516,6 +10540,51 @@ end
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
+            <file
+                name="ic_action_web_site"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-xxhdpi\ic_action_web_site.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_view_as_list"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-xhdpi\ic_action_view_as_list.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_web_site"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-xhdpi\ic_action_web_site.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_view_as_list"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-mdpi\ic_action_view_as_list.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_web_site"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-mdpi\ic_action_web_site.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_view_as_list"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-xxhdpi\ic_action_view_as_list.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_view_as_list"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-hdpi\ic_action_view_as_list.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_web_site"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\drawable-hdpi\ic_action_web_site.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="update_details_menu"
+                path="C:\Users\wabbass\git\Landa1\app\src\main\res\menu\update_details_menu.xml"
+                qualifiers=""
+                type="menu" />
         </source>
         <source path="C:\Users\wabbass\git\Landa1\app\build\generated\res\rs\debug" />
         <source path="C:\Users\wabbass\git\Landa1\app\build\generated\res\generated\debug" />

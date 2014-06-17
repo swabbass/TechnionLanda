@@ -20,7 +20,7 @@ import ward.landa.activities.Settings;
 public class DBManager {
     public static final String DB_NAME = "db_LANDA";
 
-    public static final int DB_VER = 12;
+    public static final int DB_VER = 13;
 
     DB_HELPER dbHelper;
     Context cxt;
@@ -78,6 +78,7 @@ public class DBManager {
         values.put(dbUpdate.UPDATE_CONTENT, update.getText());
         values.put(dbUpdate.UPDATE_DATE, update.getDateTime());
         values.put(dbUpdate.UPDATE_URL, update.getUrl());
+        values.put(dbUpdate.HTML_CONTENT,update.getHtml_text());
         values.put(dbUpdate.UPDATE_PINNED, Boolean.toString(update.isPinned()));
         long id = updated_db.insert(dbUpdate.UPDATES_TABLE, null, values);
         updated_db.close();
@@ -126,6 +127,7 @@ public class DBManager {
         values.put(dbCourse.COURSE_DAY, course.getDateTime());
         values.put(dbCourse.COURSE_TIME_FROM, course.getTimeFrom());
         values.put(dbCourse.COURSE_TIME_TO, course.getTimeTo());
+
         values.put(dbCourse.DOWNLOADED_IMAGE,
                 Boolean.toString(course.isDownloadedImage()));
         values.put(dbCourse.NOTIFIED, notify);
@@ -255,6 +257,7 @@ public class DBManager {
         values.put(dbUpdate.UPDATE_CONTENT, update.getText());
         values.put(dbUpdate.UPDATE_DATE, update.getDateTime());
         values.put(dbUpdate.UPDATE_URL, update.getUrl());
+        values.put(dbUpdate.HTML_CONTENT,update.getHtml_text());
         values.put(dbUpdate.UPDATE_PINNED, Boolean.toString(update.isPinned()));
         boolean res = database.update(dbUpdate.UPDATES_TABLE, values,
                 dbUpdate.UPDATE_ID + " = " + getSQLText(update.getUpdate_id()),
@@ -316,9 +319,9 @@ public class DBManager {
      */
     public boolean clearDb() {
         SQLiteDatabase database = dbHelper.getWritableDatabase();
-        boolean b = database.delete(dbUpdate.UPDATES_TABLE, null, null) > 0;
-        boolean b1 = database.delete(dbCourse.COURSE_TABLE, null, null) > 0;
-        boolean b2 = database.delete(dbTeacher.TEACHERS_TABLE, null, null) > 0;
+        boolean b = database.delete(dbUpdate.UPDATES_TABLE, "1", null) > 0;
+        boolean b1 = database.delete(dbCourse.COURSE_TABLE, "1", null) > 0;
+        boolean b2 = database.delete(dbTeacher.TEACHERS_TABLE, "1", null) > 0;
         database.close();
         return b && b1 && b2;
     }
@@ -413,14 +416,14 @@ public class DBManager {
         cursor = database.query(dbUpdate.UPDATES_TABLE, new String[]{
                         dbUpdate.UPDATE_ID, dbUpdate.UPDATE_SUBJECT,
                         dbUpdate.UPDATE_CONTENT, dbUpdate.UPDATE_DATE,
-                        dbUpdate.UPDATE_URL, dbUpdate.UPDATE_PINNED}, null, null,
+                        dbUpdate.UPDATE_URL, dbUpdate.UPDATE_PINNED,dbUpdate.HTML_CONTENT}, null, null,
                 null, null, dbUpdate.UPDATE_DATE + " DESC"
         );
         List<Update> updates = new ArrayList<Update>();
         while (cursor.moveToNext()) {
             Update u = new Update(cursor.getString(0), cursor.getString(1),
                     cursor.getString(3), cursor.getString(2),
-                    Boolean.valueOf(cursor.getString(5)));
+                    Boolean.valueOf(cursor.getString(5)),cursor.getString(6));
             u.setUrl(cursor.getString(4));
             u.setPinned(Boolean.valueOf(cursor.getString(5)));
             updates.add(u);
@@ -614,6 +617,7 @@ public class DBManager {
         database.close();
     }
 
+
     public List<File> getImagesFiles() {
         Cursor courses = null, tutors;
         List<File> files = new ArrayList<File>();
@@ -648,6 +652,18 @@ public class DBManager {
         }
         database.close();
         return files;
+    }
+
+    /**
+     * empty tutors and workshops table for new semester data
+     * @return true no error ,false otherwise
+     */
+    public boolean resetSemester() {
+        SQLiteDatabase database = dbHelper.getWritableDatabase();
+        boolean b1 = database.delete(dbCourse.COURSE_TABLE, "1", null) > 0;
+        boolean b2 = database.delete(dbTeacher.TEACHERS_TABLE, "1", null) > 0;
+        database.close();
+        return (b1 || b2);
     }
 
     class DB_HELPER extends SQLiteOpenHelper {
@@ -760,7 +776,8 @@ class dbUpdate {
     public static final String UID = "id";
     public static final String UPDATE_ID = "subject_id";
     public static final String UPDATE_SUBJECT = "subject";
-    public static final String UPDATE_CONTENT = "content";// ׳�?׳�׳©׳™׳�׳�? ׳©׳�
+    public static final String UPDATE_CONTENT = "content";
+    public static final String HTML_CONTENT = "html_content";
     public static final String UPDATE_PINNED = "pinned"; // ׳�?׳�?׳§׳¡׳�?
     public static final String UPDATE_DATE = "date";// ׳�?׳�?׳�׳₪׳•׳� ׳�׳¡׳₪׳¨
     public static final String UPDATE_URL = "url";
@@ -768,6 +785,6 @@ class dbUpdate {
             + UID + " INTEGER PRIMARY KEY AUTOINCREMENT," + UPDATE_ID
             + " text not null, " + UPDATE_SUBJECT + " text not null, "
             + UPDATE_CONTENT + " text not null, " + UPDATE_PINNED
-            + " text not null, " + UPDATE_DATE + " text not null, "
+            + " text not null, " + UPDATE_DATE + " text not null, "+ HTML_CONTENT + " text not null, "
             + UPDATE_URL + " text not null" + ");";
 }

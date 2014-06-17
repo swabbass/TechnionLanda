@@ -5,7 +5,9 @@
     <eat-comment />
 
     <string name="EndedRefreshing"></string>
+    <string name="LightTextView">גרסה קלה</string>
     <string name="Refreshing"></string>
+    <string name="RichTextView">גרסה עשירה</string>
     <string name="about">About</string>
     <string name="action_websearch">Web Search</string>
     <string name="app_name">Landa</string>
@@ -17,6 +19,7 @@
     <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
     <string name="mayer">מאיר</string>
     <string name="rabin">רבין</string>
+    <string name="richViewText">מידע עשיר</string>
     <string name="sego">סגו</string>
     <string name="selected">Selected</string>
     <string name="settings">Settings</string>

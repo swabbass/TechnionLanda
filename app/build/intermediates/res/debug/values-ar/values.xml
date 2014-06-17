@@ -14,9 +14,11 @@
     <string name="EndedRefreshing">انتهت الحتلنه</string>
     <string name="Faculty">كليه</string>
     <string name="General">عام</string>
+    <string name="LightTextView">גרסה קלה</string>
     <string name="Navigation">الانتقال</string>
     <string name="Place">مكان</string>
     <string name="Refreshing">جاري الحتلنه</string>
+    <string name="RichTextView">גרסה עשירה</string>
     <string name="Role">منصب</string>
     <string name="TeacherAdded">مدرس جديد</string>
     <string name="TeacherDeleted">مدرس ليس فعال</string>
@@ -92,6 +94,7 @@
     <eat-comment />
 
     <string name="rabin">רבין</string>
+    <string name="richViewText">מידע עשיר</string>
     <string name="sego">סגו</string>
     <string name="selected">"اختيار   "</string>
     <string name="settings">اعدادات</string>

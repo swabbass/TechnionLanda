@@ -2,44 +2,64 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-e311e493b238b75da4095bd5ee7b69d76d73dc42.jar"
-        jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
-        jumboMode="false" revision="19.1.0" sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67" />
-    <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-33c55fa37535933d155a7de8233c5124661719a9.jar"
-        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
-        jumboMode="false" revision="19.1.0" sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059" />
-    <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\picasso-2.3.1-4d93fd4dac7a9529ba0ffdc956de9a2a9d7e0c6b.jar"
-        jar="C:\Users\wabbass\git\Landa1\app\libs\picasso-2.3.1.jar" jumboMode="false"
-        revision="19.1.0" sha1="7ed01353649330c692473b85d5c64db4218338db" />
-    <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-ee37b3c9320d7850e265fadc6a0f3626c2d4c4f7.jar"
-        jar="C:\Users\wabbass\git\Landa1\app\libs\nineoldandroids-2.4.0.jar" jumboMode="false"
-        revision="19.1.0" sha1="59f19e43354d32de831379c23ce03bb259a4c2b7" />
-    <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-a68e501955ea3ec693f341cdb1d63175fdb7e3e7.jar"
-        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library\0.4.0\classes.jar"
-        jumboMode="false" revision="19.1.0" sha1="6ca319f998430aa20c4dde97ba6df213d6cf3dd0" />
+        jar="C:\Users\wabbass\git\Landa1\app\libs\picasso-2.3.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7ed01353649330c692473b85d5c64db4218338db"/>
     <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.1-9938684b02ef63bf34de6c446e5c758cdc4b8ceb.jar"
         jar="C:\Users\wabbass\git\Landa1\app\libs\universal-image-loader-1.9.1.jar"
-        jumboMode="false" revision="19.1.0" sha1="296dfb44fbf31397c0306e60cb62e06ca40df07f" />
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="296dfb44fbf31397c0306e60cb62e06ca40df07f"/>
     <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\commons-lang3-3.3.2-0fd0c0542a6a8139bedf4d3377e35ec6c0484cef.jar"
-        jar="C:\Users\wabbass\git\Landa1\app\libs\commons-lang3-3.3.2.jar" jumboMode="false"
-        revision="19.1.0" sha1="659861b4acde07a0527211e40d256119face1d15" />
-    <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-992d2d6f0b799d513fe009030550fe614e263020.jar"
-        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.chrisbanes.actionbarpulltorefresh\library\0.9.9\classes.jar"
-        jumboMode="false" revision="19.1.0" sha1="06ca4ea902f14efb76284d918edb085df33cc365" />
+        jar="C:\Users\wabbass\git\Landa1\app\libs\commons-lang3-3.3.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="659861b4acde07a0527211e40d256119face1d15"/>
     <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\jsoup-1.7.3-26042f1614a24a82f9cbb901ef2f881d681367e9.jar"
-        jar="C:\Users\wabbass\git\Landa1\app\libs\jsoup-1.7.3.jar" jumboMode="false"
-        revision="19.1.0" sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da" />
+        jar="C:\Users\wabbass\git\Landa1\app\libs\jsoup-1.7.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da"/>
     <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\com.haarman.listviewanimations-2.6.0-d745117b1862f76ca2206976ff47b8754f57af95.jar"
         jar="C:\Users\wabbass\git\Landa1\app\libs\com.haarman.listviewanimations-2.6.0.jar"
-        jumboMode="false" revision="19.1.0" sha1="59351ccb0a1631d30358f6a92749a072f2df7602" />
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="59351ccb0a1631d30358f6a92749a072f2df7602"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-33c55fa37535933d155a7de8233c5124661719a9.jar"
+        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-e311e493b238b75da4095bd5ee7b69d76d73dc42.jar"
+        jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-ee37b3c9320d7850e265fadc6a0f3626c2d4c4f7.jar"
+        jar="C:\Users\wabbass\git\Landa1\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-a68e501955ea3ec693f341cdb1d63175fdb7e3e7.jar"
+        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library\0.4.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6ca319f998430aa20c4dde97ba6df213d6cf3dd0"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-992d2d6f0b799d513fe009030550fe614e263020.jar"
+        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.github.chrisbanes.actionbarpulltorefresh\library\0.9.9\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="06ca4ea902f14efb76284d918edb085df33cc365"/>
 
 </pre-dex-items>

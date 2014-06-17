@@ -12,6 +12,7 @@ public class Update implements Serializable, Comparable<Update> {
      */
     private static final long serialVersionUID = -4704709704844438730L;
     private String text;
+    private String html_text;
     private String update_id;
     private boolean active;
     private String subject;
@@ -34,11 +35,12 @@ public class Update implements Serializable, Comparable<Update> {
     }
 
     public Update(String id, String subject, String dateTime, String text,
-                  boolean pinned) {
+                  boolean pinned,String html_text) {
         setUpdate_id(id);
         setSubject(subject);
         setDateTime(dateTime);
         setText(text);
+        this.html_text=html_text;
         this.pinned = false;
         this.setPopUpOpend(false);
 
@@ -148,4 +150,11 @@ public class Update implements Serializable, Comparable<Update> {
         this.popUpOpend = popUpOpend;
     }
 
+    public String getHtml_text() {
+        return html_text;
+    }
+
+    public void setHtml_text(String html_text) {
+        this.html_text = html_text;
+    }
 }

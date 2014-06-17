@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/htmlView"
+    android:icon="@drawable/ic_action_web_site"
+    android:title="@string/RichTextView"
+
+    android:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/normalView"
+        android:icon="@drawable/ic_action_view_as_list"
+        android:title="@string/LightTextView"
+        android:showAsAction="ifRoom|withText"/>
+</menu>

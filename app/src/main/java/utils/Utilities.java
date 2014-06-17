@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
+import android.text.Html;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 
@@ -22,6 +23,8 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.jsoup.Jsoup;
+import org.jsoup.examples.HtmlToPlainText;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -65,6 +68,17 @@ public class Utilities {
     }
 
     /**
+     *  when new semester starts reset all the courses and teachers
+     * @param context
+     */
+    public static void resetForNewSemester(Context context,DBManager dbManager)
+    {
+        saveDownloadOnceStatus(false,GCMUtils.LOAD_COURSES,context);
+        saveDownloadOnceStatus(false,GCMUtils.LOAD_TEACHERS,context);
+        dbManager.resetSemester();
+    }
+
+    /**
      * removes all kind of tags like <13455> will be removed
      *  -perfomance o(n) ..n itirations
      * @param inp html text input
@@ -73,7 +87,7 @@ public class Utilities {
     public static String html2Text(String inp) {
         boolean intag = false;
         String outp = "";
-
+        DBManager.removeQoutes(inp);
         for (int i = 0; i < inp.length(); ++i) {
 
             char c = inp.charAt(i);
@@ -93,7 +107,7 @@ public class Utilities {
                 outp = outp + inp.charAt(i);
             }
         }
-        return outp;
+        return Jsoup.parse(outp).text();
     }
 
     /**
@@ -323,9 +337,10 @@ public class Utilities {
                 String id = jObj.getString("ID");
                 String title = subject;
                 String content = Utilities.html2Text(jObj.getString("post_content"));
+                content=content.replaceAll("&#8221;",Pattern.quote("\""));
                 String date = jObj.getString("post_date");
                 String url = jObj.getString("guid");
-                u = new Update(id, title, date, content, false);
+                u = new Update(id, title, date, content, false,jObj.getString("post_content"));
                 u.setUrl(url);
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -523,7 +538,7 @@ public class Utilities {
                         u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                Utilities.html2Text(update.getString("content")), false);
+                                Utilities.html2Text(update.getString("content")), false,update.getString("content"));
                         u.setUrl(update.getString("url"));
 
                         downloadOk = true;

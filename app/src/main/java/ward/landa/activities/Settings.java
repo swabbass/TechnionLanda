@@ -44,12 +44,14 @@ public class Settings {
     public static final String EXTRA_TITLE = "title";
     private static final String TO_NOTIFY_UPDATE = "toNotifyUpdate";
     private static final String TO_CORSE_NOTIFY = "toCorseNotify";
+    private static final String RICH_VIEW = "rich_view";
     private static final String LOCAL_KEY = "local";
     public static SimpleDateFormat sDf = new SimpleDateFormat(
             "yyyy-MM-dd HH:mm");
     private static String localLang;
     private static boolean toNotifyUpdates;
     private static boolean toNotifyCourse;
+    private  static boolean richView;
 
     public static void initlizeSettings(Context c) {
         SharedPreferences settings = c.getSharedPreferences(SETTINGS,
@@ -57,6 +59,7 @@ public class Settings {
         localLang = settings.getString(LOCAL_KEY, HEBREW);
         toNotifyCourse = settings.getBoolean(TO_CORSE_NOTIFY, true);
         toNotifyUpdates = settings.getBoolean(TO_NOTIFY_UPDATE, true);
+        richView=settings.getBoolean(RICH_VIEW, false);
     }
 
     public static String getexactTime() {
@@ -66,17 +69,22 @@ public class Settings {
     }
 
     public static void saveSettings(Context c, String local,
-                                    boolean courseNotify, boolean updateNotify) {
+                                    boolean courseNotify, boolean updateNotify,boolean isRichView) {
         SharedPreferences settings = c.getSharedPreferences(SETTINGS,
                 Activity.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
 
         editor.putBoolean(TO_CORSE_NOTIFY, courseNotify);
         editor.putBoolean(TO_NOTIFY_UPDATE, updateNotify);
+        editor.putBoolean(RICH_VIEW, isRichView);
         editor.putString(LOCAL_KEY, local);
         editor.commit();
     }
 
+    public  static void resetSettings(Context context)
+    {
+        saveSettings(context,HEBREW,true,true,true);
+    }
     public static String getLocalLang() {
         return localLang;
     }
@@ -111,5 +119,13 @@ public class Settings {
             }
         }
         return -1;
+    }
+
+    public static boolean isRichView() {
+        return richView;
+    }
+
+    public static void setRichView(boolean richView) {
+        Settings.richView = richView;
     }
 }

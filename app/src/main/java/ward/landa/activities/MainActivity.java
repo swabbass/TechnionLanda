@@ -179,7 +179,6 @@ public class MainActivity extends FragmentActivity implements
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 122) {
-
             CourseNotification c = (CourseNotification) data
                     .getSerializableExtra("notfiy");
             if (c != null) {
@@ -498,42 +497,50 @@ public class MainActivity extends FragmentActivity implements
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
         for (Course c : notification.getCourse()) {
-            int dayNum = Utilities.dayWeekNumber(c.getDateTime());
-            if (dayNum == -1)
-                return;
-            int hourFrom = Integer.parseInt(c.getTimeFrom().split(":")[0]
-                    .replaceAll("\\s", ""));
-            int minFrom = Integer.parseInt(c.getTimeFrom().split(":")[1]
-                    .replaceAll("\\s", ""));
-            if (minFrom - 20 < 0) {
-                hourFrom--;
-                minFrom = 40;
-            }
-            minFrom -= 20;
-            Calendar calendar = Calendar.getInstance();
-            calendar.set(Calendar.DAY_OF_WEEK, dayNum);
-            calendar.set(Calendar.HOUR_OF_DAY, hourFrom);
-            calendar.set(Calendar.MINUTE, minFrom);
-            calendar.set(Calendar.SECOND, 0);
-            Intent myIntent = new Intent(this, Reciever.class);
-            myIntent.setAction(Settings.WARD_LANDA_ALARM);
-            myIntent.putExtra("course", c);
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(this,
-                    c.getCourseID(), myIntent,
-                    PendingIntent.FLAG_CANCEL_CURRENT);
+            if(c.getNotify()!=0) {
+                int dayNum = Utilities.dayWeekNumber(c.getDateTime());
+                if (dayNum == -1)
+                    return;
+                int hourFrom = Integer.parseInt(c.getTimeFrom().split(":")[0]
+                        .replaceAll("\\s", ""));
+                int minFrom = Integer.parseInt(c.getTimeFrom().split(":")[1]
+                        .replaceAll("\\s", ""));
+                if (minFrom - 20 < 0) {
+                    hourFrom--;
+                    minFrom = 40;
+                }
+                minFrom -= 20;
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(Calendar.DAY_OF_WEEK, dayNum);
+                calendar.set(Calendar.HOUR_OF_DAY, hourFrom);
+                calendar.set(Calendar.MINUTE, minFrom);
+                calendar.set(Calendar.SECOND, 0);
+                Intent myIntent = new Intent(this, Reciever.class);
+                myIntent.setAction(Settings.WARD_LANDA_ALARM);
+                myIntent.putExtra("course", c);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(this,
+                        c.getCourseID(), myIntent,
+                        PendingIntent.FLAG_CANCEL_CURRENT);
 
 			/*
              * alarmManager.set(AlarmManager.RTC_WAKEUP,
 			 * calendar.getTimeInMillis(), pendingIntent);
 			 */
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
-                    calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
-                    pendingIntent);
-            calendar.set(Calendar.MINUTE, minFrom + 10);
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
-                    calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
-                    pendingIntent);
-            db_mngr.UpdateCourseNotification(c, 1);
+                if(c.getNotify()==1) {
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                            calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
+                            pendingIntent);
+                    calendar.set(Calendar.MINUTE, minFrom + 10);
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                            calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7,
+                            pendingIntent);
+                }
+                else{
+                    alarmManager.cancel(pendingIntent);
+                }
+            }
+            //TODO delete the Alarm (cancel)
+            db_mngr.UpdateCourseNotification(c, c.getNotify());
         }
     }
 
@@ -926,7 +933,7 @@ public class MainActivity extends FragmentActivity implements
             if (isReg) {
                 saveRegstrationData(true, st);
                 Settings.saveSettings(getApplicationContext(), localLang, true,
-                        true);
+                        true,true);
             }
             super.onPostExecute(result);
         }

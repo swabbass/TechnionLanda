@@ -15,9 +15,11 @@
     <string name="EndedRefreshing">עדכון הסתיים</string>
     <string name="Faculty">פקולטה</string>
     <string name="General">כללי</string>
+    <string name="LightTextView">גרסה קלה</string>
     <string name="Navigation">ניווט</string>
     <string name="Place">מקום</string>
     <string name="Refreshing">מעדכן</string>
+    <string name="RichTextView">גרסה עשירה</string>
     <string name="Role">תפקיד</string>
     <string name="SC">רכז/ת חברתי</string>
     <string name="TeacherAdded">חונך חדש</string>
@@ -52,6 +54,7 @@
     <eat-comment />
 
     <string name="rabin">רבין</string>
+    <string name="richViewText">מידע עשיר</string>
     <string name="sego">סגו</string>
     <string name="selected">"נבחר "</string>
     <string name="settings">הגדרות</string>

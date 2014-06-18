@@ -2,4 +2,5 @@
 <resources>
     <drawable name="focused">#ff5500</drawable>
     <drawable name="selected">#FF00FF</drawable>
+    <color name="BackGroundGrey">#454545</color>
 </resources>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AndroidConfiguredLogFilters">
     <filters>
       <filter>
@@ -61,39 +65,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45204555-adf8-4b55-88ca-6431d8b2d682" name="Default" comment="new Features&#10; pull to refresh for updates &#10;gps dirction for course time when cliking on location icon in course details &#10;fixing when course added from the backend or edited should be eddited he not added &#10;added upload picture michanism when picture uploaded to back end it will send gcm to the app to remove the current and download the new one">
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\res\animator\slide_down.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\res\animator\slideup.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/ConnectionDetector.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/ConnectionDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/Course.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/Course.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/CourseNotification.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/CourseNotification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/DBManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/ExpandableTextView.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/ExpandableTextView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/fr/castorflex/android/smoothprogressbar/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/fr/castorflex/android/smoothprogressbar/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/uk/co/senab/actionbarpulltorefresh/library/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/uk/co/senab/actionbarpulltorefresh/library/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/ward/landa/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/ward/landa/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/SettingsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/SettingsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/course_item_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/course_item_grid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/drawe_section.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/drawe_section.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/courses_frag_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/courses_frag_grid.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/courses_frag_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/courses_frag_grid.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/teacherFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/teacherFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pop_up_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pop_up_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/teacher_custom_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/teacher_custom_grid.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/updateDetailsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/updateDetailsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/update_details_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/update_details_activity.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -118,180 +125,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FragmentUpdates.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3785" max-vertical-offset="6511">
-              <caret line="602" column="18" selection-start-line="602" selection-start-column="18" selection-end-line="602" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onCreateView#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onResume#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="class#6230:8624" expanded="false" />
-                <element signature="method#onPrepareActionMode#0;class#6230:8624" expanded="false" />
-                <element signature="method#onDestroyActionMode#0;class#6230:8624" expanded="false" />
-                <element signature="method#onCreateActionMode#0;class#6230:8624" expanded="false" />
-                <element signature="method#onActionItemClicked#0;class#6230:8624" expanded="false" />
-                <element signature="method#onItemCheckedStateChanged#0;class#6230:8624" expanded="false" />
-                <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#getItem#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#getView#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="class#17023:18646" expanded="false" />
-                <element signature="method#onClick#0;class#17023:18646" expanded="false" />
-                <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-                <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="spinner_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="squareImage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TutorDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/TutorDetails.java">
+      <file leaf-file-name="teacher_course_times.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state vertical-scroll-proportion="18.88889" vertical-offset="510" max-vertical-offset="1224">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/SettingsActivity.java">
+      <file leaf-file-name="teacher_custom_grid.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="612">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+            <state vertical-scroll-proportion="-2.5185184" vertical-offset="0" max-vertical-offset="391">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseDeatilsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding>
-                <element signature="class#CourseDetailHolder#0;class#CourseDeatilsActivity#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="updates_item.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml">
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reciever.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1615">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.25612053" vertical-offset="0" max-vertical-offset="1428">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75268817" vertical-offset="1195" max-vertical-offset="1955">
-              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateDetailActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/UpdateDetailActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <caret line="0" column="130" selection-start-line="0" selection-start-column="130" selection-end-line="0" selection-end-column="130" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FragmentTeachers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1898" max-vertical-offset="6120">
-              <caret line="182" column="31" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onStop#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#onResume#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;method#initlizeSearchEngine#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="class#3080:4154" expanded="false" />
-                <element signature="method#onTextChanged#0;class#3080:4154" expanded="false" />
-                <element signature="method#search#0;class#3080:4154" expanded="false" />
-                <element signature="method#beforeTextChanged#0;class#3080:4154" expanded="false" />
-                <element signature="method#afterTextChanged#0;class#3080:4154" expanded="false" />
-                <element signature="method#onAttach#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;method#loadFromDataBase#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;method#showDialogNoconnection#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="class#callbackTeacher#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;method#OnTeacherItemClick#0;class#callbackTeacher#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#setL#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#getCount#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#getItem#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#getItemId#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#getView#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="class#10256:11155" expanded="false" />
-                <element signature="method#onBitmapFailed#0;class#10256:11155" expanded="false" />
-                <element signature="method#onBitmapLoaded#0;class#10256:11155" expanded="false" />
-                <element signature="method#onPrepareLoad#0;class#10256:11155" expanded="false" />
-                <element signature="class#TeacherViewHolder#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="docComment;class#TeacherReciever#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#onBitmapLoaded#0;class#13424:14648" expanded="false" />
-                <element signature="method#onPrepareLoad#0;class#13424:14648" expanded="false" />
-                <element signature="docComment;class#loadDataFromBackend#0;class#FragmentTeachers#0" expanded="false" />
-                <element signature="method#onPreExecute#0;class#loadDataFromBackend#0;class#FragmentTeachers#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1450,55 +1331,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/course_teacher_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_old.xml" />
-        <option value="$PROJECT_DIR$/library/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-he/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/updates_frag_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/update_details_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawe_section.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/course_item_grid.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/ExpandableTextView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/teacherFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/utils/ConnectionDetector.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/updateDetailsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Course.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/CourseNotification.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/utils/DBManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java" />
         <option value="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.5.2/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/UpdateDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/TutorDetails.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ward/landa/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/courses_frag_grid.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pop_up_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/update_details_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/courses_frag_grid.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/teacher_custom_grid.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" />
       </list>
     </option>
   </component>
@@ -1647,6 +1530,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-w820dp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1674,7 +1561,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="animator" />
+              <option name="myItemId" value="values-v14" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1700,45 +1587,11 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="landa" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Landa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Landa1" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landa" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
+              <option name="myItemId" value="values-v11" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1764,15 +1617,11 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="landa" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
+              <option name="myItemId" value="values-sw720dp-land" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1798,7 +1647,157 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-sw600dp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa1" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-he" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa1" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa1" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa1" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout-land" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landa1" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1824,7 +1823,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="260" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="176" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -2045,7 +2044,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853898" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329296" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2063,7 +2062,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30484116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13247539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49744463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2104,7 +2103,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java</url>
-          <line>112</line>
+          <line>117</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -2146,67 +2145,67 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java</url>
-          <line>101</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java</url>
-          <line>107</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java</url>
-          <line>114</line>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java</url>
-          <line>111</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>111</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java</url>
-          <line>563</line>
+          <line>555</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java</url>
-          <line>160</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java</url>
-          <line>151</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java</url>
-          <line>156</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java</url>
-          <line>158</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java</url>
-          <line>159</line>
+          <line>158</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
@@ -2299,290 +2298,42 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="166" max-vertical-offset="1411">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.47692308" vertical-offset="287" max-vertical-offset="612">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Activity.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/TutorDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33224756" vertical-offset="5916" max-vertical-offset="7565">
-          <caret line="355" column="16" selection-start-line="355" selection-start-column="16" selection-end-line="355" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.20923077" vertical-offset="0" max-vertical-offset="646">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Instrumentation.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33224756" vertical-offset="1853" max-vertical-offset="2720">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/android/support/v4/app/FragmentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="8836" max-vertical-offset="14552">
-          <caret line="571" column="0" selection-start-line="571" selection-start-column="0" selection-end-line="571" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/android/support/v4/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="23677" max-vertical-offset="34068">
-          <caret line="1478" column="0" selection-start-line="1478" selection-start-column="0" selection-end-line="1478" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/android/support/v4/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="22929" max-vertical-offset="26996">
-          <caret line="1499" column="0" selection-start-line="1499" selection-start-column="0" selection-end-line="1499" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.16612378" vertical-offset="51" max-vertical-offset="952">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/content/BroadcastReceiver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29151943" vertical-offset="301" max-vertical-offset="867">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="class#PendingResult#0;class#BroadcastReceiver#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058721934" vertical-offset="0" max-vertical-offset="579">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawe_section.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8148148" vertical-offset="84" max-vertical-offset="425">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="309" max-vertical-offset="1224">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/course_item_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="343" max-vertical-offset="799">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="360" max-vertical-offset="2516">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="394" max-vertical-offset="1479">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="479" max-vertical-offset="1462">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8148148" vertical-offset="543" max-vertical-offset="2686">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ExpandableTextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/teacherFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/AboutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/ConnectionDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="493">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/CircleImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="3621">
-          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1609" max-vertical-offset="2108">
-          <caret line="135" column="32" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667" vertical-offset="37" max-vertical-offset="408">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5185184" vertical-offset="143" max-vertical-offset="1173">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.20923077" vertical-offset="0" max-vertical-offset="476">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1581">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1598">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5185184" vertical-offset="738" max-vertical-offset="1088">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/course_teacher_details.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5185184" vertical-offset="670" max-vertical-offset="1071">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/SettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="2108">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/updateDetailsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="865" max-vertical-offset="1955">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onPageFinished#0;class#2516:3811" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/java/lang/Character.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8432">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="2533">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1751">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2591,28 +2342,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2176">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="2261">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1598">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="1683">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1751">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2363">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="e#2390#2391#0" expanded="true" />
+            <element signature="e#2422#2423#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Update.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="2091">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/CourseFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="6885">
-          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1749" max-vertical-offset="6885">
+          <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5374#5375#0" expanded="true" />
-            <element signature="e#5419#5420#0" expanded="true" />
             <element signature="method#initlizeLocationManager#0;class#CourseFragment#0" expanded="false" />
             <element signature="method#getLastBestLocation#0;class#CourseFragment#0" expanded="false" />
             <element signature="class#AlarmCallBack#0;class#CourseFragment#0" expanded="false" />
@@ -2620,77 +2409,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/CourseNotification.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="612">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5417" max-vertical-offset="7361">
+          <caret line="409" column="45" selection-start-line="409" selection-start-column="45" selection-end-line="409" selection-end-column="45" />
+          <folding>
+            <element signature="method#coursesAdapter#0;class#coursesAdapter#0;class#FragmentCourses#0" expanded="false" />
+            <element signature="method#setCourses#0;class#coursesAdapter#0;class#FragmentCourses#0" expanded="false" />
+            <element signature="method#getCount#0;class#coursesAdapter#0;class#FragmentCourses#0" expanded="false" />
+            <element signature="docComment;class#reciever#0;class#FragmentCourses#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6998" max-vertical-offset="7463">
+          <caret line="752" column="19" selection-start-line="752" selection-start-column="19" selection-end-line="752" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onResume#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#6179:8573" expanded="false" />
+            <element signature="method#onPrepareActionMode#0;class#6179:8573" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#6179:8573" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#6179:8573" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#6179:8573" expanded="false" />
+            <element signature="method#onItemCheckedStateChanged#0;class#6179:8573" expanded="false" />
+            <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getItem#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#16680:18303" expanded="false" />
+            <element signature="method#onClick#0;class#16680:18303" expanded="false" />
+            <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="e#19597#19598#0" expanded="true" />
+            <element signature="e#19653#19654#0" expanded="true" />
+            <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="e#21192#21768#0" expanded="true" />
+            <element signature="e#21741#21742#0" expanded="true" />
+            <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
+            <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3326" max-vertical-offset="7072">
+          <caret line="261" column="19" selection-start-line="261" selection-start-column="19" selection-end-line="261" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
+            <element signature="method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
+            <element signature="method#resetForNewSemester#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#getTableTags#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#replacer#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
+            <element signature="method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
+            <element signature="method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
+            <element signature="e#10283#10308#0" expanded="false" />
+            <element signature="docComment;method#showNotification#0;class#Utilities#0" expanded="false" />
+            <element signature="method#showNotification#0;class#Utilities#0" expanded="false" />
+            <element signature="e#11059#11124#0" expanded="false" />
+            <element signature="docComment;method#openMapToNavigate#0;class#Utilities#0" expanded="false" />
+            <element signature="method#openMapToNavigate#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#openMapInLocation#0;class#Utilities#0" expanded="false" />
+            <element signature="method#openMapInLocation#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#getLocationByAddress#0;class#Utilities#0" expanded="false" />
+            <element signature="method#getLocationByAddress#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;class#PostListener#0;class#Utilities#0" expanded="false" />
+            <element signature="class#PostListener#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;field#startIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;field#endIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
+            <element signature="method#Table#0;class#Table#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
+            <element signature="docComment;method#resetAlarnsAfterReboot#0;class#Utilities#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13152805" vertical-offset="0" max-vertical-offset="517">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5009" max-vertical-offset="7344">
-          <caret line="621" column="41" selection-start-line="621" selection-start-column="41" selection-end-line="621" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="docComment;method#removeQoutes#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#insertTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="method#insertTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#insertUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="method#insertUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#insertCourse#0;class#DBManager#0" expanded="false" />
-            <element signature="method#insertCourse#0;class#DBManager#0" expanded="false" />
-            <element signature="e#5245#5315#0" expanded="false" />
-            <element signature="docComment;method#UpdateCourseNotification#0;class#DBManager#0" expanded="false" />
-            <element signature="method#UpdateCourseNotification#0;class#DBManager#0" expanded="false" />
-            <element signature="e#6131#6201#0" expanded="false" />
-            <element signature="docComment;method#UpdateCourseImageDownloaded#0;class#DBManager#0" expanded="false" />
-            <element signature="method#UpdateCourseImageDownloaded#0;class#DBManager#0" expanded="false" />
-            <element signature="e#7007#7077#0" expanded="false" />
-            <element signature="docComment;method#UpdateTeacherImageDownloaded#0;class#DBManager#0" expanded="false" />
-            <element signature="method#UpdateTeacherImageDownloaded#0;class#DBManager#0" expanded="false" />
-            <element signature="e#7900#7970#0" expanded="false" />
-            <element signature="docComment;method#updateTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="method#updateTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#updateUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="method#updateUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#deleteTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="method#deleteTeacher#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#deleteCourse#0;class#DBManager#0" expanded="false" />
-            <element signature="method#deleteCourse#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#deleteUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="method#deleteUpdate#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#clearDb#0;class#DBManager#0" expanded="false" />
-            <element signature="method#clearDb#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getSQLText#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getAllNotifiedCourses#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getCursorAllTeachers#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getCursorAllTeachers#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getCursorAllUpdates#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getCursorAllWithCourses#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getTeachersForCourse#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getTeacherByIdNumber#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#getCourseById#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getCourseById#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#checkForDownloadedImages#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;method#resetSemester#0;class#DBManager#0" expanded="false" />
-            <element signature="method#resetSemester#0;class#DBManager#0" expanded="false" />
-            <element signature="method#onCreate#0;class#DB_HELPER#0;class#DBManager#0" expanded="false" />
-            <element signature="method#onUpgrade#0;class#DB_HELPER#0;class#DBManager#0" expanded="false" />
-            <element signature="docComment;class#dbTeacher#0" expanded="false" />
-            <element signature="docComment;class#dbCourse#0" expanded="false" />
-            <element signature="docComment;class#dbUpdate#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.33512545" vertical-offset="0" max-vertical-offset="558">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3462" max-vertical-offset="9231">
-          <caret line="280" column="30" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.33207548" vertical-offset="5298" max-vertical-offset="9554">
+          <caret line="515" column="46" selection-start-line="515" selection-start-column="37" selection-end-line="515" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onResume#0;class#MainActivity#0" expanded="false" />
@@ -2705,24 +2546,22 @@
             <element signature="method#setLocalLang#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initlizeDataBase#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initlizeFragments#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10403#10474#0" expanded="false" />
-            <element signature="method#onDrawerClosed#0;class#10542:11294" expanded="false" />
+            <element signature="e#9843#9914#0" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#9982:10734" expanded="false" />
             <element signature="method#onNavigationItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onUpdateClick#0;class#MainActivity#0" expanded="false" />
             <element signature="method#OnTeacherItemClick#0;class#MainActivity#0" expanded="false" />
             <element signature="method#forceRTLIfSupported#0;class#MainActivity#0" expanded="false" />
             <element signature="method#loadRegsetrationData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setAlarms#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showDialogNoconnection#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;class#DrawerItemType#0;class#MainActivity#0" expanded="false" />
             <element signature="class#DrawerItemType#0;class#MainActivity#0" expanded="false" />
             <element signature="class#FragmentTypes#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;class#DrawerItem#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#DrawerItem#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;class#SectionsPagerAdapter#0;class#MainActivity#0" expanded="false" />
             <element signature="method#SectionsPagerAdapter#0;class#SectionsPagerAdapter#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getItem#0;class#SectionsPagerAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#20318#20386#0" expanded="false" />
+            <element signature="e#19758#19826#0" expanded="false" />
             <element signature="method#getCount#0;class#SectionsPagerAdapter#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getItemPosition#0;class#SectionsPagerAdapter#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;class#draweAdapter#0;class#MainActivity#0" expanded="false" />
@@ -2752,161 +2591,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="963" max-vertical-offset="2652">
-          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4975" max-vertical-offset="6902">
-          <caret line="504" column="56" selection-start-line="504" selection-start-column="56" selection-end-line="504" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
-            <element signature="method#saveDownloadOnceStatus#0;class#Utilities#0" expanded="false" />
-            <element signature="method#resetForNewSemester#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#removeTableFirstTrHtml#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#getTableTags#0;class#Utilities#0" expanded="false" />
-            <element signature="method#getInputMethodManager#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#replacer#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
-            <element signature="method#dayWeekNumber#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#displayMessage#0;class#Utilities#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#displayMessageUpdate#0;class#Utilities#0" expanded="false" />
-            <element signature="method#displayMessageUpdate#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
-            <element signature="method#checkIfImageExistsInSd#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#saveImageToSD#0;class#Utilities#0" expanded="false" />
-            <element signature="e#11604#11629#0" expanded="false" />
-            <element signature="docComment;method#showNotification#0;class#Utilities#0" expanded="false" />
-            <element signature="method#showNotification#0;class#Utilities#0" expanded="false" />
-            <element signature="e#12380#12445#0" expanded="false" />
-            <element signature="docComment;method#openMapToNavigate#0;class#Utilities#0" expanded="false" />
-            <element signature="method#openMapToNavigate#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#openMapInLocation#0;class#Utilities#0" expanded="false" />
-            <element signature="method#openMapInLocation#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#getLocationByAddress#0;class#Utilities#0" expanded="false" />
-            <element signature="method#getLocationByAddress#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;class#PostListener#0;class#Utilities#0" expanded="false" />
-            <element signature="class#PostListener#0;class#Utilities#0" expanded="false" />
-            <element signature="class#Table#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;field#startIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;field#endIndex#0;class#Table#0;class#Utilities#0" expanded="false" />
-            <element signature="method#Table#0;class#Table#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-            <element signature="method#fetchUpdateFromBackEndTask#0;class#fetchUpdateFromBackEndTask#0;class#Utilities#0" expanded="false" />
-            <element signature="docComment;method#resetAlarnsAfterReboot#0;class#Utilities#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentCourses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7780" max-vertical-offset="8500">
-          <caret line="486" column="18" selection-start-line="486" selection-start-column="18" selection-end-line="486" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#reciever#0;class#FragmentCourses#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentUpdates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3785" max-vertical-offset="6511">
-          <caret line="602" column="18" selection-start-line="602" selection-start-column="18" selection-end-line="602" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onAttach#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onResume#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onPause#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#initlizeFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#initlizeListners#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#6230:8624" expanded="false" />
-            <element signature="method#onPrepareActionMode#0;class#6230:8624" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#6230:8624" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#6230:8624" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#6230:8624" expanded="false" />
-            <element signature="method#onItemCheckedStateChanged#0;class#6230:8624" expanded="false" />
-            <element signature="docComment;method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#initlizeDataForFragment#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#loadFromDataBase#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#addUpdate#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#showDialogNoconnection#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#onUpdateClick#0;class#updateCallback#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#isEnabled#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getCount#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getItem#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getItemId#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#getView#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#showPopUpWindow#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#17023:18646" expanded="false" />
-            <element signature="method#onClick#0;class#17023:18646" expanded="false" />
-            <element signature="docComment;method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#toggleSelection#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;method#getSelected#0;class#updatesAdapter#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#UpdateViewHolder#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#updateReciever#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="docComment;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#downloadRecentUpdates#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-            <element signature="method#onRefreshStarted#0;class#OnPullToRefresh#0;class#FragmentUpdates#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/squareImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.5.2/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
-          <caret line="0" column="130" selection-start-line="0" selection-start-column="130" selection-end-line="0" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/fragments/FragmentTeachers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1898" max-vertical-offset="6120">
-          <caret line="182" column="31" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.19354838" vertical-offset="4312" max-vertical-offset="6749">
+          <caret line="389" column="24" selection-start-line="389" selection-start-column="24" selection-end-line="389" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onStop#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="method#onResume#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="docComment;method#initlizeSearchEngine#0;class#FragmentTeachers#0" expanded="false" />
-            <element signature="class#3080:4154" expanded="false" />
-            <element signature="method#onTextChanged#0;class#3080:4154" expanded="false" />
-            <element signature="method#search#0;class#3080:4154" expanded="false" />
-            <element signature="method#beforeTextChanged#0;class#3080:4154" expanded="false" />
-            <element signature="method#afterTextChanged#0;class#3080:4154" expanded="false" />
+            <element signature="class#3116:4190" expanded="false" />
+            <element signature="method#onTextChanged#0;class#3116:4190" expanded="false" />
+            <element signature="method#search#0;class#3116:4190" expanded="false" />
+            <element signature="method#beforeTextChanged#0;class#3116:4190" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#3116:4190" expanded="false" />
             <element signature="method#onAttach#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="docComment;method#loadFromDataBase#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="docComment;method#showDialogNoconnection#0;class#FragmentTeachers#0" expanded="false" />
@@ -2917,67 +2615,367 @@
             <element signature="method#getCount#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="method#getItem#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="method#getItemId#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-            <element signature="method#getView#0;class#gridAdabter#0;class#FragmentTeachers#0" expanded="false" />
-            <element signature="class#10256:11155" expanded="false" />
-            <element signature="method#onBitmapFailed#0;class#10256:11155" expanded="false" />
             <element signature="method#onBitmapLoaded#0;class#10256:11155" expanded="false" />
             <element signature="method#onPrepareLoad#0;class#10256:11155" expanded="false" />
             <element signature="class#TeacherViewHolder#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="docComment;class#TeacherReciever#0;class#FragmentTeachers#0" expanded="false" />
-            <element signature="method#onBitmapLoaded#0;class#13424:14648" expanded="false" />
-            <element signature="method#onPrepareLoad#0;class#13424:14648" expanded="false" />
+            <element signature="method#onBitmapLoaded#0;class#13345:14569" expanded="false" />
+            <element signature="method#onPrepareLoad#0;class#13345:14569" expanded="false" />
             <element signature="docComment;class#loadDataFromBackend#0;class#FragmentTeachers#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#loadDataFromBackend#0;class#FragmentTeachers#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/UpdateDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/TutorDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="612">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/CourseDeatilsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.19354838" vertical-offset="623" max-vertical-offset="2924">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding>
             <element signature="class#CourseDetailHolder#0;class#CourseDeatilsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Reciever.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/ImageUtilities/CircleImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1615">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2939" max-vertical-offset="3621">
+          <caret line="205" column="40" selection-start-line="205" selection-start-column="40" selection-end-line="205" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ward/landa/activities/Settings.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75268817" vertical-offset="1195" max-vertical-offset="1955">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/course_item_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4444447" vertical-offset="268" max-vertical-offset="799">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/course_teacher_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48022598" vertical-offset="510" max-vertical-offset="1071">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/courses_frag_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16007534" vertical-offset="0" max-vertical-offset="531">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawe_section.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="425">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/draweritem.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3703704" vertical-offset="64" max-vertical-offset="595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="20.62963" vertical-offset="642" max-vertical-offset="1173">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7777777" vertical-offset="0" max-vertical-offset="255">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/grid_textimg_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.148148" vertical-offset="166" max-vertical-offset="697">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pop_up_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.259259" vertical-offset="183" max-vertical-offset="714">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_layout_courses.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8888888" vertical-offset="0" max-vertical-offset="2363">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_course_times.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.88889" vertical-offset="510" max-vertical-offset="1224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3370998" vertical-offset="1326" max-vertical-offset="2669">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tutor_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12806027" vertical-offset="0" max-vertical-offset="2499">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/teacher_custom_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16007534" vertical-offset="0" max-vertical-offset="531">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/courses_frag_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16007534" vertical-offset="0" max-vertical-offset="531">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12806027" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_course_deatils.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13127413" vertical-offset="0" max-vertical-offset="782">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/updates_frag_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="561">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/update_details_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16007534" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/update_details_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16007534" vertical-offset="0" max-vertical-offset="531">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/teacher_custom_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5185184" vertical-offset="0" max-vertical-offset="391">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25612053" vertical-offset="0" max-vertical-offset="1428">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -14,9 +14,13 @@ import ward.landa.R;
 
 public class Settings {
 
-    public static final String SETTINGS = "SHAREDPREFRENCES";
+    private static final String SETTINGS;
+
+    static {
+        SETTINGS = "SHAREDPREFRENCES";
+    }
+
     public static final int COURSES = 0;
-    public static final int UPDATES = 2;
     public static final int TEACHERS = 1;
     public static final String HEBREW = "he";
     public static final String ENGLISH = "en";
@@ -26,19 +30,11 @@ public class Settings {
     public static final String URL_COURSES = "http://nlanda.technion.ac.il/LandaSystem/courses.aspx";
     public final static String picsPathDir = "Landa" + File.separator
             + "tutors" + File.separator;
-    public final static String picFromRoot = Environment
-            .getExternalStorageDirectory() + File.separator + picsPathDir;
     public static final String picFromAbsoulotePath = Environment
             .getExternalStorageDirectory().getAbsolutePath()
             + File.separator
             + picsPathDir;
     public static final String WARD_LANDA_ALARM = "ward.landa.ALARM";
-    public static final String DISPLAY_MESSAGE_ACTION = "ward.landa.DISPLAY_MESSAGE";
-    // public static final String ADD_CONVERSATION_ACTION =
-    // "ward.landa.ADD_CONVERSATION";
-    // public static final String DISPLAY_CONVERSATION_ACTION =
-    // "ward.landa.DISPLAY_CONVERSATION";
-    public static final String DISMISS_NOTIFICATION_ACTION = "ward.landa.DISMISS_NOTIFICATION";
     public static final String EXTRA_MESSAGE = "message";
     public static final String EXTRA_Date = "date";
     public static final String EXTRA_TITLE = "title";
@@ -46,8 +42,13 @@ public class Settings {
     private static final String TO_CORSE_NOTIFY = "toCorseNotify";
     private static final String RICH_VIEW = "rich_view";
     private static final String LOCAL_KEY = "local";
-    public static SimpleDateFormat sDf = new SimpleDateFormat(
-            "yyyy-MM-dd HH:mm");
+    private static final SimpleDateFormat sDf;
+
+    static {
+        sDf = new SimpleDateFormat(
+                "yyyy-MM-dd HH:mm");
+    }
+
     private static String localLang;
     private static boolean toNotifyUpdates;
     private static boolean toNotifyCourse;
@@ -60,12 +61,6 @@ public class Settings {
         toNotifyCourse = settings.getBoolean(TO_CORSE_NOTIFY, true);
         toNotifyUpdates = settings.getBoolean(TO_NOTIFY_UPDATE, true);
         richView=settings.getBoolean(RICH_VIEW, false);
-    }
-
-    public static String getexactTime() {
-
-        Date cal = Calendar.getInstance().getTime();
-        return sDf.format(cal);
     }
 
     public static void saveSettings(Context c, String local,
@@ -89,24 +84,12 @@ public class Settings {
         return localLang;
     }
 
-    public static void setLocalLang(String localLang) {
-        Settings.localLang = localLang;
-    }
-
     public static boolean isToNotifyUpdates() {
         return toNotifyUpdates;
     }
 
-    public static void setToNotifyUpdates(boolean toNotifyUpdates) {
-        Settings.toNotifyUpdates = toNotifyUpdates;
-    }
-
     public static boolean isToNotifyCourse() {
         return toNotifyCourse;
-    }
-
-    public static void setToNotifyCourse(boolean toNotifyCourse) {
-        Settings.toNotifyCourse = toNotifyCourse;
     }
 
     public static int langId(String lang) {
@@ -125,7 +108,4 @@ public class Settings {
         return richView;
     }
 
-    public static void setRichView(boolean richView) {
-        Settings.richView = richView;
-    }
 }

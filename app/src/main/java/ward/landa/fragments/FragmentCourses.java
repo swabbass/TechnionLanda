@@ -42,6 +42,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,6 +94,7 @@ public class FragmentCourses extends Fragment {
         getActivity().getMenuInflater().inflate(R.menu.course_menu, menu);
         View v = menu.findItem(R.id.course_menu_search).getActionView();
         if (!getArguments().getBoolean("rtl"))
+
             getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
 
         EditText search = (EditText) v.findViewById(R.id.course_txt_search);
@@ -184,7 +186,7 @@ public class FragmentCourses extends Fragment {
     private void loadFromDataBase() {
         courses = null;
         courses = db_mngr.getCursorAllWithCourses();
-        uAdapter = new coursesAdapter(courses, getActivity(), getResources());
+        uAdapter = new coursesAdapter(courses, getActivity().getApplicationContext());
 
         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                 uAdapter);
@@ -261,16 +263,15 @@ public class FragmentCourses extends Fragment {
 
         List<Course> courses;
         LayoutInflater inflater = null;
-        Context cxt = null;
-       final Resources res;
+        WeakReference<Context> cxt;
         int searched;
 
-        public coursesAdapter(List<Course> courses, Context cxt, Resources res) {
+        public coursesAdapter(List<Course> courses, Context cxt) {
             this.courses = courses;
-            this.cxt = cxt;
-            this.inflater = (LayoutInflater) cxt
+            this.cxt =new WeakReference<>(cxt) ;
+            this.inflater = (LayoutInflater) this.cxt.get()
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            this.res = res;
+
             this.searched = 0;
 
         }
@@ -347,11 +348,11 @@ public class FragmentCourses extends Fragment {
 
             };
             if (!c.isDownloadedImage()) {
-                Picasso.with(cxt).load(c.getImageUrl())
+                Picasso.with(cxt.get()).load(c.getImageUrl())
                         .error(R.drawable.ic_launcher).into(viewHolder.picture);
-                Picasso.with(cxt).load(c.getImageUrl()).into(target);
+                Picasso.with(cxt.get()).load(c.getImageUrl()).into(target);
             } else {
-                Picasso.with(cxt).load(new File(c.getImagePath()))
+                Picasso.with(cxt.get()).load(new File(c.getImagePath()))
                         .error(R.drawable.ic_launcher).into(viewHolder.picture);
             }
 
@@ -405,6 +406,7 @@ public class FragmentCourses extends Fragment {
             Log.d("ward", jsonCourses != null ? jsonCourses.toString() : null);
 
             try {
+                assert jsonCourses != null;
                 JSONArray jsonCoursesArray = jsonCourses
                         .getJSONArray("courses");
 
@@ -451,8 +453,7 @@ public class FragmentCourses extends Fragment {
                 }
                 toSave = null;
                 courses = db_mngr.getCursorAllWithCourses();
-                uAdapter = new coursesAdapter(courses, getActivity(),
-                        getResources());
+                uAdapter = new coursesAdapter(courses, getActivity().getApplicationContext());
 
                 SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                         uAdapter);
@@ -497,8 +498,7 @@ public class FragmentCourses extends Fragment {
                                 context, db_mngr, intent);
                         courses = null;
                         courses = db_mngr.getCursorAllWithCourses();
-                        uAdapter = new coursesAdapter(courses, getActivity(),
-                                getResources());
+                        uAdapter = new coursesAdapter(courses, getActivity().getApplicationContext());
 
                         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                                 uAdapter);

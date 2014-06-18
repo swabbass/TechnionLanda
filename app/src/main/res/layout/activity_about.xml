@@ -3,7 +3,6 @@
     android:id="@+id/AboutAvtivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#404040"
     android:orientation="vertical"
     tools:context="ward.landa.AboutActivity">
 

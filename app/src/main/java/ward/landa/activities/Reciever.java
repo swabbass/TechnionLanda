@@ -16,7 +16,6 @@ import ward.landa.R;
 import ward.landa.Update;
 
 public class Reciever extends BroadcastReceiver implements PostListener {
-    final public static String ONE_TIME = "onetime";
     private DBManager dbmngr;
     private Context cxt;
 
@@ -42,7 +41,7 @@ public class Reciever extends BroadcastReceiver implements PostListener {
                 }
             } else {
                 Update u = Utilities.generateUpdateFromExtras(
-                        intent.getExtras(), context);
+                        intent.getExtras());
                 if (u != null && u.getUrlToJason() == null) {
                     dbmngr.insertUpdate(u);
                     if (Settings.isToNotifyUpdates())

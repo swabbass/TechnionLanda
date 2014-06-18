@@ -107,6 +107,8 @@ public class CourseFragment extends Fragment {
         if (ab != null) {
             ab.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         }
+
+        assert ab != null;
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setDisplayShowHomeEnabled(true);
         super.onCreateOptionsMenu(menu, inflater);

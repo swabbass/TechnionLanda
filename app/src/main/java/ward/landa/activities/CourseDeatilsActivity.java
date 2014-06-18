@@ -61,7 +61,6 @@ public class CourseDeatilsActivity extends FragmentActivity implements
         setContentView(R.layout.activity_course_deatils);
         fetchArguments();
 
-        DBManager dbManager = new DBManager(getApplicationContext());
         courseNotification = new CourseNotification(courseName);
         checkedCourses = new ArrayList<>();
         result = new Intent(getApplicationContext(), MainActivity.class);

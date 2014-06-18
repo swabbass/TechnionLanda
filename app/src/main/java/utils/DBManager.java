@@ -418,7 +418,7 @@ public class DBManager {
         while (cursor.moveToNext()) {
             Update u = new Update(cursor.getString(0), cursor.getString(1),
                     cursor.getString(3), cursor.getString(2),
-                    Boolean.valueOf(cursor.getString(5)),cursor.getString(6));
+                    cursor.getString(6));
             u.setUrl(cursor.getString(4));
             u.setPinned(Boolean.valueOf(cursor.getString(5)));
             updates.add(u);

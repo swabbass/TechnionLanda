@@ -10,14 +10,14 @@
         android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#404040">
+   >
 
         <ListView
 
             android:id="@+id/updates_listView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#404040"
+
             android:divider="#00e0e0e0"
             android:dividerHeight="0.5dp"
             android:drawSelectorOnTop="false"

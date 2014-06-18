@@ -62,12 +62,6 @@ public class Teacher implements Serializable {
         return false;
     }
 
-    public void addCourse(String course_name, List<String> times) {
-
-        timesForEachCourse.put(course_name, times);
-
-    }
-
     public void addTimeToCourse(String name, String time) {
         List<String> times = timesForEachCourse.get(name);
         if (times == null) {
@@ -75,12 +69,6 @@ public class Teacher implements Serializable {
             timesForEachCourse.put(name, times);
         }
         times.add(time);
-    }
-
-    public void removeCourse(String course_name) {
-
-        timesForEachCourse.remove(course_name);
-
     }
 
     public List<String> getTimePlaceForCourse(String course_name) {
@@ -190,17 +178,4 @@ public class Teacher implements Serializable {
         this.downloadedImage = downloadedImage;
     }
 
-    public HashMap<String, List<String>> getTimesForEachCourse() {
-        return timesForEachCourse;
-    }
-
-    public void setTimesForEachCourse(
-            HashMap<String, List<String>> timesForEachCourse) {
-        this.timesForEachCourse = timesForEachCourse;
-    }
-
-    public Uri getUriFromLocal() {
-        File f = new File(this.imageLocalPath);
-        return Uri.fromFile(f);
-    }
 }

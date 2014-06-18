@@ -1,13 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/shadow">
 
-    <RelativeLayout
+
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/updatesItem"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="?android:attr/activatedBackgroundIndicator">
+          android:background="@drawable/update_panel"                                   >
 
         <ImageView
             android:id="@+id/popUpMenu"
@@ -79,4 +76,4 @@
 
     </RelativeLayout>
 
-</FrameLayout><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/updates_item.xml -->
+<!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/updates_item.xml -->

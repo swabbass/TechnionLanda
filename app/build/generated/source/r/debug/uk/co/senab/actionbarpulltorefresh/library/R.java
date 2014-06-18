@@ -42,8 +42,8 @@ public final class R {
 		public static final int spb_default_reversed = 0x7f060002;
 	}
 	public static final class color {
-		public static final int default_progress_bar_color = 0x7f07000a;
-		public static final int spb_default_color = 0x7f07000b;
+		public static final int default_progress_bar_color = 0x7f07000b;
+		public static final int spb_default_color = 0x7f07000c;
 	}
 	public static final class dimen {
 		public static final int ptr_progress_bar_stroke_width = 0x7f090002;

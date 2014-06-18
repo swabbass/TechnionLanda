@@ -22,11 +22,12 @@ public class Update implements Serializable, Comparable<Update> {
     private boolean pinned;
     private boolean popUpOpend;
 
-    public Update(String subject, String dateTime, String text) {
-        setSubject(subject);
-        setDateTime(dateTime);
-        setText(text);
+    public
+    Update(String subject, String dateTime, String text) {
 
+        setSubject(subject);
+        this.dateTime = dateTime;
+        this.text = text;
     }
 
     public Update(String id, String urlToJSon) {
@@ -35,14 +36,14 @@ public class Update implements Serializable, Comparable<Update> {
     }
 
     public Update(String id, String subject, String dateTime, String text,
-                  boolean pinned,String html_text) {
-        setUpdate_id(id);
+                  String html_text) {
+        this.update_id=id;
         setSubject(subject);
-        setDateTime(dateTime);
-        setText(text);
-        this.html_text=html_text;
+        this.dateTime=dateTime;
+        this.text=text;
+        this.html_text = html_text;
         this.pinned = false;
-        this.setPopUpOpend(false);
+       this.popUpOpend=false;
 
     }
 
@@ -61,24 +62,12 @@ public class Update implements Serializable, Comparable<Update> {
     }
 
     public void setText(String text) {
-       // String tmp = Utilities.removeTableFirstTrHtml(text);
+        // String tmp = Utilities.removeTableFirstTrHtml(text);
         //tmp = Utilities.html2Text(tmp == null ? text : tmp);
-        this.text =text;
-                //Utilities.html2Text(text);
+        this.text = text;
+        //Utilities.html2Text(text);
 
         // Html.fromHtml(text).toString();
-    }
-
-    public boolean isToobig() {
-        return text.length() > 300;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
     }
 
     public String getSubject() {

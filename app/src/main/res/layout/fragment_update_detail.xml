@@ -4,6 +4,6 @@
     android:layout_height="match_parent"
     tools:context="ward.landa.fragments.UpdateDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
 
 </FrameLayout>

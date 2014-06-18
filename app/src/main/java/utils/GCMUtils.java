@@ -18,8 +18,13 @@ import ward.landa.Teacher;
 import ward.landa.activities.Settings;
 
 public class GCMUtils {
-    public static final String EXTRA_MESSAGE = "message";
-    public static final String PROPERTY_REG_ID = "registration_id";
+
+    private static final String PROPERTY_REG_ID;
+
+    static {
+        PROPERTY_REG_ID = "registration_id";
+    }
+
     public static final String DATA = "data";
     public static final String SENDER_ID = "498258787681";
     public static final String REGSITER = "isReg";

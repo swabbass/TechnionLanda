@@ -28,6 +28,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.ref.WeakReference;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -47,7 +48,6 @@ public class Utilities {
 
     private static final String NEW_UPDATE = "new_Update";
     private static final int notfyId = 12;
-    public static HashMap<String, String> files;
 
     /**
      * Saving the download data once per key in the Shared Perfrences
@@ -168,11 +168,6 @@ public class Utilities {
         return tables;
     }
 
-    public static InputMethodManager getInputMethodManager(Activity activity) {
-        return (InputMethodManager) activity
-                .getSystemService(Context.INPUT_METHOD_SERVICE);
-    }
-
     /**
      * @param outBuffer String buffer of the text to replace % and escaped characters
      * @return Formated String with replaced tags and encodded
@@ -225,34 +220,6 @@ public class Utilities {
 
         }
         return -1;
-    }
-
-    /**
-     * @param context Context
-     * @param message Message to send to BoroadCastReciever
-     * @param time    Time day hour minute seconds milliseconds
-     * @param title   Title of the message
-     * @param Action  Action type for intent
-     */
-    public static void displayMessage(Context context, String message,
-                                      String time, String title, String Action) {
-        Intent intent = new Intent(Action);
-        intent.putExtra(Settings.EXTRA_MESSAGE, message);
-        intent.putExtra(Settings.EXTRA_Date, time);
-        intent.putExtra(Settings.EXTRA_TITLE, title);
-        context.sendBroadcast(intent);
-    }
-
-    /**
-     * @param context Context
-     * @param update  Update object to send to broadcasrreciever
-     * @param Action  ActionType for intent
-     */
-    public static void displayMessageUpdate(Context context, Update update,
-                                            String Action) {
-        Intent intent = new Intent(Action);
-        intent.putExtra(NEW_UPDATE, update);
-        context.sendBroadcast(intent);
     }
 
     /**
@@ -325,7 +292,7 @@ public class Utilities {
      * @param extras from intent
      * @return new Update with the message delivered from back-end
      */
-    public static Update generateUpdateFromExtras(Bundle extras, Context cxt) {
+    public static Update generateUpdateFromExtras(Bundle extras) {
         String msg = extras.getString(Settings.EXTRA_MESSAGE);
 
         Update u = null;
@@ -341,7 +308,7 @@ public class Utilities {
                 content=content.replaceAll("&#8221;",Pattern.quote("\""));
                 String date = jObj.getString("post_date");
                 String url = jObj.getString("guid");
-                u = new Update(id, title, date, content, false,jObj.getString("post_content"));
+                u = new Update(id, title, date, content, jObj.getString("post_content"));
                 u.setUrl(url);
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -485,9 +452,9 @@ public class Utilities {
         /**
          * the last index of the close table tag
          */
-        public int endIndex;
-        public int firstTrStartIndex;
-        public int firstTrEndIndex;
+        private int endIndex;
+        private int firstTrStartIndex;
+        private int firstTrEndIndex;
 
         public Table() {
             // TODO Auto-generated constructor stub
@@ -503,18 +470,17 @@ public class Utilities {
     public static class fetchUpdateFromBackEndTask extends
             AsyncTask<String, String, Update> {
        final List<NameValuePair> params = new ArrayList<>();
-        boolean downloadOk = false;
-       final Context cxt;
+        final WeakReference<Context> cxt;
        final ConnectionDetector connectionDetector;
         Update u;
       final  PostListener listner;
        final String url = "http://wabbass.byethost9.com/wordpress/";
 
         public fetchUpdateFromBackEndTask(Context cxt, PostListener listner) {
-            this.cxt = cxt;
+            this.cxt = new WeakReference<Context>(cxt);
             this.listner = listner;
             this.u = null;
-            connectionDetector = new ConnectionDetector(cxt);
+            connectionDetector = new ConnectionDetector(this.cxt.get());
         }
 
         @Override
@@ -539,10 +505,9 @@ public class Utilities {
                         u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                Utilities.html2Text(update.getString("content")), false,update.getString("content"));
+                                Utilities.html2Text(update.getString("content")), update.getString("content"));
                         u.setUrl(update.getString("url"));
 
-                        downloadOk = true;
                     } catch (JSONException e) {
 
                         e.printStackTrace();

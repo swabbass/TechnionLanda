@@ -42,6 +42,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -212,7 +213,7 @@ public class FragmentTeachers extends Fragment {
     private void loadFromDataBase() {
         tutors = null;
         tutors = db_mngr.getCursorAllTeachers();
-        gAdapter = new gridAdabter(root.getContext(), tutors, getResources());
+        gAdapter = new gridAdabter(getActivity().getApplicationContext(), tutors);
         sb = new SwingBottomInAnimationAdapter(gAdapter);
         sb.setAbsListView(gridView);
         gridView.setAdapter(sb);
@@ -274,15 +275,14 @@ public class FragmentTeachers extends Fragment {
 
       final   LayoutInflater inflater;
         List<Teacher> l;
-     final   Resources res;
-       final Context cxt;
+
+      WeakReference< Context> cxt;
         int searched = 0;
 
-        public gridAdabter(Context context, List<Teacher> l, Resources res) {
-            this.cxt = context;
+        public gridAdabter(Context context, List<Teacher> l) {
+            this.cxt = new WeakReference<>(context);
             this.inflater = LayoutInflater.from(context);
             this.l = l;
-            this.res = res;
             this.searched = 0;
         }
 
@@ -354,11 +354,11 @@ public class FragmentTeachers extends Fragment {
             };
             db_mngr.UpdateTeacherImageDownloaded(teacher, true);
             if (!teacher.isDownloadedImage()) {
-                Picasso.with(cxt).load(teacher.getImageUrl())
+                Picasso.with(cxt.get()).load(teacher.getImageUrl())
                         .error(R.drawable.ic_launcher).into(viewHolder.picture);
-                Picasso.with(cxt).load(teacher.getImageUrl()).into(target);
+                Picasso.with(cxt.get()).load(teacher.getImageUrl()).into(target);
             } else {
-                Picasso.with(cxt).load(new File(teacher.getImageLocalPath()))
+                Picasso.with(cxt.get()).load(new File(teacher.getImageLocalPath()))
                         .error(R.drawable.ic_launcher).into(viewHolder.picture);
             }
             viewHolder.name.setText(teacher.toString());
@@ -387,11 +387,9 @@ public class FragmentTeachers extends Fragment {
                 if (intent.getStringExtra("Type") != null) {
                     if (intent.getStringExtra("Type").contains("INSTRUCTOR")) {
                         abortBroadcast();
-                        String type = intent.getStringExtra("Type");
                         tutors = null;
                         tutors = db_mngr.getCursorAllTeachers();
-                        gAdapter = new gridAdabter(root.getContext(), tutors,
-                                getResources());
+                        gAdapter = new gridAdabter(getActivity().getApplicationContext(), tutors);
                         sb = new SwingBottomInAnimationAdapter(gAdapter);
                         sb.setAbsListView(gridView);
                         gridView.setAdapter(sb);
@@ -481,6 +479,7 @@ public class FragmentTeachers extends Fragment {
             Log.d("ward", jsonUsers != null ? jsonUsers.toString() : null);
             try {
 
+                assert jsonUsers != null;
                 JSONArray teachers = jsonUsers.getJSONArray("users");
                 for (int i = 0; i < teachers.length(); i++) {
                     JSONObject c = teachers.getJSONObject(i);
@@ -522,8 +521,7 @@ public class FragmentTeachers extends Fragment {
 
                     @Override
                     public void run() {
-                        gAdapter = new gridAdabter(getActivity(), tutors,
-                                getResources());
+                        gAdapter = new gridAdabter(getActivity().getApplicationContext(), tutors);
                         SwingBottomInAnimationAdapter sb = new SwingBottomInAnimationAdapter(
                                 gAdapter);
                         sb.setAbsListView(gridView);

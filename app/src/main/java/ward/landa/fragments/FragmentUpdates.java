@@ -72,7 +72,6 @@ public class FragmentUpdates extends Fragment {
     private   JSONParser jParser;
     private  ConnectionDetector connectionDetector;
     private   DBManager db_mngr;
-    private  View root;
 
     private   PullToRefreshLayout pullToRefreshLayout;
     private boolean toFetchDataFromDB;
@@ -94,8 +93,8 @@ public class FragmentUpdates extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        root = inflater.inflate(R.layout.updates_frag_list, container, false);
-        initlizeFragment(root, container);
+        View root = inflater.inflate(R.layout.updates_frag_list, container, false);
+        initlizeFragment(root);
         initlizeListners();
         initlizeDataForFragment();
         return root;
@@ -157,7 +156,7 @@ public class FragmentUpdates extends Fragment {
      *
      * @param root Root view that have ui components to find and set
      */
-    private void initlizeFragment(View root, ViewGroup container) {
+    private void initlizeFragment(View root) {
         db_mngr = new DBManager(getActivity());
 
 
@@ -289,7 +288,7 @@ public class FragmentUpdates extends Fragment {
         updates = null;
         updates = db_mngr.getCursorAllUpdates();
         Collections.sort(updates);
-        uAdapter = new updatesAdapter(updates, getActivity(), callBack, db_mngr);
+        uAdapter = new updatesAdapter(updates, getActivity(), db_mngr);
         ScaleInAnimationAdapter sc = new ScaleInAnimationAdapter(uAdapter);
         sc.setAbsListView(l);
         l.setAdapter(sc);
@@ -374,7 +373,6 @@ public class FragmentUpdates extends Fragment {
     static class updatesAdapter extends BaseAdapter {
 
         LayoutInflater inflater = null;
-      final  updateCallback callback;
         final  List<Update> selected_items;
        final WeakReference<Activity> weakActivity;
       final  WeakReference<DBManager> weakDb_mngr;
@@ -382,24 +380,18 @@ public class FragmentUpdates extends Fragment {
         private boolean isActionMode;
 
         public updatesAdapter(List<Update> updates, Activity cxt,
-                              updateCallback callback, DBManager db_mngr) {
+                              DBManager db_mngr) {
 
             this.updates = updates;
             this.inflater = (LayoutInflater) cxt
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            this.callback = callback;
+
             this.weakActivity = new WeakReference<>(cxt);
             this.selected_items = new ArrayList<>();
             this.weakDb_mngr = new WeakReference<>(db_mngr);
         }
 
-        public List<Update> getUpdates() {
-            return updates;
-        }
 
-        public void setUpdates(List<Update> updates) {
-            this.updates = updates;
-        }
 
         @Override
         public boolean isEnabled(int position) {
@@ -579,6 +571,9 @@ public class FragmentUpdates extends Fragment {
             return this.selected_items;
         }
 
+        public void setActionMode(boolean isActionMode) {
+            this.isActionMode = isActionMode;
+        }
     }
 
     /**
@@ -609,7 +604,7 @@ public class FragmentUpdates extends Fragment {
                 if (arg1.getStringExtra("Type") == null) {
                     abortBroadcast();
                     Update u = Utilities.generateUpdateFromExtras(
-                            arg1.getExtras(), arg0);
+                            arg1.getExtras());
                     if (u != null && u.getUrlToJason() == null) {
                         updates.add(0, u);
                         db_mngr.insertUpdate(u);
@@ -620,24 +615,23 @@ public class FragmentUpdates extends Fragment {
                                 Utilities.html2Text(u.getText()));
                     } else {
                         assert u != null;
-                        if (u.getUrlToJason() != null) {
-                            Utilities.PostListener listner = new Utilities.PostListener() {
+                        Utilities.PostListener listner;
+                        listner = new Utilities.PostListener() {
 
-                                @Override
-                                public void onPostUpdateDownloaded(Update u) {
-                                    addUpdate(u);
-                                    Utilities.showNotification(getActivity(),
-                                            u.getSubject(),
-                                            Utilities.html2Text(u.getText()));
-                                    Collections.sort(updates);
-                                    uAdapter.notifyDataSetChanged();
+                            @Override
+                            public void onPostUpdateDownloaded(Update u) {
+                                addUpdate(u);
+                                Utilities.showNotification(getActivity(),
+                                        u.getSubject(),
+                                        Utilities.html2Text(u.getText()));
+                                Collections.sort(updates);
+                                uAdapter.notifyDataSetChanged();
 
-                                }
-                            };
-                            Utilities.fetchUpdateFromBackEndTask task = new Utilities.fetchUpdateFromBackEndTask(
-                                    getActivity(), listner);
-                            task.execute(u.getUpdate_id());
-                        }
+                            }
+                        };
+                        Utilities.fetchUpdateFromBackEndTask task = new Utilities.fetchUpdateFromBackEndTask(
+                                getActivity(), listner);
+                        task.execute(u.getUpdate_id());
                     }
                 }
             }
@@ -700,7 +694,7 @@ public class FragmentUpdates extends Fragment {
                         Update u = new Update(update.getString("id"),
                                 update.getString("title"),
                                 update.getString("date"),
-                                Utilities.html2Text(update.getString("content")), false,update.getString("content"));
+                                Utilities.html2Text(update.getString("content")), update.getString("content"));
                         u.setUrl(update.getString("url"));
                         if (!toRefresh) {
                             updates.add(u);
@@ -739,7 +733,7 @@ public class FragmentUpdates extends Fragment {
                     db_mngr.insertUpdate(u);
                 }
 
-                uAdapter = new updatesAdapter(updates, getActivity(), callBack,
+                uAdapter = new updatesAdapter(updates, getActivity(),
                         db_mngr);
                 ScaleInAnimationAdapter sc = new ScaleInAnimationAdapter(
                         uAdapter);
@@ -754,7 +748,7 @@ public class FragmentUpdates extends Fragment {
                         getActivity());
                 db_mngr.clearDb();
                 showDialogNoconnection(!toFetchDataFromDB);
-            } else if (toRefresh) {
+            } else {
 
                 Collections.sort(updates);
                 uAdapter.notifyDataSetChanged();

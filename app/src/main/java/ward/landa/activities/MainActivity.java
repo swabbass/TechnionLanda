@@ -94,8 +94,6 @@ public class MainActivity extends FragmentActivity implements
         setContentView(R.layout.activity_main);
         loadSettings();
         forceRTLIfSupported();
-        JSONParser jParser = new JSONParser();
-        Reciever alarm = new Reciever();
 
     }
 
@@ -244,8 +242,6 @@ public class MainActivity extends FragmentActivity implements
     private void loadSettings() {
         Settings.initlizeSettings(getApplicationContext());
         this.localLang = Settings.getLocalLang();
-        boolean isCourseNotify = Settings.isToNotifyCourse();
-        boolean isUpdateNotify = Settings.isToNotifyUpdates();
 
     }
 
@@ -272,12 +268,6 @@ public class MainActivity extends FragmentActivity implements
     }
 
     private void initlizeDrawerNavigation() {
-        String[] drawertitles = new String[]{
-                getResources().getString(R.string.updates),
-                getResources().getString(R.string.teachers),
-                getResources().getString(R.string.courses),
-                getResources().getString(R.string.settings),
-                getResources().getString(R.string.about)};
         items = new ArrayList<>();
         items.add(new DrawerSection(getResources().getString(
                 R.string.Navigation)));

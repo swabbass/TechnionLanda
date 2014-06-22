@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ward.landa.ImageUtilities.squareImage
+        <ward.landaMaan.ImageUtilities.squareImage
             android:id="@+id/picture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

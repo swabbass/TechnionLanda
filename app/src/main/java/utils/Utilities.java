@@ -16,8 +16,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
-import android.util.Log;
-import android.view.inputmethod.InputMethodManager;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -32,17 +31,16 @@ import java.lang.ref.WeakReference;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
-import ward.landa.Course;
-import ward.landa.R;
-import ward.landa.Update;
-import ward.landa.activities.MainActivity;
-import ward.landa.activities.Reciever;
-import ward.landa.activities.Settings;
+import ward.landaMaan.Course;
+import ward.landaMaan.R;
+import ward.landaMaan.Update;
+import ward.landaMaan.activities.MainActivity;
+import ward.landaMaan.activities.Reciever;
+import ward.landaMaan.activities.Settings;
 
 public class Utilities {
 
@@ -283,7 +281,7 @@ public class Utilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Log.d("eee", "saved Image : " + localPath);
+
         return localPath;
 
     }
@@ -493,14 +491,13 @@ public class Utilities {
                         this.params);
                 if (jObject == null) {
                     if (cancel(true)) {
-                        Log.e(GCMUtils.TAG,
-                                "loading Updates from internet canceled");
+                      
                     }
                 } else {
-                    Log.d("ward", jObject.toString());
+
                     try {
                         JSONObject update = jObject.getJSONObject("post");
-                        Log.d("ward", jObject.toString());
+
 
                         u = new Update(update.getString("id"),
                                 update.getString("title"),
@@ -511,9 +508,9 @@ public class Utilities {
                     } catch (JSONException e) {
 
                         e.printStackTrace();
-                        Log.e(GCMUtils.TAG, e.toString());
+
                         if (!connectionDetector.isConnectingToInternet()) {
-                            Log.e(GCMUtils.TAG, "faild no internet ");
+
                             cancel(true);
                         }
 

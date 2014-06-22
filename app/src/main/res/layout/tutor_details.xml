@@ -4,6 +4,6 @@
     android:id="@+id/tutorDetailContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ward.landa.activities.TutorDetails">
+    tools:context="ward.landaMaan.activities.TutorDetails">
 
 </FrameLayout>

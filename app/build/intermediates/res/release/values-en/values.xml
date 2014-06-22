@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values-en/strings.xml -->
+    <eat-comment />
+
+    <string name="EndedRefreshing"></string>
+    <string name="LightTextView">גרסה קלה</string>
+    <string name="Refreshing"></string>
+    <string name="RichTextView">גרסה עשירה</string>
+    <string name="about">About</string>
+    <string name="action_websearch">Web Search</string>
+    <string name="app_name">Landa</string>
+    <string name="chemya">כימיה</string>
+    <string name="courses">Workshops</string>
+    <string name="drawer_close">Close Navigation Menu</string>
+    <string name="drawer_open">Open Navigation Menu</string>
+    <string name="feshbach">פישבך</string>
+    <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
+    <string name="mayer">מאיר</string>
+    <string name="rabin">רבין</string>
+    <string name="richViewText">מידע עשיר</string>
+    <string name="sego">סגו</string>
+    <string name="selected">Selected</string>
+    <string name="settings">Settings</string>
+    <string name="taub">טאוב</string>
+    <string name="teachers">Tutors</string>
+    <string name="ulman">אולמן</string>
+    <string name="updates">News</string>
+
+</resources>

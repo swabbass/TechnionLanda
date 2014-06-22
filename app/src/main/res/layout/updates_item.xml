@@ -16,7 +16,7 @@
             android:focusableInTouchMode="false"
             android:src="@drawable/ic_action_overflow" />
 
-        <ward.landa.ExpandableTextView
+        <ward.landaMaan.ExpandableTextView
             android:id="@+id/contentTextBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

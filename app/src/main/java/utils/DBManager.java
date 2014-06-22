@@ -10,10 +10,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import ward.landa.Course;
-import ward.landa.Teacher;
-import ward.landa.Update;
-import ward.landa.activities.Settings;
+import ward.landaMaan.Course;
+import ward.landaMaan.Teacher;
+import ward.landaMaan.Update;
+import ward.landaMaan.activities.Settings;
 
 public class DBManager {
     private static final String DB_NAME = "db_LANDA";

@@ -32,17 +32,17 @@
         revision="19.1.0"
         sha1="59351ccb0a1631d30358f6a92749a072f2df7602"/>
     <item
-        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-33c55fa37535933d155a7de8233c5124661719a9.jar"
-        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
-    <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-e311e493b238b75da4095bd5ee7b69d76d73dc42.jar"
         jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\classes-33c55fa37535933d155a7de8233c5124661719a9.jar"
+        jar="C:\Users\wabbass\git\Landa1\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
     <item
         dex="C:\Users\wabbass\git\Landa1\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-ee37b3c9320d7850e265fadc6a0f3626c2d4c4f7.jar"
         jar="C:\Users\wabbass\git\Landa1\app\libs\nineoldandroids-2.4.0.jar"

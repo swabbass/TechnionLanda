@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/romaFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   >
+
+        <ListView
+
+            android:id="@+id/updates_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="#00e0e0e0"
+            android:dividerHeight="0.5dp"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#00000000"
+            android:padding="5dp" />
+
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+</FrameLayout><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/updates_frag_list.xml -->

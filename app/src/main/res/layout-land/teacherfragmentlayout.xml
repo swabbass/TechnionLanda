@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ward.landaMaan"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,14 +8,16 @@
     android:orientation="horizontal"
     android:weightSum="1">
 
-    <ImageView
+     <ward.landaMaan.ImageUtilities.CircleImageView
         android:id="@+id/teacher_picture"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/person" />
+    android:src="@drawable/person"
+    app:border_color="#e0e0e0"
+    app:border_width="2dp" />
 
     <TextView
         android:id="@+id/emailTeacherLable"

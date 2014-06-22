@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ward.landa"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="ward.landaMaan"
+    android:versionCode="3"
+    android:versionName="1.01"
+    >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -19,14 +20,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
-        android:name="ward.landa.activities.permission.RECEIVE"
+        android:name="ward.landaMaan.activities.permission.RECEIVE"
         android:protectionLevel="signature" />
     <permission
-        android:name="ward.landa.activities.permission.C2D_MESSAGE"
+        android:name="ward.landaMaan.activities.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="ward.landa.activities.permission.RECEIVE" />
-    <uses-permission android:name="ward.landa.activities.permission.C2D_MESSAGE" />
+    <uses-permission android:name="ward.landaMaan.activities.permission.RECEIVE" />
+    <uses-permission android:name="ward.landaMaan.activities.permission.C2D_MESSAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -36,7 +37,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="ward.landa.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateVisible|adjustResize|adjustPan">
             <intent-filter>
@@ -47,7 +48,7 @@
         </activity>
 
         <receiver
-            android:name="ward.landa.activities.Reciever"
+            android:name=".activities.Reciever"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -57,31 +58,31 @@
                 <!-- Receives the registration id. -->
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="ward.landa.activities" />
+                <category android:name="ward.landaMaan.activities" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="ward.landa.activities.CourseDeatilsActivity"
+            android:name=".activities.CourseDeatilsActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity"/>
         <activity
-            android:name="ward.landa.activities.TutorDetails"
+            android:name=".activities.TutorDetails"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity"/>
         <activity
-            android:name="ward.landa.activities.UpdateDetailActivity"
+            android:name=".activities.UpdateDetailActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity"/>
         <activity
-            android:name="ward.landa.activities.SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity"/>
         <activity
-            android:name="ward.landa.AboutActivity"
+            android:name=".AboutActivity"
             android:label="@string/about"
             android:launchMode="standard"
-            android:parentActivityName="ward.landa.activities.MainActivity">
+            android:parentActivityName=".activities.MainActivity">
 
         </activity>
     </application>

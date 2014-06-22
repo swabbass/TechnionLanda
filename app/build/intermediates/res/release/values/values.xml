@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string-array name="drawer_array">
+        <item>עדכונים</item>
+        <item>מסדנתים</item>
+        <item>סדנאות</item>
+        <item>הגדרות</item>
+        <item>אודות</item>
+    </string-array>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <attr name="ptrHeaderStyle" format="reference" />
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <bool name="spb_default_mirror_mode">false</bool>
+    <bool name="spb_default_progressiveStart_activated">false</bool>
+    <bool name="spb_default_reversed">false</bool>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="BackGroundGrey">#454545</color>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_colors.xml -->
+    <eat-comment />
+
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <color name="default_progress_bar_color">#FF33B5E5</color>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <color name="spb_default_color">#33b5e5</color>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_colors.xml -->
+    <eat-comment />
+
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/admob_ads_attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="AdsAttrs">
+
+        <!--
+    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
+    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
+    &lt;width&gt;x&lt;height&gt;.
+        -->
+        <attr name="adSize" format="string" />
+
+        <!--
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+        -->
+        <attr name="adSizes" format="string" />
+
+        <!-- The ad unit ID. -->
+        <attr name="adUnitId" format="string" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/maps_attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="MapAttrs">
+        <attr name="mapType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="satellite" value="2" />
+            <enum name="terrain" value="3" />
+            <enum name="hybrid" value="4" />
+        </attr>
+        <attr name="cameraBearing" format="float" />
+        <attr name="cameraTargetLat" format="float" />
+        <attr name="cameraTargetLng" format="float" />
+        <attr name="cameraTilt" format="float" />
+        <attr name="cameraZoom" format="float" />
+        <attr name="uiCompass" format="boolean" />
+        <attr name="uiRotateGestures" format="boolean" />
+        <attr name="uiScrollGestures" format="boolean" />
+        <attr name="uiTiltGestures" format="boolean" />
+        <attr name="uiZoomControls" format="boolean" />
+        <attr name="uiZoomGestures" format="boolean" />
+        <attr name="useViewLifecycle" format="boolean" />
+        <attr name="zOrderOnTop" format="boolean" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <declare-styleable name="PullToRefreshHeader">
+
+        <!-- A drawable to use as the background of the Header View -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- The height of the Header View -->
+        <attr name="ptrHeaderHeight" format="reference|dimension" />
+
+        <!-- The Text Appearance of the Header View's Title text -->
+        <attr name="ptrHeaderTitleTextAppearance" format="reference" />
+
+        <!-- The color that the Progress Bar should be tinted with -->
+        <attr name="ptrProgressBarColor" format="reference|color" />
+
+        <!-- The style of the Progress Bar -->
+        <attr name="ptrProgressBarStyle">
+            <flag name="inside" value="0x0" />
+            <flag name="outside" value="0x1" />
+        </attr>
+
+        <!-- The height of the Progress Bar -->
+        <attr name="ptrProgressBarHeight" format="reference|dimension" />
+
+        <!-- Text to show to prompt the user is pull (or keep pulling) -->
+        <attr name="ptrPullText" format="reference|string" />
+
+        <!-- Text to show to tell the user that a refresh is currently in progress -->
+        <attr name="ptrRefreshingText" format="reference|string" />
+
+        <!-- Text to show to tell the user has scrolled enough to refresh -->
+        <attr name="ptrReleaseText" format="reference|string" />
+
+        <!-- indeterminate progressbar style -->
+        <attr name="ptrSmoothProgressBarStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefreshView">
+
+        <!-- The class to use as a View's View Delegate. Can be relative path from app's package name -->
+        <attr name="ptrViewDelegateClass" format="reference|string" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <declare-styleable name="SmoothProgressBar">
+        <attr name="spbStyle" format="reference" />
+        <attr name="spb_color" format="color" />
+        <attr name="spb_stroke_width" format="dimension" />
+        <attr name="spb_stroke_separator_length" format="dimension" />
+        <attr name="spb_sections_count" format="integer" />
+        <attr name="spb_speed" format="float" />
+        <attr name="spb_progressiveStart_speed" format="float" />
+        <attr name="spb_progressiveStop_speed" format="float" />
+        <attr name="spb_interpolator" format="enum">
+            <enum name="spb_interpolator_accelerate" value="0" />
+            <enum name="spb_interpolator_linear" value="1" />
+            <enum name="spb_interpolator_acceleratedecelerate" value="2" />
+            <enum name="spb_interpolator_decelerate" value="3" />
+        </attr>
+        <attr name="spb_reversed" format="boolean" />
+        <attr name="spb_mirror_mode" format="boolean" />
+        <attr name="spb_colors" format="reference" />
+        <attr name="spb_progressiveStart_activated" format="boolean" />
+        <attr name="spb_background" format="reference" />
+        <attr name="spb_generate_background_with_colors" format="boolean" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/swipelistview__attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean" />
+        <attr name="swipeAnimationTime" format="integer" />
+        <attr name="swipeOffsetLeft" format="dimension" />
+        <attr name="swipeOffsetRight" format="dimension" />
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean" />
+        <attr name="swipeFrontView" format="reference" />
+        <attr name="swipeBackView" format="reference" />
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="both" value="1" />
+            <enum name="right" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+            <enum name="choice" value="2" />
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+            <enum name="choice" value="2" />
+        </attr>
+        <attr name="swipeDrawableChecked" format="reference" />
+        <attr name="swipeDrawableUnchecked" format="reference" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="WalletFragmentOptions">
+
+        <!-- Theme to be used for the Wallet selector -->
+        <attr name="theme" format="enum">
+            <enum name="holo_dark" value="0" />
+            <enum name="holo_light" value="1" />
+        </attr>
+        <!-- Google Wallet environment to use -->
+        <attr name="environment" format="enum">
+            <enum name="production" value="1" />
+            <enum name="sandbox" value="0" />
+            <enum name="strict_sandbox" value="2" />
+        </attr>
+        <!-- A style resource specifing attributes to customize the look and feel of WalletFragment -->
+        <attr name="fragmentStyle" format="reference" />
+        <!-- Fragment mode -->
+        <attr name="fragmentMode" format="enum">
+            <enum name="buyButton" value="1" />
+            <enum name="selectionDetails" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WalletFragmentStyle">
+
+        <!--
+             Height of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific height, e.g.
+             "48dp", or special values "match_parent" and "wrap_content".
+        -->
+        <attr name="buyButtonHeight" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!--
+             Width of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific width, e.g.
+             "300dp", or special values "match_parent" and "wrap_content".
+        -->
+        <attr name="buyButtonWidth" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!-- Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" -->
+        <attr name="buyButtonText" format="enum">
+            <enum name="buy_with_google" value="1" />
+            <enum name="buy_now" value="2" />
+            <enum name="book_now" value="3" />
+        </attr>
+        <!-- Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" -->
+        <attr name="buyButtonAppearance" format="enum">
+            <enum name="classic" value="1" />
+            <enum name="grayscale" value="2" />
+            <enum name="monochrome" value="3" />
+        </attr>
+        <!-- TextAppearance for masked wallet details -->
+        <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+        <!-- TextAppearance for headers describing masked wallet details -->
+        <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+        <!-- Masked wallet details background -->
+        <attr name="maskedWalletDetailsBackground" format="reference|color" />
+        <!-- TextAppearance for the "Change" button in masked wallet details view -->
+        <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+        <!-- "Change" button background in masked wallet details view -->
+        <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+        <!-- Color of the Google Wallet logo text in masked wallet details view -->
+        <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+        <!-- Type of the wallet logo image in masked wallet details view -->
+        <attr name="maskedWalletDetailsLogoImageType" format="enum">
+            <enum name="classic" value="1" />
+            <enum name="monochrome" value="2" />
+        </attr>
+    </declare-styleable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <dimen name="ptr_progress_bar_stroke_width">4dp</dimen>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <dimen name="spb_default_stroke_separator_length">4dp</dimen>
+    <dimen name="spb_default_stroke_width">4dp</dimen>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <drawable name="focused">#ff5500</drawable>
+    <drawable name="selected">#FF00FF</drawable>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <item name="ptr_content" type="id"/>
+    <item name="ptr_progress" type="id"/>
+    <item name="ptr_text" type="id"/>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/integers.xml -->
+    <eat-comment />
+
+    <integer name="card_flip_time_full">300</integer>
+    <integer name="card_flip_time_half">150</integer>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/version.xml -->
+    <eat-comment />
+
+    <integer name="google_play_services_version">4452000</integer>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <integer name="spb_default_interpolator">0</integer>
+    <integer name="spb_default_sections_count">4</integer>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="AC">רכז פרויקט</string>
+    <string name="CordAdded">רכז חדש</string>
+    <string name="CordDeleted">רכז לא בתוקף</string>
+    <string name="CordUpdated">פרטי רכז עודכנו</string>
+    <string name="CourseAdded">סדנה חדשה</string>
+    <string name="CourseDeleted">סדנא בוטלה</string>
+    <string name="CourseUpdated">סדנה עודכנה</string>
+    <string name="Email">דוא"ל</string>
+    <string name="EndedRefreshing">עדכון הסתיים</string>
+    <string name="Faculty">פקולטה</string>
+    <string name="General">כללי</string>
+    <string name="LightTextView">גרסה קלה</string>
+    <string name="Navigation">ניווט</string>
+    <string name="Place">מקום</string>
+    <string name="Refreshing">מעדכן</string>
+    <string name="RichTextView">גרסה עשירה</string>
+    <string name="Role">תפקיד</string>
+    <string name="SC">רכז/ת חברתי</string>
+    <string name="TeacherAdded">חונך חדש</string>
+    <string name="TeacherDeleted">חונך לא בתוקף</string>
+    <string name="TeacherUpdated">פרטי חונך עודכנו</string>
+    <string name="Time">זמן</string>
+    <string name="UpdateDeleted">עדכון נמחק</string>
+    <string name="UpdatePinned">עדכון מסומן כחשוב</string>
+    <string name="UpdateUnPinned">עדכון מסומן כלא חשוב</string>
+    <string name="WorkshopAlarm">סדנא קרובה</string>
+    <string name="about">אודות</string>
+    <string name="aboutText">היוזמה להקמת הפרויקט לקידום בני המיעוטים בטכניון הייתה על ידי משפחת פטסי ובני לנדא. 
+תודתנו העמוקה נתונה למשפחת לנדא על יוזמתם הברוכה להשקת הפרויקט ועל המעורבות, האחריות והנדיבות שהם מגלים בנושא צמצום פערים בחברה הישראלית.</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">לנדא</string>
+    <string name="chemya">כימיה</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_strings.xml -->
+    <eat-comment />
+
+    <string name="common_google_play_services_enable_button" msgid="2523291102206661146">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text" msgid="227660514972886228">This app won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title" msgid="5122002158466380389">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string name="common_google_play_services_install_button" msgid="7153882981874058840">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone" msgid="2122112764540849864">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="common_google_play_services_install_text_tablet" msgid="7351599665250191022">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string name="common_google_play_services_install_title" msgid="7215213145546190223">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_date_text">The date on the device appears to be incorrect. Please check the date on the device.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button" msgid="6556509956452265614">Update</string>
+    <string name="common_google_play_services_update_text" msgid="9053896323427875356">This app won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title" msgid="1788179980625863495">Update Google Play services</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="courses">סדנאות</string>
+    <string name="delete">מחק</string>
+    <string name="developedby">"וורד עבאס, הפקולטה למדעי מחשב טכניון "</string>
+    <string name="drawer_close">סגור רשימה</string>
+    <string name="drawer_open">פתח רשימה</string>
+    <string name="feshbach">פישבך</string>
+    <string name="fialedToRefresh">נכשל,אין חיבור אינטרנט </string>
+    <string name="headTitle"> פרויקט לשוויון הזדמניות -לנדא</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mayer">מאיר</string>
+    <string name="navigateTo">נווט ל</string>
+    <string name="noConntection">אין חיבור,לקבלת מידע עדכני נא להתחבר לאינטרנט</string>
+    <string name="noConntectionMsgFirsttime">נא להתחבר לאינטרנט להרצת האפלקציה בפעם הראשונה</string>
+    <string name="pin">סמן כחשוב</string>
+    <string name="placeDesx">place</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.chrisbanes.actionbarpulltorefresh/library/0.9.9/res/values/values.xml -->
+    <eat-comment />
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="rabin">רבין</string>
+    <string name="richViewText">מידע עשיר</string>
+    <string name="sego">סגו</string>
+    <string name="selected">"נבחר "</string>
+    <string name="settings">הגדרות</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <item name="spb_default_speed" format="float" type="string">1.0</item>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="taub">טאוב</string>
+    <string name="teachers">מסדנתים</string>
+    <string name="timedayDesc">time day</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="tutor">חונך אקדמי</string>
+    <string name="ulman">אולמן</string>
+    <string name="updates">עדכונים</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_strings.xml -->
+    <eat-comment />
+
+    <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/0.4.0/res/values/values.xml -->
+    <eat-comment />
+
+    <style name="SmoothProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="spb_color">@color/spb_default_color</item>
+        <item name="spb_sections_count">@integer/spb_default_sections_count</item>
+        <item name="spb_speed">@string/spb_default_speed</item>
+        <item name="spb_stroke_width">@dimen/spb_default_stroke_width</item>
+        <item name="spb_stroke_separator_length">@dimen/spb_default_stroke_separator_length</item>
+        <item name="spb_reversed">@bool/spb_default_reversed</item>
+        <item name="spb_mirror_mode">@bool/spb_default_mirror_mode</item>
+        <item name="spb_progressiveStart_activated">@bool/spb_default_progressiveStart_activated</item>
+        <item name="spb_background">@null</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+
+    <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme">
+        <item name="spbStyle">@style/SmoothProgressBar</item>
+    </style>
+    <!-- From: file:/C:/Users/wabbass/git/Landa1/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_styles.xml -->
+    <eat-comment />
+
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+
+</resources>

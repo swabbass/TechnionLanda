@@ -2,20 +2,18 @@ package utils;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-import ward.landa.Course;
-import ward.landa.R;
-import ward.landa.Teacher;
-import ward.landa.activities.Settings;
+import ward.landaMaan.Course;
+import ward.landaMaan.R;
+import ward.landaMaan.Teacher;
+import ward.landaMaan.activities.Settings;
 
 public class GCMUtils {
 
@@ -26,13 +24,15 @@ public class GCMUtils {
     }
 
     public static final String DATA = "data";
-    public static final String SENDER_ID = "498258787681";
+  //  public static final String SENDER_ID = "498258787681";//for development
+    public static final String SENDER_ID = "479204617677"; //for deploy
     public static final String REGSITER = "isReg";
     public static final String LOAD_TEACHERS = "load_teachers";
     public static final String LOAD_UPDATES = "load_updates";
     public static final String LOAD_COURSES = "load_courses";
     public static final String REG_KEY = "REGKEY";
-    private static final String URL = "http://wabbass.byethost9.com/wordpress/";
+  // private static final String URL = "http://wabbass.byethost9.com/wordpress/";
+    private static final String URL = "http://glanda.technion.ac.il/wordpress";
     public static final String TAG = "wordpress";
     private static final String NLANDA_GCM_REG = "http://nlanda.technion.ac.il/LandaSystem/registerGcm.aspx";
 
@@ -44,8 +44,6 @@ public class GCMUtils {
         try {
             HttpResponse response = httpclient.execute(httppost);
             HttpResponse resNlanda = httpclient.execute(httppostNlanda);
-            Log.d(TAG, EntityUtils.toString(response.getEntity()));
-            Log.d(TAG, EntityUtils.toString(resNlanda.getEntity()));
             return "";
 
         } catch (IOException e) {

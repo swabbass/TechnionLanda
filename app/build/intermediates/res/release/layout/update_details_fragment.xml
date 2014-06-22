@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/updateDetailSubjectLable"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0082f7" />
+
+        <TextView
+            android:id="@+id/updateDetailDateTimeLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#e0e0e0" />
+
+        <TextView
+            android:id="@+id/updateDetailContentLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:gravity="right"
+            android:padding="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:text="Large Text"
+            android:textColor="#e0e0e0"
+            android:textSize="16sp" />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/webView"
+            android:layout_weight="104.70"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/shadow" />
+
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/wabbass/git/Landa1/app/src/main/res/layout/update_details_fragment.xml -->

@@ -64,72 +64,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: ward.landaMaan" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45204555-adf8-4b55-88ca-6431d8b2d682" name="Default" comment="new Features&#10; pull to refresh for updates &#10;gps dirction for course time when cliking on location icon in course details &#10;fixing when course added from the backend or edited should be eddited he not added &#10;added upload picture michanism when picture uploaded to back end it will send gcm to the app to remove the current and download the new one">
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\com_haarman_listviewanimations_2_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\commons_lang3_3_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\jsoup_1_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\library_0_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\library_0_9_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\nineoldandroids_2_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\picasso_2_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\play_services_4_4_52.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\support_v4_19_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\.idea\libraries\universal_image_loader_1_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\app\build\generated\source\buildConfig\debug\ward\landa\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\app\build\generated\source\r\debug\ward\landa\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\wabbass\git\Landa1\app\build\generated\source\r\debug\ward\landa\R.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\AboutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/AboutActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\Course.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/Course.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\CourseNotification.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/CourseNotification.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\ExpandableTextView.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/ExpandableTextView.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\ImageUtilities\CircleImageView.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/ImageUtilities/CircleImageView.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\ImageUtilities\squareImage.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/ImageUtilities/squareImage.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\Teacher.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/Teacher.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\Update.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/Update.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\CourseDeatilsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/CourseDeatilsActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/MainActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\Reciever.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/Reciever.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\Settings.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/Settings.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\SettingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/SettingsActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\TutorDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/TutorDetails.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\activities\UpdateDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/activities/UpdateDetailActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\CourseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/CourseFragment.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\FragmentCourses.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/FragmentCourses.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\FragmentTeachers.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/FragmentTeachers.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\FragmentUpdates.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/FragmentUpdates.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\SettingsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/SettingsFragment.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\teacherFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/teacherFragment.java" />
-      <change type="MOVED" beforePath="C:\Users\wabbass\git\Landa1\app\src\main\java\ward\landa\fragments\updateDetailsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/ward/landaMaan/fragments/updateDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/web_hi_rewhites_512.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/web_hi_rewhites_512.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/DBManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/JSONParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" afterPath="$PROJECT_DIR$/app/src/main/java/utils/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_course_deatils.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_course_deatils.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/course_deatils.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/course_deatils.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/course_teacher_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/course_teacher_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_update_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/grid_textimg_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grid_textimg_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/teacherfragmentlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/teacherfragmentlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tutor_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tutor_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/updates_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="45204555-adf8-4b55-88ca-6431d8b2d682" name="Default" comment="new Features&#10; pull to refresh for updates &#10;gps dirction for course time when cliking on location icon in course details &#10;fixing when course added from the backend or edited should be eddited he not added &#10;added upload picture michanism when picture uploaded to back end it will send gcm to the app to remove the current and download the new one" />
     <ignored path="Landa.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -154,8 +89,8 @@
       <file leaf-file-name="GCMUtils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.065671645" vertical-offset="1671" max-vertical-offset="2006">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44179106" vertical-offset="1671" max-vertical-offset="2006">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1956,7 +1891,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2777,8 +2712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/utils/GCMUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.065671645" vertical-offset="1671" max-vertical-offset="2006">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.44179106" vertical-offset="1671" max-vertical-offset="2006">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
           <folding />
         </state>
       </provider>
